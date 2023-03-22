@@ -1,0 +1,7 @@
+#cryptocurency-market-cap-wrapper.cmc-advance-layout table,
+#cryptocurency-market-cap-wrapper.cmc-advance-layout table th,
+#cryptocurency-market-cap-wrapper.cmc-advance-layout table tr,
+#cryptocurency-market-cap-wrapper.cmc-advance-layout table td {  
+    border: none !important;
+    box-shadow: none;
+}

@@ -1,0 +1,61 @@
+/*!
+Theme Name: cFund Adwivo
+Author: Adwivo
+Author URI: https://adwivo.com/
+Description: cFund Website Theme
+Version: 1.1
+Text Domain: cfund-adwivo
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.bg-left,
+.bg-right {
+    position: relative;
+}
+.bg-right:before,
+.bg-left:before {
+	content: '';
+	background: url(https://cfund.vc/wp-content/uploads/2021/09/bg-left.svg) no-repeat 0 0;
+	position: absolute;
+	top: 0;
+	width: 300px;
+	height: 600px;
+	background-size: contain;
+	opacity: 0.15;
+	z-index: -1;
+}
+.bg-left:before {
+	left: 0;
+
+}
+.bg-right:before {
+	background: url(https://cfund.vc/wp-content/uploads/2021/09/bg-right.svg) no-repeat 100% 0;
+	right: 0;
+	top: 350px;
+	background-size: contain;
+	opacity: 0.1;
+}
+.page-footer {
+	background: #FFFFFF;
+}
+@media only screen and (min-width: 992px) {
+	.bg-right:before,
+	.bg-left:before {
+		width: 200px;
+		height: 600px;
+		opacity: .2;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	.bg-right:before,
+	.bg-left:before {
+		width: 300px;
+		height: 600px;
+		opacity: 1;
+	}
+	.bg-right:before {
+		top: 0;
+	}
+}

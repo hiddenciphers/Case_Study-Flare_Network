@@ -1,0 +1,49 @@
+
+var ftGUID_4166877="555541CDBE8DF4";
+var ftConfID_4166877="0";
+var ftParams_4166877="ftOBA=1&ft_domain=www.collinsdictionary.com&ft_ifb=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.collinsdictionary.com%2F&us_privacy=${US_PRIVACY}&cachebuster=423868.4735795668&ft_dv=%5B%25ft_dv%25%5D";
+var ftKeyword_4166877="";
+var ftCustom_4166877="";
+var ftSection_4166877="";
+var ftSegment_4166877="";
+var ftSegmentList_4166877=[];
+var ftRuleMatch_4166877="0";
+var ftTimestamp_4166877="1679211104";
+var ftGeoC2_4166877="au";
+var ftGeoState_4166877="nsw";
+var ftGeoCity_4166877="surry hills";
+var ftISP_4166877="tpg internet pty ltd.";
+var ftSpeed_4166877="broadband";
+var ftConnType_4166877="wifi";
+var ftDMA_4166877="36117";
+var ftLong_4166877="151.21";
+var ftLat_4166877="-33.89";
+var ftPostal_4166877="2010";
+var ftTimeZone_4166877="+1100";
+var ftMobileCarrier_4166877="";
+var ftImp4166877 = {};
+ftImp4166877.privacy = "x";
+ftImp4166877.guidAge = "1";
+ftImp4166877.impID = "188B322C-1884-DD29-D9E9-28CEF2CA2803";
+ftImp4166877.duid = "FT:555541CDBE8DF4";
+
+ftImp4166877.ft_tpplid = "";
+ftImp4166877.ft_c = {};
+ftImp4166877.gdpr = "";
+ftImp4166877.gdpr_consent = "";
+ftImp4166877.gdpr_pd = "";
+ftImp4166877.oob_consent = "";
+ftImp4166877.gdprStoredConsent = "";
+ftImp4166877.us_privacy = "!!US_PRIVACY!";
+
+ftImp4166877.jsAppend = "1";
+(function(){
+    var tag = document.getElementById('ft_servedby_4166877') || (function(s){
+    	return s[s.length-1];
+    }(document.getElementsByTagName('script'))),
+           js = document.createElement('script');
+    js.src =
+"https://cdn.flashtalking.com/xre/416/4166877/3990093/js/j-4166877-3990093.js";
+    js.id = "ftscript_m4166877";
+    tag.parentNode.insertBefore(js, tag);
+}());

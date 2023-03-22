@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('subset-Ubuntu.eot');
+  src:
+    url('subset-Ubuntu.eot?#iefix') format('embedded-opentype'),
+    url('subset-Ubuntu.woff2') format('woff2'),
+    url('subset-Ubuntu.woff') format('woff'),
+    url('subset-Ubuntu.ttf') format('truetype'),
+    url('subset-Ubuntu.svg#Ubuntu') format('svg');
+  font-display: swap;
+}

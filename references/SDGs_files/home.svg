@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icon / home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.1107904,2.53518851 L10.1107904,0.259280643 L11.6664742,0.259280643 L11.6664742,3.80278276 L14,5.70417414 L12.9628774,6.74129671 L6.99942265,1.8149645 L1.03596787,6.74129671 L9.09494702e-13,5.70417414 L6.99942265,0 L10.1107904,2.53518851 Z M7,3.11136771 L11.6664742,7.00057735 L11.6664742,11.1481958 L8.29582586,11.1481958 L8.29582586,8.03769992 L5.70301943,8.03769992 L5.70301943,11.1481958 L2.33237108,11.1481958 L2.33237108,7.00057735 L7,3.11136771 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="element-/-header-/-UN-&amp;-languages" transform="translate(-150.000000, -8.000000)">
+            <g id="Group" transform="translate(150.000000, 6.000000)">
+                <g id="icon-/-home" transform="translate(0.000000, 1.500000)">
+                    <g id="color-/-basic-/-black-copy" transform="translate(0.000000, 1.400000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Combined-Shape"></g>
+                        <g id="color-/-corporative-/-2" mask="url(#mask-2)" fill="#333333">
+                            <g transform="translate(0.000000, -1.400000)" id="Rectangle">
+                                <rect x="0" y="0" width="14" height="14"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

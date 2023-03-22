@@ -1,0 +1,2469 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.huobi.com/learn/en-us/what-is-token-distribution/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"> -->
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>What is token distribution? – Huobi Learn</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="alternate" type="application/rss+xml" title="Huobi Learn » Feed" href="https://www.huobi.com/learn/en-us/feed/">
+<link rel="alternate" type="application/rss+xml" title="Huobi Learn » Comments Feed" href="https://www.huobi.com/learn/en-us/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.13.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script type="text/javascript" async="" src="./distribution_files/analytics.js"></script><script type="text/javascript" async="" src="./distribution_files/js"></script><script src="./distribution_files/js(1)" data-cfasync="false" data-wpfc-render="false" async=""></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '8.13.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-6MN17TESGE',
+														];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+													} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-6MN17TESGE', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<link rel="stylesheet" id="blocksy-dynamic-global-css" href="./distribution_files/global.css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./distribution_files/style.min.css" media="all">
+<link rel="stylesheet" id="fontawesome-free-css" href="./distribution_files/all.min.css" media="all">
+<link rel="stylesheet" id="slick-css" href="./distribution_files/slick.min.css" media="all">
+<link rel="stylesheet" id="slick-theme-css" href="./distribution_files/slick-theme.min.css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="./distribution_files/magnific-popup.min.css" media="all">
+<link rel="stylesheet" id="getwid-blocks-css" href="./distribution_files/blocks.style.css" media="all">
+<style id="getwid-blocks-inline-css">
+.wp-block-getwid-section .wp-block-getwid-section__wrapper .wp-block-getwid-section__inner-wrapper{max-width: 1200px;}
+</style>
+<link rel="stylesheet" id="classic-theme-styles-css" href="./distribution_files/classic-themes.min.css" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--palette-color-1: var(--paletteColor1, #2483ff);--wp--preset--color--palette-color-2: var(--paletteColor2, #6ea6ff);--wp--preset--color--palette-color-3: var(--paletteColor3, rgba(44, 62, 80, 0.9));--wp--preset--color--palette-color-4: var(--paletteColor4, rgba(44, 62, 80, 1));--wp--preset--color--palette-color-5: var(--paletteColor5, #ffffff);--wp--preset--color--palette-color-6: var(--paletteColor6, #f2f5f7);--wp--preset--color--palette-color-7: var(--paletteColor7, #FAFBFC);--wp--preset--color--palette-color-8: var(--paletteColor8, #ffffff);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);--wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);--wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);--wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);--wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);--wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);--wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);--wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);--wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);--wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);--wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);--wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);--wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);--wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);--wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);--wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);--wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);--wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);--wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);--wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);--wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);--wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);--wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);--wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);--wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);--wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);--wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);--wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);--wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);--wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);--wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);--wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);--wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);--wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);--wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);--wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);--wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);--wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);--wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);--wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);--wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);--wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);--wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);--wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="ct-main-styles-css" href="./distribution_files/main.min.css" media="all">
+<link rel="stylesheet" id="blocksy-ext-widgets-styles-css" href="./distribution_files/main.css" media="all">
+<link rel="stylesheet" id="cool-tag-cloud-css" href="./distribution_files/cool-tag-cloud.css" media="all">
+<link rel="stylesheet" id="email-subscribers-css" href="./distribution_files/email-subscribers-public.css" media="all">
+<link rel="stylesheet" id="trp-floater-language-switcher-style-css" href="./distribution_files/trp-floater-language-switcher.css" media="all">
+<link rel="stylesheet" id="trp-language-switcher-style-css" href="./distribution_files/trp-language-switcher.css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="./distribution_files/style.css" media="all">
+<link rel="stylesheet" id="es_starter_main_css-css" href="./distribution_files/starter-main.css" media="all">
+<link rel="stylesheet" id="ct-page-title-styles-css" href="./distribution_files/page-title.min.css" media="all">
+<link rel="stylesheet" id="ct-getwid-styles-css" href="./distribution_files/getwid.min.css" media="all">
+<link rel="stylesheet" id="ct-elementor-styles-css" href="./distribution_files/elementor-frontend.min.css" media="all">
+<link rel="stylesheet" id="ct-share-box-styles-css" href="./distribution_files/share-box.min.css" media="all">
+<script src="./distribution_files/frontend-gtag.min.js" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" id="monsterinsights-frontend-script-js-extra">var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.huobi.com\/learn\/en-us","hash_tracking":"false","ua":"","v4_id":"G-6MN17TESGE"};</script>
+<script src="./distribution_files/jquery.min.js" id="jquery-core-js"></script>
+<script src="./distribution_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script id="email-subscribers-js-extra">
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/www.huobi.com\/learn\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="./distribution_files/email-subscribers-public.js" id="email-subscribers-js"></script>
+<link rel="https://api.w.org/" href="https://www.huobi.com/learn/en-us/wp-json/"><link rel="alternate" type="application/json" href="https://www.huobi.com/learn/en-us/wp-json/wp/v2/posts/3402"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.huobi.com/learn/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.huobi.com/learn/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.1.1">
+<link rel="canonical" href="https://www.huobi.com/learn/en-us/what-is-token-distribution/">
+<link rel="shortlink" href="https://www.huobi.com/learn/en-us/?p=3402">
+<link rel="alternate" type="application/json+oembed" href="https://www.huobi.com/learn/en-us/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.huobi.com%2Flearn%2Fen-us%2Fwhat-is-token-distribution%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.huobi.com/learn/en-us/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.huobi.com%2Flearn%2Fen-us%2Fwhat-is-token-distribution%2F&amp;format=xml">
+<link rel="alternate" hreflang="en-US" href="https://www.huobi.com/learn/en-us/what-is-token-distribution/">
+<link rel="alternate" hreflang="en" href="https://www.huobi.com/learn/en-us/what-is-token-distribution/">
+<link rel="alternate" hreflang="es-ES" href="https://www.huobi.com/learn/es-es/what-is-token-distribution/">
+<link rel="alternate" hreflang="es" href="https://www.huobi.com/learn/es-es/what-is-token-distribution/">
+<link rel="alternate" hreflang="tr-TR" href="https://www.huobi.com/learn/tr-tr/what-is-token-distribution/">
+<link rel="alternate" hreflang="tr" href="https://www.huobi.com/learn/tr-tr/what-is-token-distribution/">
+<link rel="alternate" hreflang="vi" href="https://www.huobi.com/learn/vi-vi/what-is-token-distribution/">
+<link rel="alternate" hreflang="zh-HK" href="https://www.huobi.com/learn/zh-hk/what-is-token-distribution/">
+<link rel="alternate" hreflang="zh" href="https://www.huobi.com/learn/zh-hk/what-is-token-distribution/">
+<link rel="alternate" hreflang="id-ID" href="https://www.huobi.com/learn/id-id/what-is-token-distribution/">
+<link rel="alternate" hreflang="id" href="https://www.huobi.com/learn/id-id/what-is-token-distribution/">
+<link rel="alternate" hreflang="ms-MY" href="https://www.huobi.com/learn/ms-my/what-is-token-distribution/">
+<link rel="alternate" hreflang="ms" href="https://www.huobi.com/learn/ms-my/what-is-token-distribution/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.huobi.com/learn/pt-br/what-is-token-distribution/">
+<link rel="alternate" hreflang="pt" href="https://www.huobi.com/learn/pt-br/what-is-token-distribution/">
+<link rel="alternate" hreflang="fr-FR" href="https://www.huobi.com/learn/fr-fr/what-is-token-distribution/">
+<link rel="alternate" hreflang="fr" href="https://www.huobi.com/learn/fr-fr/what-is-token-distribution/">
+<!-- This code is added by WP Analytify (4.1.7) https://analytify.io/downloads/analytify-wordpress-plugin/ !-->
+			<script async="" src="./distribution_files/js(2)"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			const configuration = {
+				'anonymize_ip': false,
+				'forceSSL': false,
+				'allow_display_features': false,
+								
+			};
+			const UACode = 'UA-224803531-1';
+
+			gtag('config', UACode, configuration);
+
+			
+			</script>
+
+			<!-- This code is added by WP Analytify (4.1.7) !--><noscript><link rel='stylesheet' href='https://www.huobi.com/learn/wp-content/themes/blocksy/static/bundle/no-scripts.min.css' type='text/css' /></noscript>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="What is token distribution?">
+<meta property="og:url" content="https://www.huobi.com/learn/en-us/what-is-token-distribution/">
+<meta property="og:description" content="Token distribution is an integral part of tokenomics research. It describes the proportions in which different groups of users and investors own blockchains tokens. You can consider token distribut…">
+<meta property="article:published_time" content="2022-01-28T14:47:39+00:00">
+<meta property="article:modified_time" content="2022-03-07T13:04:31+00:00">
+<meta property="og:site_name" content="Huobi Learn">
+<meta property="og:image" content="https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution.jpeg">
+<meta property="og:image:width" content="1251">
+<meta property="og:image:height" content="751">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:text:title" content="What is token distribution?">
+<meta name="twitter:image" content="https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution.jpeg?w=640">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="icon" href="https://www.huobi.com/learn/wp-content/uploads/2021/02/%E7%BC%96%E7%BB%84-2%E5%A4%8D%E5%88%B6-12.png" sizes="32x32">
+<link rel="icon" href="https://www.huobi.com/learn/wp-content/uploads/2021/02/%E7%BC%96%E7%BB%84-2%E5%A4%8D%E5%88%B6-12.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.huobi.com/learn/wp-content/uploads/2021/02/%E7%BC%96%E7%BB%84-2%E5%A4%8D%E5%88%B6-12.png">
+<meta name="msapplication-TileImage" content="https://www.huobi.com/learn/wp-content/uploads/2021/02/编组-2复制-12.png">
+		<style id="wp-custom-css">
+			:root {
+  --fontFamily: DINPro, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --c1: 36, 131, 255;
+  --c2: 250, 77, 86;
+  --c3: 0, 180, 100;
+  --c4: 250, 172, 20;
+  --wide-offset: 0px;
+  }
+  ::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  
+  [data-vertical-spacing*='top'] {
+    padding-top: 0;
+  }
+  [data-vertical-spacing*='bottom'] {
+    padding-bottom: 0;
+  }
+  [data-dropdown*="padded"] .sub-menu li {
+  padding: 0 !important;
+  }
+  html[lang="tr-TR"] body {
+      font-size: 0;
+  }
+  html[lang="tr-TR"] body > div {
+    font-size: var(--fontSize);
+  }
+  body {
+    --grid-columns-gap: 40px;
+  }
+  .screen-reader-text {
+  width: auto !important;
+  }
+  
+  header nav .sub-menu {
+  padding: 4px 8px;
+  min-width: 140px !important;
+  width: auto !important;
+  max-width: 260px;
+  }
+  
+  header nav .sub-menu li > a {
+  padding: 10px 8px;
+  margin: 0 !important;
+  white-space: nowrap;
+  }
+  
+  header nav .menu > .menu-item-home > a {
+  --linkInitialColor: #ffffff !important;
+  --menu-indicator-width: calc(100% - var(--menu-items-spacing, 25px));
+  --menu-indicator-opacity: 1;
+  }
+  
+  #menu-item-109 a {
+  height: 22px;
+  background: #E78C04;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0 8px;
+  margin-left: 20px;
+  }
+  #menu-item-109 a::after {
+  display: none;
+  }
+  
+  body.home {
+  background-size: auto 800px;
+  background-position: 0 0;
+  }
+  body.home .wp-block-group {
+  margin-bottom: 0;
+  }
+  
+  body.home .banner {
+  height: 752px;
+  align-items: flex-start;
+  padding-top: 100px;
+  --heading-color: #ffffff;
+  }
+  
+  body.home .banner h1 {
+  font-size: 90px;
+  line-height: 100px;
+  width: 1000px !important;
+  }
+  
+  body.home .banner h4 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 24px;
+  color: #B0B8DB;
+  }
+  
+  body.home .wp-block-search {
+  width: 600px !important;
+  margin-top: 60px;
+  }
+  
+  body.home .wp-block-search input[type="search"] {
+  border-radius: 28px !important;
+  height: 56px;
+  }
+  body .wp-block-search .wp-block-search__button {
+      border: none;
+  }
+  
+  body .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,
+  body.search-no-results .ct-search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: none;
+  }
+  
+  body .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper input[type="search"],
+  body.search-no-results .ct-search-input input[type="search"] {
+  width: 100%;
+  height: 64px;
+  border-radius: 52px;
+  padding: 0 54px 0 24px;
+  background-color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0px 0px 1px rgba(20, 40, 130, 0.2), 0px 6px 15px rgba(20, 40, 130, 0.05);
+  }
+  
+  body .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper button {
+  position: absolute;
+  right: 12px;
+  background-color: transparent;
+  transform: scaleX(-1);
+  outline: none;
+  }
+  body .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper button svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+  }
+  body.search-no-results .ct-search-input button {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background-color: transparent;
+  outline: none;
+  }
+  body.search-no-results .ct-search-input button svg {
+  width: 16px;
+  height: 16px;
+  fill: #9AA5B5;
+  }
+  
+  body article.hentry .banner .wp-block-buttons {
+  margin-top: 100px;
+  }
+  
+  body article.hentry .banner .wp-block-button a {
+  min-width: 200px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, .1) !important;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 8px;
+  }
+  
+  body article.hentry .banner .wp-block-button a b {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #000586;
+  font-size: 22px;
+  margin-right: 20px;
+  }
+  body article.hentry .banner .wp-block-button:nth-of-type(1) {
+  --buttonTextHoverColor: rgb(var(--c1));
+  }
+  body article.hentry .banner .wp-block-button:nth-of-type(2) {
+  --buttonTextHoverColor: rgb(var(--c2));
+  }
+  body article.hentry .banner .wp-block-button:nth-of-type(3) {
+  --buttonTextHoverColor: rgb(var(--c3));
+  }
+  body article.hentry .banner .wp-block-button:nth-of-type(4) {
+  --buttonTextHoverColor: rgb(var(--c4));
+  }
+  body article.hentry .banner .wp-block-button:nth-of-type(1) a b {
+  background-color: rgb(var(--c1));
+  }
+  
+  body article.hentry .banner .wp-block-button:nth-of-type(2) a b {
+  background-color: rgb(var(--c2));
+  }
+  
+  body article.hentry .banner .wp-block-button:nth-of-type(3) a b {
+  background-color: rgb(var(--c3));
+  }
+  
+  body article.hentry .banner .wp-block-button:nth-of-type(4) a b {
+  background-color: rgb(var(--c4));
+  }
+  
+  body article.hentry .category {
+  padding: 40px 4vw;
+  }
+  
+  body article.hentry .category h3 {
+  display: flex;
+  align-items: center;
+  color: #1C242C;
+  }
+  
+  body article.hentry .category h3 b {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  }
+  
+  body article.hentry .category:nth-of-type(1) h3 b {
+  background-color: rgba(var(--c1), .1);
+  color: rgb(var(--c1));
+  }
+  
+  body article.hentry .category:nth-of-type(2) h3 b {
+  background-color: rgba(var(--c2), .1);
+  color: rgb(var(--c2));
+  }
+  
+  body article.hentry .category:nth-of-type(3) h3 b {
+  background-color: rgba(var(--c3), .1);
+  color: rgb(var(--c3));
+  }
+  
+  body article.hentry .category:nth-of-type(4) h3 b {
+  background-color: rgba(var(--c4), .1);
+  color: rgb(var(--c4));
+  }
+  body article.hentry .category:nth-of-type(even) {
+  background-color: #FFFFFF;
+  }
+  body article.hentry .category:nth-of-type(odd) {
+  background-color: #F2F6FC;
+  }
+  body article.hentry .wp-block-latest-posts {
+  width: 1200px !important;
+  margin-bottom: 0;
+  }
+  
+  body article.hentry .wp-block-latest-posts li {
+  width: 276px;
+  height: 250px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  overflow: hidden;
+  }
+  
+  body article.hentry .wp-block-latest-posts li .wp-block-latest-posts__featured-image {
+  border-radius: 16px;
+  overflow: hidden;
+  }
+  
+  body article.hentry .wp-block-latest-posts li > div {
+  height: 172px;
+  border-radius: inherit;
+  }
+  
+  body article.hentry .wp-block-latest-posts li > a {
+  margin-top: -2px;
+  padding: 0 16px;
+  color: var(--headingColor);
+  text-decoration: none;
+  overflow: hidden;
+  line-height: 23px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 600;
+  }
+  
+  body article.hentry .wp-block-latest-posts li:hover > a {
+  color: var(--paletteColor1);
+  }
+  
+  body article.hentry .wp-block-latest-posts .wp-block-buttons .wp-block-button {
+  margin-bottom: 0;
+  --buttonTextHoverColor: #ffffff;
+  }
+  
+  footer h2 {
+  margin-bottom: 0;
+  }
+  
+  footer a {
+  color: var(--color);
+  }
+  
+  [data-footer*="type-1"] footer.ct-footer [data-row="top"] .widget_block h5 {
+      font-size: 32px;
+      line-height: 50px;
+      color: #ffffff;
+      font-weight: 500;
+      margin: 0;
+  }
+  [data-footer*="type-1"] footer.ct-footer [data-row="top"] .widget_block h5 b {
+  font-size: 40px;
+  color: #FFDB3F;
+  }
+  
+  [data-footer*="type-1"] footer.ct-footer [data-row="top"] .widget_block h6 {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 8px 0 40px;
+  color: #B0B8DB;
+  }
+  [data-footer*="type-1"] footer.ct-footer [data-row="top"] .widget_block .wp-block-button__link {
+  /*   line-height: 40px; */
+  padding: 0 24px;
+  --start-color: #2483FF;
+  --stop-color: #8176FF;
+  background: linear-gradient(282.38deg, var(--start-color) 0%, var(--stop-color) 104.1%);
+  }
+  [data-footer*="type-1"] footer.ct-footer [data-row="top"] .widget_block .wp-block-button__link:hover {
+  --stop-color: #2483FF;
+  }
+  
+  body.single-post,body.tag, body.error404, body.search, body.category, body.page:not(.home) {
+  background-size: auto 250px;
+  background-position: 0% 0%;
+  }
+  
+  body.search main, body.error404 main, body.category main, body.single-post main, body.page:not(.home) main
+  {
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+  margin: 78px 0 40px;
+  padding-top: 40px;
+  }
+  
+  body.single-post .entry-header .meta-categories a {
+  min-height: 40px;
+  background: rgba(36, 131, 255, .1);
+  border-radius: 8px;
+  color: var(--paletteColor1);
+  font-size: 16px;
+  padding: 0 16px;
+  }
+  
+  body.search main article.entry-card, body.category main article.entry-card, body.page:not(.home) main .wp-block-latest-posts li, body.home main .wp-block-latest-posts li, body.single-post .ct-related-posts article {
+  font-size: 18px;
+  box-shadow: 0px 0px 1px rgba(20, 40, 130, 0.2), 0px 6px 15px rgba(20, 40, 130, 0.05);
+  --margin-bottom: var(--card-inner-spacing);
+  }
+  
+  [data-cards="boxed"] .entry-card .entry-title a, body.single-post .ct-related-posts article .related-entry-title a {
+  margin-top: -2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 600;
+  }
+  body.single-post article iframe, body.single-post article .ct-image-container {
+  border-radius: 16px;
+  }
+  body.single-post article .ct-image-container {
+  overflow: hidden;
+  }
+  
+  body.search main h1, body.category main h1, body.page:not(.home) main h1 {
+  font-size: 60px;
+      text-align:center;
+  }
+  body.single-post main h1 {
+  --fontSize: 50px;
+  --lineHeight: 64px;
+  }
+  
+  body.single-post .entry-header > *:not(:first-child) {
+  margin-top: 8px;
+  }
+  
+  body.single-post .ct-featured-image {
+    padding-bottom: 20px;
+  }
+  
+  body.single-post .entry-tags a {
+    align-items: center;
+  }
+  
+  body.single-post .ct-related-posts article {
+  width: 276px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  }
+  body.single-post .ct-related-posts article .related-entry-title a {
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0 16px;
+  }
+  body.single-post .ct-related-posts .ct-block-title {
+  display: flex;
+  align-items: center;
+  }
+  body.single-post .ct-related-posts .ct-block-title:before {
+  content: '|';
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding-left: 16px;
+  color: #2483FF;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  margin-right: -12px;
+  }
+  
+  body.single-post .ct-related-posts-container .ct-container {
+  padding-top: 40px;
+  border-top: 1px solid #ECF1F8;
+  }
+  body.single-post main .entry-content {
+  /*   padding-bottom: 40px; */
+  --block-max-width: 100%;
+  font-weight: 500;
+  }
+  
+  body.search .entry-header, 
+  body.category .entry-header, 
+  body.search-no-results .entry-header,
+  body.page:not(.home) .entry-header {
+  margin-top: -74px;
+  }
+  
+  body.search .wp-block-search, 
+  body.category .wp-block-search, 
+  body.search-no-results .wp-block-search,
+  body.page:not(.home) .wp-block-search {
+  width: 600px;
+  margin: 0 auto;
+  }
+  body.search-no-results .ct-container > section {
+  padding: 0;
+  }
+  
+  body .category-buttons .wp-block-button a {
+  background-color: #ECF1F8;
+  color: #495666;
+  }
+  body .category-buttons a.active {
+  color: var(--buttonTextInitialColor);
+  }
+  body .category-buttons .wp-block-button:nth-of-type(1) a.active, body .category-buttons .wp-block-button:nth-of-type(1) a:hover {
+  background-color: rgb(var(--c1));
+  }
+  body .category-buttons .wp-block-button:nth-of-type(2) a.active, body .category-buttons .wp-block-button:nth-of-type(2) a:hover {
+  background-color: rgb(var(--c2));
+  }
+  body .category-buttons .wp-block-button:nth-of-type(3) a.active, body .category-buttons .wp-block-button:nth-of-type(3) a:hover {
+  background-color: rgb(var(--c3));
+  }
+  body .category-buttons .wp-block-button:nth-of-type(4) a.active, body .category-buttons .wp-block-button:nth-of-type(4) a:hover {
+  background-color: rgb(var(--c4));
+  }
+  
+  body.search:not(.search-no-results) .no-result, body.search-no-results .entry-content .search-form {
+  display: none;
+  }
+  body.search-no-results .no-result {
+  height: 250px;
+  }
+  
+  body input[type="search"] {
+  color: #1C242C;
+  font-weight: 500;
+  caret-color: #2483FF;
+  }
+  
+  body input[type="search"]::-webkit-input-placeholder {
+  opacity: 1;
+  color: #9AA5B5;
+  }
+  
+  body input[type="search"]::-moz-placeholder {
+  opacity: 1;
+  color: #9AA5B5;
+  }
+  
+  body input[type="search"]:-ms-input-placeholder {
+  opacity: 1;
+  color: #9AA5B5;
+  }
+  
+  body input[type="search"]:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: #CCD2DA;
+  }
+  
+  body input[type="search"]:focus::-moz-placeholder {
+  opacity: 1;
+  color: #CCD2DA;
+  }
+  
+  body input[type="search"]:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: #CCD2DA;
+  }
+  
+  body.search .page-title {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  }
+  body.tag main{
+  background: white;
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+  margin: 78px 0 40px;
+  padding-top: 40px;
+  }
+      body.tag main .hero-section .entry-header{
+              margin-top: -74px;
+      }
+      .entry-tags a{
+          box-shadow:none;
+      }
+      
+      .entry-tags a:hover{
+          box-shadow:none;
+      }
+  .min-h-screen{
+      background-color:ahead;
+  }
+  body.single-post article iframe{
+      width:100%;
+  }
+  body .hero-section[data-type="type-1"] {
+      width: 100%;
+  }
+  body .topics_1 {
+      padding: 72px 0;
+  }
+  body .cool-tag-cloud {
+      text-align: center;
+  }
+  body .cool-tag-cloud .ctcleft .tag-cloud-link {
+      height: 32px !important;
+      padding: 0 16px !important;
+      margin: 0 12px 24px !important;
+      border-radius: 8px;
+      font-size: 16px !important;
+      line-height: 32px !important;
+      background-color: #E3F2FF;
+  }
+  body.home .cool-tag-cloud .ctcleft .tag-cloud-link, body.tag .cool-tag-cloud .ctcleft .tag-cloud-link {
+    background-color: #fff;
+  }
+  
+  body .subscribe-box {
+      font-size: 0;
+      padding-top: 48px;
+  }
+  body .subscribe-box .emaillist {
+      padding-top: 48px;
+      padding-bottom: 36px;
+  }
+  body .subscribe-box .emaillist form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .subscribe-box .emaillist .es-field-wrap {
+      order: 1;
+      width: 430px;
+      height: 48px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+  }
+  body .subscribe-box .emaillist .es-field-wrap label {
+      flex: 1;
+      margin-right: 16px;
+  }
+
+  body .entry-content .back-to-home {
+      margin-top: 40px !important;
+  }
+  
+  @media screen and (max-width: 450px) {
+    body .topics_1 {
+      padding: 56px 0;
+      font-size: 0;
+    }
+    body .topics_1 h2 {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: left;
+    }
+    body .cool-tag-cloud .ctcleft {
+      text-align: left;
+    }
+    body .cool-tag-cloud .ctcleft .tag-cloud-link {
+      height: 24px !important;
+      padding: 0 12px !important;
+      margin: 0 12px 12px 0 !important;
+      font-size: 12px !important;
+      line-height: 24px !important;
+      border-radius: 4px;
+    }
+    body .topics_1 .wp-block-buttons {
+      display: none;
+    }
+    
+    body .subscribe-box .emaillist .es-field-wrap {
+      width: 100%;
+    }
+    body .subscribe-box .emaillist .es-field-wrap label {
+      margin-right: 0;
+    }
+    body .subscribe-box .emaillist .es-field-wrap label input {
+      --form-field-border-style: none;
+      --form-font-size: 12px;
+    }
+  
+    body.single-post .ct-related-posts .ct-block-title::before {
+      display: none;
+    }
+    body.single-post .ct-share-box {
+      margin: 28px 0;
+    }
+    body.single-post .ct-share-box .ct-icon-container {
+      min-height: unset;
+    }
+    body.single-post .ct-related-posts article {
+      width: auto;
+      height: auto;
+      margin-bottom: 0 !important;
+    }
+    body.single-post .ct-related-posts .related-entry-title {
+      --fontSize: 14px;
+      --lineHeight: 16px;
+      --fontWeight: 400;
+      margin: 10px;
+    }
+    body.home .wp-block-search__inside-wrapper {
+      margin: 0 3vw;
+    }
+    .category-buttons .wp-block-buttons {
+      width: 100% !important;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      --buttonMinHeight: 36px;
+      --buttonFontSize: 14px;
+    }
+    .category-buttons .wp-block-buttons .wp-block-button {
+      margin-bottom: 0;
+    }
+    .category-buttons .wp-block-buttons .wp-block-button__link {
+      width: 100%;
+    }
+    body.category .entries, body.search .entries {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    body.category .entries article, body.search .entries article {
+      flex-shrink: 0;
+      width: calc(50% - 6px);
+    }
+  }
+  
+    /* pc */
+    @media screen and (min-width: 450px){
+        [data-structure*="wide"] [class*="_inner-container"]>*:not(.alignwide):not(.alignfull){
+            max-width:100%;
+        }
+        .ct-trigger{
+            color:white;
+        }
+    body.tag .alignfull{
+      margin-top:40px!important;
+    }
+    body.tag .entry-header .page-title{
+      font-size:60px;
+    }
+    .alignwide b{
+      margin-right:16px;
+    }
+    .gohome_1 {	
+    height: 21px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+      position: absolute;
+      top: 84px;
+      left: 7%;
+      background-image:url("https://www.huobi.com/learn/wp-content/uploads/2021/04/callback.png");
+      background-size:24px;
+    background-position: 0 -2px;
+      background-repeat:no-repeat;
+    }
+    .gohome_1 b{
+    color: #357CE1;
+    }
+    .gohome_1 a{
+      color:white;
+      margin-left:24.5px;
+    }
+    .gohome_1 a:hover{
+      color:#6DA9FF;
+    }
+    /*sing post*/
+    body.tag .search_bar_mobile{
+      width: 600px;
+      margin-left: calc(50% - 300px);
+    }
+    body.single-post .sing_search_1{
+      margin-top: -74px !important;
+      margin-left: 180px;
+      margin-left: calc(50% - 300px);
+      margin-bottom:40px;
+    }
+    body.single-post .search_bar_mobile {
+      display:none;
+    }
+    body.single-post .entry-content {
+      padding-bottom: 0px;
+    }
+    
+    /*sing post*/
+    
+    .section_2{
+      min-width:100% !important;
+      background: rgba(248, 250, 253, 1);
+    }
+    [data-vertical-spacing*='bottom'] {
+      padding-bottom:0;
+    }
+    
+    .emaillist .es_caption{
+    text-align:center;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1C242C;
+      margin-bottom:24px;
+      padding-bottom:0;
+      font-weight:600;
+    }
+        .emaillist .ig-es-form-list-selection td{
+          padding:0 17px 8px 0;
+    }
+        .emaillist p{
+        color: #9AA5B5;
+        font-size: 16px;		
+        margin-bottom:16px;
+    }
+    .emaillist .font-medium{
+    font-size: 16px;
+    line-height: 19px;
+    }
+      .emaillist .pl-6{
+      margin-right:8px
+    }
+    .emaillist  .font-normal{
+    font-size: 16px;
+    color: #1C242C;
+    }
+    .emaillist .es_subscription_message{
+      display:block;
+      text-align:center;
+      padding-top:15px;
+      font-weight:700;
+    }
+    .emaillist .success{
+    height: 39px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #1C242C;
+      margin-bottom:72px;
+    }
+    .section_2 {
+        position:relative;
+     background: #F8FAFD;
+      background-image: url("https://www.huobi.com/learn/wp-content/uploads/2021/04/dingyue.png");
+      background-repeat:no-repeat;
+      background-size:151.84px 84.84px;
+      background-position:center 45px
+    }
+    .section_2 .es-field-wrap .es_required_field{
+     background: rgba(255, 255, 255, 1);
+      width: 306px;
+      border-radius:8px;
+    }
+      .section_2 .es-field-wrap .es_required_field:active{
+         background: rgba(255, 255, 255, 1);
+    }
+      .section_2 .es-field-wrap .es_required_field:focus{
+         background: rgba(255, 255, 255, 1);
+    }
+    
+    .section_2 .es-field-wrap input{
+      border-radius:8px;
+    }
+      .section_2 [name="submit"]:hover{
+        background-color:#2483ff;
+    }
+          .section_2 [name="submit"]:active{
+        border:0 !important;
+    }
+        .section_2 [name="submit"]:focus{
+        border:0px!important;
+          outline-style:none;
+          outline-width:0;
+    }
+    [data-block="hook"] .entry-content>*{
+      margin-bottom:0px;
+    }
+    main {
+      margin-bottom:40px
+    }
+    
+    
+    body.single main  .entry-tags {
+      margin-bottom: 10px;
+    }
+    
+    body.single main .entry-tags a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #369CF4;
+    height: 32px;
+    background: #E3F2FF;
+    border-radius: 8px;
+    }
+    body.single main .entry-tags a:after {
+    order: 0;
+    content: '';
+    margin-right: 0;
+    }
+    .wp-block-search__button {
+    background: #2483FF !important;
+    border-radius: 48px !important;
+    height: 48px;
+    width: 72px;
+    
+    }
+    .es_spinner_image{
+      display:none !important;
+    }
+    
+    .es_required_field{
+      height:48px !important;
+    }
+    
+    }
+    @media screen and (max-width: 1110px)and (min-width:450px){
+    .gohome_1 {
+      display:none;
+    }
+    }
+    
+    
+    /* end pc */
+    /*h5*/
+    @media screen and (max-width: 450px) {
+    .ct-header{
+      display:none;
+    }
+    .site-main .ct-container{
+      margin-left: .882353rem;
+      margin-right: .882353rem;
+      width: inherit;
+    /* 		 padding-bottom: 0; */
+    }
+    .ct-container section{
+      width: 100%;
+    }
+    .entry-content{
+      width:inherit !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+    body.home .banner  {
+      height: auto;
+      padding-top:0;
+    }
+    #main-container .site-main{
+      margin-top:36px;
+    }
+    body.home .banner h1{
+      width:100% !important;
+      font-size: 2.11765rem;
+      line-height: 2.3529rem;
+      text-align: center;
+      margin-bottom:0;
+      }
+      body.home .banner h4{
+          width: 100%;
+      color :rgba(176, 184, 219, 1);	
+    height: 1.8235rem;
+    border-radius: nullpx;
+    /* 			12px */
+    font-size: 0.7059rem;
+    
+    line-height: 0.8235rem;
+    letter-spacing: 0px;
+    text-align: center;
+        margin-top:0.7059rem;
+        margin-bottom:0;
+      }
+    body.home .wp-block-search{
+      width:100% !important;
+      margin-top:0.9412rem;
+      margin-bottom: 1.6471rem;
+    }
+    body.home .wp-block-search .wp-block-search__inside-wrapper #wp-block-search__input-1{
+      height: 2.3529rem;
+    border-radius: 1.1765rem !important;
+      font-size:0.7059rem;
+    
+    }
+    body.home	.wp-block-search__button{
+      right:8px!important;
+      top:8px;
+      border: none;
+    }
+    
+    body.home .wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button .search-icon{
+      width:16px;
+    
+    }
+    body article.hentry .banner .wp-block-buttons {
+      margin-top: 0px;
+      display:flex;
+      flex-wrap:wrap;
+        justify-content: space-between;
+      margin-bottom:1.6471rem !important;
+    }
+    body article.hentry .banner .wp-block-buttons .wp-block-button{
+      height: 1.8824rem;
+      margin-right:0px;
+      width: 48%;
+      margin-bottom:0;
+    }
+      body article.hentry .banner .wp-block-buttons .wp-block-button:nth-child(-n+2){
+          margin-bottom:0.88235rem;
+    }
+    body article.hentry .banner .wp-block-buttons .wp-block-button a{
+    min-height:1.8823rem;
+    height: 1.8823rem;
+    border-radius: 2.1176rem;
+    font-size: 14px;
+    line-height: 16px;
+      min-width:0;
+      width:100%;
+      font-weight:600;
+    }
+    body article.hentry .banner .wp-block-button a b{
+    height: 16px;
+    width: 16px;
+    font-size: 0.6471rem;
+    margin-right:0.4706rem;
+    }
+      .wp-block-group__inner-container .category:nth-child(1){
+          border-radius: 12px 12px 0 0;
+      }
+    .wp-block-group__inner-container .category{
+      padding:1.6471rem 3.2vw !important;
+    }
+    body article.hentry .category h3{
+    border-radius: nullpx;
+    font-size: 1.4117rem;
+    line-height: 1.6471rem;
+    letter-spacing: 0px;
+      display:block;
+      text-align:center;
+      vertical-align:middle;
+      margin-bottom:0.9412rem
+    
+    }
+    body article.hentry .category h3 b{
+    height: 24px;
+    width: 24px;
+    font-size: 0.8812rem;
+    /* 	margin-right:2.1vw; */
+    vertical-align: top;
+      margin-top: 2px;
+    }
+    
+    body.page:not(.home) main .wp-block-latest-posts li{
+      margin-bottom:12px !important;
+    }
+    body article.hentry .wp-block-latest-posts{
+      width:initial !important;
+    }
+        body.home article.hentry .wp-block-latest-posts li:nth-child(n+5){
+    display:none
+    }
+    body article.hentry .wp-block-latest-posts li:nth-child(even){
+      margin-right:0;
+    }
+      body article.hentry .wp-block-latest-posts li:nth-child(odd){
+      margin-right:3.5%;
+				margin-bottom: 0.58rem !important;
+    }
+    body article.hentry .wp-block-latest-posts li{
+    height: 9.2647rem;
+    /* width: 45.2vw; */
+      width:48.2%;
+      border-radius:0.9412rem;
+      margin-bottom:0 !important;
+    }
+      body.home article.hentry .wp-block-latest-posts li:nth-child(3),body.home article.hentry .wp-block-latest-posts li:nth-child(4){
+        margin-bottom:0.9412rem!important;
+    }
+    body article.hentry .wp-block-latest-posts li div{
+      height:6.2135rem;
+      margin-bottom:0;
+        border-radius:8px!important;
+    }
+    body article.hentry .wp-block-latest-posts li> a{
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-align: left;
+      line-height:16px;
+          margin-top: 7.85px;
+      padding: 0 10px;
+    }
+    body article.hentry .wp-block-latest-posts li:hover > a{
+      color:#1C242C!important;
+    }
+    
+    /* start	topics */
+    :root {
+      --container-width: 100%;
+    }
+    .entry-content>*:not(.alignfull) [class*="_inner-container"] {
+      --inner-block-width: 100%;
+    }
+    [data-block="hook"] .ct-container {
+    padding-bottom: 0px;
+    }
+    [data-block="hook"] .ct-container .wp-block-group {
+    width: 100%  !important;
+    }
+    /* .topics_1 .topics_image {
+    
+    width: 0.882353rem;
+    height: 1.082353rem;
+    top: 1.882353rem;
+    left: 0.882353rem;
+    } */
+        [class*="_inner-container"]>*:first-child{
+            margin-top:0!important;
+        }
+    .section_2{
+      position:relative;
+    }
+    .section_2 .emaillist{
+      margin-bottom:40px;
+    }
+    .section_2 .es-field-wrap  label{
+      width:100% !important;
+    }
+    .section_2 .es-field-wrap .es_required_field{
+    
+     background: rgba(255, 255, 255, 1);
+    height:2.35294rem !important;
+      border-radius:0.4706rem;
+      border-radius:8px 0 0 8px;
+      border:1px solid white;
+    }
+    .section_2 .es-field-wrap .es_required_field:active{
+         background: rgba(255, 255, 255, 1);
+    }
+      .section_2 .es-field-wrap .es_required_field:focus{
+         background: rgba(255, 255, 255, 1);
+        border: 2px solid #2483FF;
+    border-right:0;
+    }
+    .section_2 .es-field-wrap input{
+      font-size:0.70588rem;
+    }
+    .section_2 .es-field-wrap{
+      padding :0 .882353rem;
+    }
+    
+      .emaillist .es_textbox_button{
+        width:26.666vw;
+        height:2.2353rem;
+        min-height:2.35294rem;
+        border-radius:0 0.4706rem 0.4706rem 0;		
+        font-size:0.70588rem;
+        margin-left:0 !important;
+    }
+    .emaillist .form-checkbox{
+      border-radius:50%;
+    }
+    .emaillist  .es_subscription_message.success{
+    font-size: 1.411765rem;
+      line-height: 1.647059rem;
+      text-align: left;
+      margin-left: .882353rem;
+      display: block;
+      width: 14.594118rem;
+      color: #1C242C;
+      margin-top: .882353rem;
+      font-weight: 700;
+    }
+        .es_subscription_message.error{
+            display:block;
+            padding:0 15px;
+        }
+    .emaillist .es_spinner_image img{
+      display:none;
+    }
+    /* end	topics */
+    
+    /* start	subscrible */
+    .section_2 {
+      background-color: #e0e9fb;
+      background-image: url("https://www.huobi.com/learn/wp-content/uploads/2021/04/dingyue.png");
+      background-size: 5.264706rem 2.941176rem;
+      background-position: 15.907059rem 2.3529rem;
+      background-repeat: no-repeat;
+    margin-bottom:0;
+    }
+    
+    .section_2 .es_caption {
+      height: 3.294118rem;
+      width: 14.794118rem;
+      font-size: 1.411765rem;
+      line-height: 1.647059rem;
+      text-align: left;
+      color: #1c242c;
+      margin-top: 2.352941rem;
+      margin-bottom: 1.176471rem;
+      margin-left: 0.882353rem;
+      padding: 0;
+    font-weight:700;
+    }
+    .emaillist p{
+      margin-bottom:0;
+      
+    }
+    .emaillist p .font-medium {
+    font-size: .705882rem;
+    line-height: .823529rem;
+    text-align: left;
+    color: rgba(154, 165, 181, 1);
+      margin-left:.882353rem;
+    }
+    .emaillist table{
+      margin-bottom:1.411765rem;
+    }
+    .emaillist tr td
+    {
+      padding-left: .882353rem;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    
+    .emaillist input[type="checkbox"] {
+      width: .941176rem;
+      height: .941176rem;
+      display: inline-block;
+      text-align: center;
+      vertical-align: baseline;
+      line-height: 1.64rem;
+       position: relative;
+      border-radius: 50%;
+      outline: none;
+      -webkit-appearance: none;
+      border: 1px solid #fff;
+      -webkit-tab-highlight-color: rgba(0, 0, 0, 0);
+      color: #fff;
+       background: #fff;
+      vertical-align:middle;
+      margin-right:.705882rem;
+    }
+    .emaillist .font-normal{
+    font-size: .823529rem;
+    line-height: .970588rem;
+    text-align: left;
+    height: 1.058824rem;
+    color: #495666;
+    vertical-align:middle;
+    }
+      .emaillist
+    input[type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+       background: #fff;
+       width: .941176rem;
+      height: .941176rem;
+       border: 2px solid #C5CFD5;
+       border-radius: 50%;
+       color: #fff;
+      }
+    
+    .emaillist
+    input[type=checkbox]:checked::before {
+    background-image:url("https://www.huobi.com/learn/wp-content/uploads/2021/04/checked.png");
+    background-position: -1px;
+    background-size:.941176rem;
+    border:1px solid #2483ff;
+    background-repeat: no-repeat;
+       }
+    
+    /* end	subscrible */
+    
+    /* start	footer */
+    [data-row="top"] .ct-container {
+    text-align: center;
+    padding-top: 12.294118rem !important;
+    padding-bottom: 2.352941rem !important;
+    }
+    [data-row="top"] .ct-container h5 {
+    font-size: 22px !important;
+    margin-bottom: 0.470588rem;
+    height: 2.117647rem;
+    font-weight:700;
+    }
+    [data-row="top"] .ct-container h5 b {
+    font-size: 28px !important;
+    font-weight:700;
+    }
+    [data-row="top"] .ct-container h6 {
+    font-size: 0.705882rem;
+    line-height: 0.823529rem;
+    margin-top: 0.470588rem !important;
+    margin-bottom: 1.411765rem !important;
+    font-weight:500;
+    }
+        [data-row="top"] .ct-container h6+div{
+            justify-content:center;
+        }
+    [data-row="top"] .ct-container .wp-block-button__link {
+    height: 2.352941rem;
+    font-size: 0.705882rem;
+    line-height: 0.823529rem;
+    text-align: center;
+    min-height: 2.352941rem;
+    width: 9.411765rem;
+    border-radius:32px;
+    }
+    
+    /* start search_bar_mobile  */
+    .search_bar_mobile {
+    height: 1.882353rem !important;
+    position:absolute;
+    top:20px;
+    width: inherit !important;
+    left:.882353rem;
+    right:.882353rem;
+    }
+    .search_bar_mobile .wp-block-search__inside-wrapper {
+    padding: 0  !important;
+    }
+    .search_bar_mobile .wp-block-search__inside-wrapper .wp-block-search__input {
+    height: 1.882353rem !important;
+    border-radius: 1.176471rem;
+    font-size: 0.705882rem !important;
+    line-height: 0.823529rem;
+    text-align: left;
+    }
+    .search_bar_mobile .wp-block-search__inside-wrapper .wp-block-search__button {
+    width: 1.882353rem;
+    height: 1.882353rem;
+    font-size: 0.705882rem;
+    }
+    .wp-block-search .search-icon
+    {
+      width:22px !important;
+    }
+    .latest_1 {
+      margin-left: -0.176471rem;
+      margin-right: -0.176471rem;
+    }
+    
+    /* ..........*/
+    .hfeed .hero-section {
+    margin-bottom: 0px !important;
+    display: inline-block;
+    }
+    .hfeed .hero-section::before {
+    display: block;
+    content: '';
+    clear: both;
+    }
+    .hfeed .hero-section [data-block="hook"] .alignfull {
+    margin-bottom: 1.176471rem;
+    }
+    .hfeed .hero-section [data-block="hook"] .alignfull .category_mobile .wp-block-button {
+    /*   width: 9.794118rem; */
+    width:44vw;
+    height: 2.117647rem;
+    border-radius: 0.470588rem;
+    font-size: 0.823529rem;
+    line-height: 0.970588rem;
+    letter-spacing: 0px;
+    text-align: left;
+    }
+    .hfeed .hero-section [data-block="hook"] .alignfull .category_mobile .wp-block-button:nth-child(1) {
+    margin-bottom: 0.705882rem;
+    }
+    
+    .hfeed .hero-section [data-block="hook"] .alignfull .category_mobile .wp-block-button:nth-child(even) {
+    margin-right: 0;
+    }
+    .hfeed .hero-section [data-block="hook"] .alignfull .category_mobile .wp-block-button a {
+    /*   width: 9.794118rem; */
+    width:100%;
+    height: 2.117647rem;
+    min-height: 2.117647rem;
+    font-size:14px;
+    font-weight:600;
+    }
+    
+    
+    
+    
+    .content-wide [data-structure*="default"] .entry-content>*:not(.alignfull)
+    {
+    width:initial !important;
+    }
+    
+    
+    body.page:not(.home) main {
+    padding-bottom: 0!important;
+    margin-bottom: 0 !important;
+      margin-top:72px!important;
+      border-radius:12px 12px 0 0;
+      padding-top:20px;
+    }
+    body.page:not(.home) main .page-title {
+    display: none;
+    }
+    body.category main {
+    margin-top: 72px!important;
+    padding-top: 1.176471rem !important;
+    padding-bottom: 0!important;
+    margin-bottom: 0 !important;
+    border-radius:12px 12px 0 0;
+    }
+    body.category main .page-title {
+    display: none;
+    }
+    body.tag:not(.home) main {
+    margin-top: 72px!important;
+    padding-top: 1.176471rem !important;
+    padding-bottom: 0!important;
+    margin-bottom: 0 !important;
+    border-radius: 12px 12px 0 0;
+    }
+    
+    body.tag:not(.home) main .page-title {
+    font-size: 1.764706rem;
+    line-height: 2.058824rem;
+    text-align: center;
+    /* 		width:20.294118rem !important; */
+    
+    }
+      body.search:not(.home) main {
+    margin-top: 72px!important;
+    padding-top: 1.176471rem !important;
+    padding-bottom: 0!important;
+    margin-bottom: 0 !important;
+        border-radius:12px 12px 0 0;
+    }
+    body.search:not(.home) main .alignfull {
+    display:none
+    }
+    body.search main .page-title {
+      width:20.294118rem;
+      text-align:center;
+      font-size:1.764706rem;
+      height: 2.264706rem;
+    line-height: 2.058824rem;
+      margin-top:0;
+    }
+    body.search .entry-header{
+      margin-top:0;
+    }
+    body.search:not(.search-results) main .page-title{
+      display:none;
+    }
+    
+    
+    /* start single*/
+    
+    body.single:not(.home) main {
+    margin-top: 72px!important;
+    padding-top: 1.176471rem !important;
+    padding-bottom: 0!important;
+    margin-bottom: 0 !important;
+    border-radius:8px 8px 0 0;
+    }
+    body.single:not(.home) main .ct-container-narrow {
+    padding-left: 0.882353rem;
+    padding-right: 0.882353rem;
+    margin-bottom:1.647059rem;
+    }
+    body.single:not(.home) main .ct-container-narrow .entry-header {
+    margin-bottom: 1.647059rem;
+    }
+    body.single:not(.home) main .ct-container-narrow .entry-header a {
+    height: 1.411765rem;
+    font-size: 0.705882rem;
+    line-height: 0.823529rem;
+    min-height: 1.411765rem;
+    border-radius:4px;
+    }
+    body.single:not(.home) main .ct-container-narrow .entry-header .page-title {
+    display: block;
+    margin-top: -2.352941rem;
+    font-size: 1.411765rem;
+    line-height: 1.647059rem;
+    letter-spacing: 0px;
+    text-align: left;
+    }
+    
+    body.single-post article iframe, body.single-post article .ct-image-container{
+      border-radius:.470588rem;
+    }
+    
+    body.single:not(.home) main .entry-tags a {
+    font-size: 0.705882rem;
+    line-height: 0.823529rem;
+    text-align: left;
+    background: #e3f2ff;
+    border: 1px solid #e3f2ff;
+    color: #369cf4;
+    margin-right: 0.705882rem;
+    border-radius:4px;
+    }
+    body.single:not(.home) main .entry-tags a:after {
+    order: 0;
+    content: '';
+    margin-right: 0;
+    }
+    .ct-related-posts[data-column-set] {
+    grid-row-gap: 0;
+    }
+    
+    
+    
+    
+    /* end single*/
+    
+    
+    
+    
+    
+    
+    [data-block*="fixed"] {
+    left:auto;
+     right:0.88235rem ;
+    }
+      [data-block*="fixed"] img{
+    margin-right:2px;
+    }
+    [data-block*="fixed"] .fixed_home a{
+    font-size:.705882rem;
+      box-shadow: 0px .294118rem .588235rem rgba(36, 131, 255, 0.3);
+      min-height:36px;
+      line-height: 14px;
+    }
+    body.single-post .entry-content {
+      padding-bottom: 0;
+    }
+    
+    /* end search_bar_mobile  */
+    [data-v-spacing*='bottom']{
+      padding-bottom:0;
+    }
+      .wp-block-search__button {
+    background: #2483FF !important;
+    height: 1.882353rem !important;
+    width: 3.235294rem !important;
+            min-height: 1.882353rem !important;
+    border-radius: 1.176471rem !important;
+        right:0;
+        fill: white !important;
+    }
+    body.category .wp-block-search__input{
+      border-radius:20px !important;
+    background: #343b9b !important;
+      color:white;
+    }
+    body.category	.wp-block-search__button{
+      right:0 !important;
+    } 
+    
+      body.page:not(.home) .wp-block-search__input{
+      border-radius:20px !important;
+    background: #343b9b !important;	
+      color:white;
+    }
+    body.page:not(.home)	.wp-block-search__button{
+      right:0 !important;
+    }
+    
+        body.single .wp-block-search__input{
+      border-radius:20px !important;
+    background: #343b9b !important;
+      color:white;
+    }
+    body.single	.wp-block-search__button{
+      right:0 !important;
+    }
+          body.tag .wp-block-search__input{
+      border-radius:20px !important;
+    background: #343b9b !important;
+      color:white;
+    }
+    body.tag	.wp-block-search__button{
+      right:0 !important;
+    }
+    body.tag .hfeed .ct-container{
+      margin-bottom:1.411765rem;
+    }
+      body.category .hfeed .ct-container{
+      margin-bottom:1.411765rem;
+    }
+        body.page:not(.home) .hfeed .ct-container{
+      margin-bottom:1.411765rem;
+    }
+            body.search .wp-block-search__input{
+      border-radius:20px !important;
+    background: #343b9b !important;
+      color:white;
+    }
+    body.search	.wp-block-search__button{
+      right:0 !important;
+    }
+    input::-webkit-input-placeholder{
+    color: #9AA5B5 !important;
+    }
+    .post-edit-link{
+    display:none;
+    }
+    body.page:not(.home) main article .entry-card {
+      margin-bottom: 0.705882rem !important;
+    }
+    body.search footer{
+      display:none;
+    }
+    body.search .section_2{
+      display:none;
+    }
+    body.search .ct-container{
+      margin-bottom:50px;
+    }
+    
+    body article.hentry .category:nth-of-type(odd) {
+      background-color: #FFFFFF;
+    }
+    body article.hentry .category:nth-of-type(even) {
+      background-color: #F2F6FC;;
+    }
+    body.search main,
+    body.error404 main, body.category main,
+    body.single-post main, body.page:not(.home) main
+    body.tag main{
+      border-radius: .882353rem .882353rem 0 0;
+    
+    }
+    body.page .aligncenter .wp-block-button__link{
+    min-height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+    
+    }
+    .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button{
+      padding:0;
+    }
+        .section_2  [name="submit"]:hover{
+        background-color:#2483ff;
+    }
+    .section_2 [name="submit"]:focus {
+      border: 0px!important;
+      outline-style: none;
+      outline-width: 0;
+    }
+    .ct-footer [data-row="top"] .ct-container{
+      background-image:url("https://www.huobi.com/learn/wp-content/uploads/2021/04/huodong.png");
+      background-size:100% 100%;
+      background-repeat:no-repeat;
+        
+    }
+    body.single-post .ct-related-posts article .related-entry-title a{
+      padding:0;
+    }
+    body.single .ct-share-box [data-icons-type="simple"]{
+      display:flex;
+    }
+    
+      body.single .ct-share-box [data-icons-type="simple"] a{
+      flex:1;
+    }
+    
+  }
+    /*end h5*/
+  		</style>
+			<script async="" src="./distribution_files/lazy-load.js"></script><script charset="utf-8" src="./distribution_files/9.d491a3874131abf3bf92.js"></script><script charset="utf-8" src="./distribution_files/8.e8a3e2136a276e1f19db.js"></script></head>
+
+<body class="post-template-default single single-post postid-3402 single-format-standard wp-custom-logo wp-embed-responsive translatepress-en_US elementor-default elementor-kit-3049 ct-elementor-default-template" data-link="type-1" data-prefix="single_blog_post" data-header="type-1" data-footer="type-1" itemscope="itemscope" itemtype="https://schema.org/Blog">
+
+<a class="skip-link show-on-focus" href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#main">
+	Skip to content</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+<div id="main-container">
+	<header id="header" class="ct-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader"><div data-device="desktop"><div data-row="top" data-column-set="2"><div class="ct-container-fluid"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+			<a href="https://www.huobi.com/" class="site-logo-container" rel="home"><img width="730" height="160" src="./distribution_files/火币全线品牌logo导出-RGB_火币Global-标准色-1.webp" class="default-logo" alt="Huobi Learn"></a>	
+	</div>
+
+
+<nav id="header-menu-1" class="header-menu-1" data-id="menu" data-interaction="hover" data-menu="type-2:center" data-dropdown="type-1:padded" data-responsive="yes" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+
+	<ul id="menu-header-2" class="menu"><li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="https://c2c.huobi.com/" class="ct-menu-link">Buy Crypto</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110"><a href="https://www.huobi.com/markets/" class="ct-menu-link">Markets</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-88 animated-submenu" data-submenu="right"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Spot Trading<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu"></button>
+<ul class="sub-menu">
+	<li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a href="https://www.huobi.com/exchange/" class="ct-menu-link">Exchange</a></li>
+	<li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="https://www.huobi.com/cross-margin/" class="ct-menu-link">Margin</a></li>
+	<li id="menu-item-197" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-197"><a href="https://www.huobi.com/en-us/grid-exchange/" class="ct-menu-link">Trading Bot</a></li>
+	<li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="https://brokerage.huobi.com/" class="ct-menu-link">Brokerage (OTC)</a></li>
+</ul>
+</li>
+<li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-92 animated-submenu" data-submenu="right"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Derivatives<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu"></button>
+<ul class="sub-menu">
+	<li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93"><a href="https://futures.huobi.com/en-us/linear_swap/exchange/#contract_code=BTC-USDT&amp;contract_type=swap&amp;type=cross" class="ct-menu-link">Derivatives Overview</a></li>
+	<li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a href="https://futures.huobi.com/contract/exchange/" class="ct-menu-link">Coin-margined Futures</a></li>
+	<li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="https://futures.huobi.com/swap/exchange/" class="ct-menu-link">Coin-margined Swaps</a></li>
+	<li id="menu-item-3916" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3916"><a href="https://futures.huobi.com/en-us/linear_swap/exchange/#contract_code=BTC-USDT&amp;contract_type=swap&amp;type=cross" class="ct-menu-link">USDT-margined Contracts</a></li>
+</ul>
+</li>
+<li id="menu-item-97" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97 animated-submenu" data-submenu="right"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Finance<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu"></button>
+<ul class="sub-menu">
+	<li id="menu-item-2560" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2560"><a href="https://www.huobi.com/en-us/staking/vote/" class="ct-menu-link">Staking</a></li>
+	<li id="menu-item-99" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a href="https://www.huobi.com/en-us/topic/defi-list/" class="ct-menu-link">Primepool</a></li>
+	<li id="menu-item-3917" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3917"><a href="https://www.huobi.com/en-us/topic/dot-slot/" class="ct-menu-link">Polkadot Slot Auction</a></li>
+	<li id="menu-item-98" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="https://www.huobi.com/en-us/financial/earnings/" class="ct-menu-link">Huobi Earn</a></li>
+	<li id="menu-item-2290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2290"><a href="https://www.huobi.com/en-us/staking/eth2/" class="ct-menu-link">ETH 2.0</a></li>
+	<li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102"><a href="https://www.huobi.com/en-us/financial/pledge/" class="ct-menu-link">Crypto Loans</a></li>
+	<li id="menu-item-3918" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3918"><a href="https://www.huobiwallet.fi/?utm_source=Global&amp;utm_medium=%E4%BA%A7%E5%93%81%E5%B5%8C%E5%85%A5&amp;utm_content=%E5%AF%BC%E8%88%AA%E6%A0%8F&amp;utm_campaign=%E5%86%85%E9%83%A8%E6%B5%81%E9%87%8F&amp;_channel_track_key=IUWe6jSD" class="ct-menu-link">Huobi Wallet</a></li>
+</ul>
+</li>
+<li id="menu-item-2054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2054 animated-submenu" data-submenu="right"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Learn<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu"></button>
+<ul class="sub-menu">
+	<li id="menu-item-2051" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2051"><a href="https://www.huobi.com/learn/en-us/" class="ct-menu-link">Learn Hub</a></li>
+	<li id="menu-item-2055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2055 animated-submenu"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Categories<span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu"></button>
+	<ul class="sub-menu">
+		<li id="menu-item-2056" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2056"><a href="https://www.huobi.com/learn/en-us/category/cryptocurrency/" class="ct-menu-link">Cryptocurrency</a></li>
+		<li id="menu-item-2058" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2058"><a href="https://www.huobi.com/learn/en-us/category/investing/" class="ct-menu-link">Investing</a></li>
+		<li id="menu-item-2057" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2057"><a href="https://www.huobi.com/learn/en-us/category/how-to-guides/" class="ct-menu-link">How-to Guides</a></li>
+		<li id="menu-item-2053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2053"><a href="https://www.huobi.com/learn/en-us/latest-articles/" class="ct-menu-link">Latest Articles</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2052" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2052"><a href="https://www.huobi.com/learn/en-us/topics/" class="ct-menu-link">All Topics</a></li>
+</ul>
+</li>
+<li id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109"><a href="https://www.huobi.com/en-us/topic/welcome-bonus/?inviter_id=11329860" class="ct-menu-link">Get $300+DOGE</a></li>
+</ul></nav>
+
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#search-modal" class="ct-header-search " aria-label="Search" data-label="left" data-id="search">
+
+	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Search</span>
+
+	<svg class="ct-icon" width="15" height="15" viewBox="0 0 15 15">
+		<title>Search header icon</title>
+		<path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"></path>
+	</svg>
+</a>
+
+<nav id="header-menu-2" class="header-menu-2" data-id="menu-secondary" data-interaction="hover" data-menu="type-1" data-dropdown="type-1:padded" data-responsive="yes" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+
+	<ul id="menu-header-3" class="menu"><li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a href="https://www.huobi.com/download/#exchange" class="ct-menu-link">Download</a></li>
+<li id="menu-item-157" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-has-children current-language-menu-item menu-item-157 animated-submenu" data-submenu="left"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">English</span></span><span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu"></button>
+<ul class="sub-menu">
+	<li id="menu-item-2288" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2288"><a href="https://www.huobi.com/learn/es-es/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Español</span></span></a></li>
+	<li id="menu-item-2299" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2299"><a href="https://www.huobi.com/learn/vi-vi/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Tiếng Việt</span></span></a></li>
+	<li id="menu-item-2887" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2887"><a href="https://www.huobi.com/learn/tr-tr/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Türkçe</span></span></a></li>
+	<li id="menu-item-2298" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2298"><a href="https://www.huobi.com/learn/id-id/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Bahasa Indonesia</span></span></a></li>
+	<li id="menu-item-2297" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2297"><a href="https://www.huobi.com/learn/ms-my/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Bahasa Melayu</span></span></a></li>
+	<li id="menu-item-2505" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2505"><a href="https://www.huobi.com/learn/pt-br/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Português do Brasil</span></span></a></li>
+	<li id="menu-item-2886" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2886"><a href="https://www.huobi.com/learn/fr-fr/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Français</span></span></a></li>
+</ul>
+</li>
+</ul></nav>
+
+</div></div></div></div></div><div data-device="mobile"><div data-row="top" data-column-set="2"><div class="ct-container-fluid"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+			<a href="https://www.huobi.com/" class="site-logo-container" rel="home"><img width="730" height="160" src="./distribution_files/火币全线品牌logo导出-RGB_火币Global-标准色-1.webp" class="default-logo" alt="Huobi Learn"></a>	
+	</div>
+
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#offcanvas" class="ct-header-trigger" data-design="simple" data-label="right" aria-label="Menu" data-id="trigger">
+
+	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Menu</span>
+
+	<svg class="ct-trigger ct-icon" width="18" height="14" viewBox="0 0 18 14" aria-label="Off-canvas trigger icon" data-type="type-1">
+
+		<rect y="0.00" width="18" height="1.7" rx="1"></rect>
+		<rect y="6.15" width="18" height="1.7" rx="1"></rect>
+		<rect y="12.3" width="18" height="1.7" rx="1"></rect>
+	</svg>
+
+</a>
+</div></div></div></div></div></header>
+	<main id="main" class="site-main hfeed" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+		
+	<div class="ct-container-full" data-content="narrow" data-vertical-spacing="top">
+
+		
+		
+	<article id="post-3402" class="post-3402 post type-post status-publish format-standard has-post-thumbnail hentry category-beginner category-beginner-module-12 category-cryptocurrency tag-blockchain tag-cryptocurrency tag-huobi tag-huobi-learn">
+
+		
+<div class="hero-section" data-type="type-1">
+	<header class="entry-header">
+		<ul class="entry-meta" data-type="simple:slash"><li class="meta-categories" data-type="pill"><a href="https://www.huobi.com/learn/en-us/category/beginner/" rel="tag" class="ct-term-543">Beginner</a><a href="https://www.huobi.com/learn/en-us/category/beginner-module-12/" rel="tag" class="ct-term-551">Beginner - Module 12</a><a href="https://www.huobi.com/learn/en-us/category/cryptocurrency/" rel="tag" class="ct-term-2">Cryptocurrency</a></li></ul><h1 class="page-title" title="What is token distribution?" itemprop="headline">What is token distribution?</h1><ul class="entry-meta" data-type="label:none" data-id="second"><li class="meta-date" itemprop="datePublished"><span>Published:</span><time class="ct-meta-element-date" datetime="2022-01-28T14:47:39+00:00" data-label="On">28 Jan 2022 </time></li></ul>	</header>
+</div>
+<figure class="ct-featured-image ct-hidden-sm"><div class="ct-image-container ct-lazy-loaded"><img width="1251" height="751" class="attachment-full size-full wp-post-image entered loaded" alt="" decoding="async" loading="lazy" sizes="(max-width: 1251px) 100vw, 1251px" data-ct-lazy="https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution.jpeg" data-ct-lazy-set="https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution.jpeg 1251w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-300x180.jpeg 300w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-1024x615.jpeg 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-768x461.jpeg 768w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-18x12.jpeg 18w" data-object-fit="~" itemprop="image" data-ll-status="loaded" srcset="https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution.jpeg 1251w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-300x180.jpeg 300w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-1024x615.jpeg 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-768x461.jpeg 768w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-18x12.jpeg 18w" src="./distribution_files/What-is-token-distribution__What-is-Token-Distribution.jpeg"><noscript><img width="1251" height="751" src="https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution.jpeg" class="attachment-full size-full wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution.jpeg 1251w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-300x180.jpeg 300w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-1024x615.jpeg 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-768x461.jpeg 768w, https://www.huobi.com/learn/wp-content/uploads/2022/01/What-is-token-distribution__What-is-Token-Distribution-18x12.jpeg 18w" sizes="(max-width: 1251px) 100vw, 1251px" /></noscript><span class="ct-ratio" style="padding-bottom: 60%"></span></div></figure>
+					
+		<div class="ct-share-box" data-location="top" data-type="type-1">
+			
+			<div data-icons-type="simple">
+							
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.huobi.com%2Flearn%2Fen-us%2Fwhat-is-token-distribution%2F" data-network="facebook" aria-label="Facebook" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Facebook Icon">
+					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+				</svg>
+			</span>				</a>
+							
+				<a href="https://twitter.com/share?url=https%3A%2F%2Fwww.huobi.com%2Flearn%2Fen-us%2Fwhat-is-token-distribution%2F&amp;text=What%20is%20token%20distribution%3F" data-network="twitter" aria-label="Twitter" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Twitter Icon">
+					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+				</svg>
+			</span>				</a>
+							
+				<a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" data-network="pinterest" aria-label="Pinterest" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Pinterest Icon">
+					<path d="M10,0C4.5,0,0,4.5,0,10c0,4.1,2.5,7.6,6,9.2c0-0.7,0-1.5,0.2-2.3c0.2-0.8,1.3-5.4,1.3-5.4s-0.3-0.6-0.3-1.6c0-1.5,0.9-2.6,1.9-2.6c0.9,0,1.3,0.7,1.3,1.5c0,0.9-0.6,2.3-0.9,3.5c-0.3,1.1,0.5,1.9,1.6,1.9c1.9,0,3.2-2.4,3.2-5.3c0-2.2-1.5-3.8-4.2-3.8c-3,0-4.9,2.3-4.9,4.8c0,0.9,0.3,1.5,0.7,2C6,12,6.1,12.1,6,12.4c0,0.2-0.2,0.6-0.2,0.8c-0.1,0.3-0.3,0.3-0.5,0.3c-1.4-0.6-2-2.1-2-3.8c0-2.8,2.4-6.2,7.1-6.2c3.8,0,6.3,2.8,6.3,5.7c0,3.9-2.2,6.9-5.4,6.9c-1.1,0-2.1-0.6-2.4-1.2c0,0-0.6,2.3-0.7,2.7c-0.2,0.8-0.6,1.5-1,2.1C8.1,19.9,9,20,10,20c5.5,0,10-4.5,10-10C20,4.5,15.5,0,10,0z"></path>
+				</svg>
+			</span>				</a>
+							
+				<a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.huobi.com%2Flearn%2Fen-us%2Fwhat-is-token-distribution%2F&amp;title=What%20is%20token%20distribution%3F" data-network="linkedin" aria-label="LinkedIn" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="LinkedIn Icon">
+					<path d="M18.6,0H1.4C0.6,0,0,0.6,0,1.4v17.1C0,19.4,0.6,20,1.4,20h17.1c0.8,0,1.4-0.6,1.4-1.4V1.4C20,0.6,19.4,0,18.6,0z M6,17.1h-3V7.6h3L6,17.1L6,17.1zM4.6,6.3c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7c0.9,0,1.7,0.8,1.7,1.7C6.3,5.5,5.5,6.3,4.6,6.3z M17.2,17.1h-3v-4.6c0-1.1,0-2.5-1.5-2.5c-1.5,0-1.8,1.2-1.8,2.5v4.7h-3V7.6h2.8v1.3h0c0.4-0.8,1.4-1.5,2.8-1.5c3,0,3.6,2,3.6,4.5V17.1z"></path>
+				</svg>
+			</span>				</a>
+							
+				<a href="https://reddit.com/submit?url=https%3A%2F%2Fwww.huobi.com%2Flearn%2Fen-us%2Fwhat-is-token-distribution%2F&amp;title=What%20is%20token%20distribution%3F" data-network="reddit" aria-label="Reddit" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Reddit Icon">
+					<path d="M11.7,0.9c-0.9,0-2,0.7-2.1,3.9c0.1,0,0.3,0,0.4,0c0.2,0,0.3,0,0.5,0c0.1-1.9,0.6-3.1,1.3-3.1c0.3,0,0.5,0.2,0.8,0.5c0.4,0.4,0.9,0.9,1.8,1.1c0-0.1,0-0.2,0-0.4c0-0.2,0-0.4,0.1-0.5c-0.6-0.2-0.9-0.5-1.2-0.8C12.8,1.3,12.4,0.9,11.7,0.9z M16.9,1.3c-1,0-1.7,0.8-1.7,1.7s0.8,1.7,1.7,1.7s1.7-0.8,1.7-1.7S17.9,1.3,16.9,1.3z M10,5.7c-5.3,0-9.5,2.7-9.5,6.5s4.3,6.9,9.5,6.9s9.5-3.1,9.5-6.9S15.3,5.7,10,5.7z M2.4,6.1c-0.6,0-1.2,0.3-1.7,0.7C0,7.5-0.2,8.6,0.2,9.5C0.9,8.2,2,7.1,3.5,6.3C3.1,6.2,2.8,6.1,2.4,6.1z M17.6,6.1c-0.4,0-0.7,0.1-1.1,0.3c1.5,0.8,2.6,1.9,3.2,3.2c0.4-0.9,0.3-2-0.5-2.7C18.8,6.3,18.2,6.1,17.6,6.1z M6.5,9.6c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S5.8,9.6,6.5,9.6z M13.5,9.6c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S12.8,9.6,13.5,9.6z M6.1,14.3c0.1,0,0.2,0.1,0.3,0.2c0,0.1,1.1,1.4,3.6,1.4c2.6,0,3.6-1.4,3.6-1.4c0.1-0.2,0.4-0.2,0.6-0.1c0.2,0.1,0.2,0.4,0.1,0.6c-0.1,0.1-1.3,1.8-4.3,1.8c-3,0-4.2-1.7-4.3-1.8c-0.1-0.2-0.1-0.5,0.1-0.6C5.9,14.4,6,14.3,6.1,14.3z"></path>
+				</svg>
+			</span>				</a>
+																			
+				<a href="https://t.me/share/url?url=https%3A%2F%2Fwww.huobi.com%2Flearn%2Fen-us%2Fwhat-is-token-distribution%2F&amp;text=What%20is%20token%20distribution%3F" data-network="telegram" aria-label="Telegram" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Telegram Icon">
+					<path d="M19.9,3.1l-3,14.2c-0.2,1-0.8,1.3-1.7,0.8l-4.6-3.4l-2.2,2.1c-0.2,0.2-0.5,0.5-0.9,0.5l0.3-4.7L16.4,5c0.4-0.3-0.1-0.5-0.6-0.2L5.3,11.4L0.7,10c-1-0.3-1-1,0.2-1.5l17.7-6.8C19.5,1.4,20.2,1.9,19.9,3.1z"></path>
+				</svg>
+			</span>				</a>
+																			
+			</div>
+					</div>
+
+			
+		
+		<div class="entry-content">
+			<div dir="auto">
+<div dir="auto"><span style="background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-size: revert; font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);" data-darkreader-inline-bgcolor="" data-darkreader-inline-color=""><span style="background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-size: revert; font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);" data-darkreader-inline-bgcolor="" data-darkreader-inline-color="">Token distribution is an integral part of tokenomics research. It describes the proportions in which different groups of users and investors own blockchains tokens. You can consider token distribution as a pie chart where each piece represents a specific group’s ownership of the project.</span></span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">All projects have initial token distributions in the beginning, whereby they decide how many tokens they will give, grant or sell, and to whom. These decisions also determine how ‘fair’ the project’s launch is. Generally speaking, a well-organized token launch is one that anyone can attend, with only a small portion of tokens distributed to inside investors.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">It is also important to note that the centralization of token ownership goes against the key principle of blockchains, i.e., decentralization.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">In the initial token distribution, blockchain projects distribute their tokens to four main groups: the public, their communities, insiders, and their own foundations. The public refers to anyone keen on investing in the project, while the community consist of users who are passionate about the project and want to help it succeed. Insiders are essentially the founder team, advisors and VCs, and the foundation is usually a non-profit that manages the project in one way or another.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">Because crypto communities emphasize open-source principles, they expect the blockchain to permit funding from the public, who should receive ownership in return. Thus, some projects are criticized as for giving only a small number of insider investors the possibility of buying the first round of tokens.</span></div>
+</div>
+<div dir="auto">
+<h4 dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">A demonstration of Ethereum (ETH) token distribution</span></h4>
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">1. It started with 72 million ETH tokens, of which 60 million were distributed to around 1,000 investors, who bought the tokens from an open-crowd sale in 2014. The Ethereum network used the raised money (about 18 million USD) to fund protocol development, research, legal expenses, and communications.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">2. The network shared the remaining 12 million tokens between the Ethereum foundation and early contributors to the protocol.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<figure id="attachment_3403" aria-describedby="caption-attachment-3403" style="width: 1379px" class="wp-caption alignnone"><img decoding="async" class="size-full wp-image-3403" src="./distribution_files/Token-distribution.png" alt="" width="1379" height="788" srcset="https://www.huobi.com/learn/wp-content/uploads/2022/01/Token-distribution.png 1379w, https://www.huobi.com/learn/wp-content/uploads/2022/01/Token-distribution-300x171.png 300w, https://www.huobi.com/learn/wp-content/uploads/2022/01/Token-distribution-1024x585.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/01/Token-distribution-768x439.png 768w, https://www.huobi.com/learn/wp-content/uploads/2022/01/Token-distribution-18x10.png 18w" sizes="(max-width: 1379px) 100vw, 1379px"><figcaption id="caption-attachment-3403" class="wp-caption-text">Source: <a href="https://messari.io/" target="_blank" rel="noopener">Messari</a></figcaption></figure>
+</div>
+<div dir="auto">
+<h4 dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">What can you learn from Ethereum token distribution?</span></h4>
+</div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">A small number of crowd sale participants means few individuals can influence the token price. The concentrated ETH distribution also means token owners can easily vote on the future development of the protocol. Therefore, how decentralized the network really was to begin with is questionable.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">Nowadays, the situation is different as early buyers of Ethereum have sold parts of their holdings to new entrants, and proof-of-work (PoW) mining has created a lot of new token supply. However, it is still the case that there are some ‘whale’ holders who can influence the price of the token with their holdings.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto">
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);">On the plus side, Ethereum sold most of its tokens in the public sale, unlike some blockchains that allocate a significant portion of their tokens to insiders.</span></div>
+</div>
+<div dir="auto"></div>
+<div dir="auto"><span style="font-size: revert; background-color: var(--has-boxed, #ffffff); color: var(--color); font-family: var(--fontFamily); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform);" data-darkreader-inline-bgcolor="" data-darkreader-inline-color=""><strong style="color: var(--color); font-family: var(--fontFamily); font-size: var(--fontSize); font-style: var(--fontStyle, inherit); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform); background-color: var(--has-boxed, #ffffff);" data-darkreader-inline-color="" data-darkreader-inline-bgcolor=""><em>New to Huobi? </em></strong><a style="font-family: var(--fontFamily); font-size: var(--fontSize); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform); background-color: var(--has-boxed, #ffffff);" href="https://www.huobi.com/en-us/" target="_blank" rel="noreferrer noopener" data-darkreader-inline-bgcolor=""><em>Register for a Huobi account</em></a><em style="color: var(--color); font-family: var(--fontFamily); font-size: var(--fontSize); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform); background-color: var(--has-boxed, #ffffff);" data-darkreader-inline-color="" data-darkreader-inline-bgcolor=""> and receive up to $300 as a <strong>‘</strong>Welcome Bonus’ to help you start your investment journey! If you’re an existing user, check out </em><a style="font-family: var(--fontFamily); font-size: var(--fontSize); font-style: var(--fontStyle, inherit); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform); background-color: var(--has-boxed, #ffffff);" href="https://www.huobi.com/en-us/financial/earnings/" target="_blank" rel="noreferrer noopener" data-darkreader-inline-bgcolor=""><em>Huobi Earn</em></a><em style="color: var(--color); font-family: var(--fontFamily); font-size: var(--fontSize); font-weight: var(--fontWeight); letter-spacing: var(--letterSpacing); text-transform: var(--textTransform); background-color: var(--has-boxed, #ffffff);" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">, where you can start earning interest from your idle cryptocurrencies!</em></span></div>
+		</div>
+
+		
+					<div class="entry-tags"><a href="https://www.huobi.com/learn/en-us/tag/blockchain/" rel="tag"># Blockchain</a><a href="https://www.huobi.com/learn/en-us/tag/cryptocurrency/" rel="tag"># Cryptocurrency</a><a href="https://www.huobi.com/learn/en-us/tag/huobi/" rel="tag"># Huobi</a><a href="https://www.huobi.com/learn/en-us/tag/huobi-learn/" rel="tag"># Huobi Learn</a></div>		
+		
+		
+	</article>
+
+	
+		
+			</div>
+
+
+		<div class="ct-related-posts-container">
+		<div class="ct-container">
+	
+		<div class="ct-related-posts" data-layout="grid">
+			<h3 class="ct-block-title">
+				Related Articles			</h3>
+
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container ct-lazy" href="https://www.huobi.com/learn/en-us/what-is-impermanent-loss/" aria-label="What is impermanent loss?" tabindex="-1"><img width="300" height="180" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" data-ct-lazy="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-300x180.png" data-ct-lazy-set="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-300x180.png 300w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-1024x615.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-768x461.png 768w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-18x12.png 18w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss.png 1251w" data-object-fit="~" itemprop="image"><noscript><img width="300" height="180" src="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-300x180.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-300x180.png 300w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-1024x615.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-768x461.png 768w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss-18x12.png 18w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-What-is-Impermanent-Loss.png 1251w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ct-ratio" style="padding-bottom: 62.5%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://www.huobi.com/learn/en-us/what-is-impermanent-loss/" itemprop="url">What is impermanent loss?</a>
+						</h3>
+					
+									</article>
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container ct-lazy" href="https://www.huobi.com/learn/en-us/what-is-yield-farming/" aria-label="What is yield farming?" tabindex="-1"><img width="300" height="180" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" data-ct-lazy="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-300x180.png" data-ct-lazy-set="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-300x180.png 300w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-1024x614.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-768x461.png 768w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-1536x922.png 1536w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-2048x1229.png 2048w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-18x12.png 18w" data-object-fit="~" itemprop="image"><noscript><img width="300" height="180" src="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-300x180.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-300x180.png 300w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-1024x614.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-768x461.png 768w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-1536x922.png 1536w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-2048x1229.png 2048w, https://www.huobi.com/learn/wp-content/uploads/2022/06/Huobi-Learn-Lesson-Cover-what-is-yield-farming-18x12.png 18w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ct-ratio" style="padding-bottom: 62.5%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://www.huobi.com/learn/en-us/what-is-yield-farming/" itemprop="url">What is yield farming?</a>
+						</h3>
+					
+									</article>
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container ct-lazy" href="https://www.huobi.com/learn/en-us/what-are-lp-tokens/" aria-label="What are LP tokens?" tabindex="-1"><img width="300" height="154" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" data-ct-lazy="https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-300x154.png" data-ct-lazy-set="https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-300x154.png 300w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-1024x527.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-768x395.png 768w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-1536x791.png 1536w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-2048x1054.png 2048w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-16x8.png 16w" data-object-fit="~" itemprop="image"><noscript><img width="300" height="154" src="https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-300x154.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-300x154.png 300w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-1024x527.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-768x395.png 768w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-1536x791.png 1536w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-2048x1054.png 2048w, https://www.huobi.com/learn/wp-content/uploads/2021/09/Huobi-Learn-RGB-横式-标准色_Huobi-Learn-4-e1632489505861-16x8.png 16w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ct-ratio" style="padding-bottom: 62.5%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://www.huobi.com/learn/en-us/what-are-lp-tokens/" itemprop="url">What are LP tokens?</a>
+						</h3>
+					
+									</article>
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container ct-lazy" href="https://www.huobi.com/learn/en-us/what-are-liquidity-pools/" aria-label="What are liquidity pools?" tabindex="-1"><img width="300" height="180" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" data-ct-lazy="https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-300x180.png" data-ct-lazy-set="https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-300x180.png 300w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-1024x615.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-768x461.png 768w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-1536x922.png 1536w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-2048x1229.png 2048w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-18x12.png 18w" data-object-fit="~" itemprop="image"><noscript><img width="300" height="180" src="https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-300x180.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-300x180.png 300w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-1024x615.png 1024w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-768x461.png 768w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-1536x922.png 1536w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-2048x1229.png 2048w, https://www.huobi.com/learn/wp-content/uploads/2022/06/earn-with-wallet_What-are-Liquidity-pools-and-why-are-they-important-副本-3-18x12.png 18w" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ct-ratio" style="padding-bottom: 62.5%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://www.huobi.com/learn/en-us/what-are-liquidity-pools/" itemprop="url">What are liquidity pools?</a>
+						</h3>
+					
+									</article>
+					</div>
+
+			</div>
+	</div>
+	
+		</main>
+
+	<footer class="ct-footer" data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter"><div data-row="top"><div class="ct-container"><div data-column="widget-area-1"><div class="ct-widget widget_block" id="block-2"><h5><b>$300</b> Huobi Welcome Bonus</h5>
+<h6>Up to $300 for grabs for new Huobi users</h6>
+<div class="wp-block-buttons">
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="https://www.huobi.com/en-us/topic/welcome-bonus/?inviter_id=11331580" rel="">Welcome Bonus</a></div>
+</div>
+</div></div><div data-column="ghost"></div></div></div><div data-row="middle" class="ct-hidden-sm"><div class="ct-container"><div data-column="widget-area-2"><div class="widget_text ct-widget widget_custom_html" id="custom_html-3"><div class="textwidget entry-content custom-html-widget"><div class="fedui-footer-left">
+<div class="fedui-footer-logo"><img src="./distribution_files/cd7fd1e.png" alt="Huobi Global - Leading Bitcoin Exchange" width="84" height="23"></div>
+<div class="fedui-footer-copyright">© 2013-2021 Huobi</div>
+</div></div></div><div class="ct-widget ct-socials-widget" id="blocksy_ct_socials-2"><h2 class="widget-title"></h2>
+		<div class="ct-social-box" data-icon-size="small" data-color="custom" data-icons-type="simple">
+			
+			
+							
+				<a href="https://www.facebook.com/huobiglobalofficial" data-network="facebook" aria-label="Facebook">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Facebook Icon">
+					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Facebook</span>				</a>
+							
+				<a href="https://twitter.com/HuobiGlobal" data-network="twitter" aria-label="Twitter">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Twitter Icon">
+					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Twitter</span>				</a>
+							
+				<a href="https://www.youtube.com/HuobiGlobal" data-network="youtube" aria-label="YouTube">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20" aria-label="YouTube Icon">
+					<path d="M15,0H5C2.2,0,0,2.2,0,5v10c0,2.8,2.2,5,5,5h10c2.8,0,5-2.2,5-5V5C20,2.2,17.8,0,15,0z M14.5,10.9l-6.8,3.8c-0.1,0.1-0.3,0.1-0.5,0.1c-0.5,0-1-0.4-1-1l0,0V6.2c0-0.5,0.4-1,1-1c0.2,0,0.3,0,0.5,0.1l6.8,3.8c0.5,0.3,0.7,0.8,0.4,1.3C14.8,10.6,14.6,10.8,14.5,10.9z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">YouTube</span>				</a>
+							
+				<a href="https://t.me/huobiglobalofficial" data-network="telegram" aria-label="Telegram">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Telegram Icon">
+					<path d="M19.9,3.1l-3,14.2c-0.2,1-0.8,1.3-1.7,0.8l-4.6-3.4l-2.2,2.1c-0.2,0.2-0.5,0.5-0.9,0.5l0.3-4.7L16.4,5c0.4-0.3-0.1-0.5-0.6-0.2L5.3,11.4L0.7,10c-1-0.3-1-1,0.2-1.5l17.7-6.8C19.5,1.4,20.2,1.9,19.9,3.1z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Telegram</span>				</a>
+							
+				<a href="https://medium.com/@huobiglobal" data-network="medium" aria-label="Medium">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20" aria-label="Medium Icon">
+					<path d="M2.4,5.3c0-0.2-0.1-0.5-0.3-0.7L0.3,2.4V2.1H6l4.5,9.8l3.9-9.8H20v0.3l-1.6,1.5c-0.1,0.1-0.2,0.3-0.2,0.4v11.2c0,0.2,0,0.3,0.2,0.4l1.6,1.5v0.3h-7.8v-0.3l1.6-1.6c0.2-0.2,0.2-0.2,0.2-0.4V6.5L9.4,17.9H8.8L3.6,6.5v7.6c0,0.3,0.1,0.6,0.3,0.9L6,17.6v0.3H0v-0.3L2.1,15c0.2-0.2,0.3-0.6,0.3-0.9V5.3z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Medium</span>				</a>
+							
+				<a href="https://www.instagram.com/huobiglobalofficial/" data-network="instagram" aria-label="Instagram">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20" aria-label="Instagram Icon">
+					<circle cx="10" cy="10" r="3.3"></circle>
+					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Instagram</span>				</a>
+							
+				<a href="https://weibo.com/huobicom" data-network="weibo" aria-label="Weibo">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20" aria-label="Weibo Icon">
+					<path d="M15.9,7.6c0.3-0.9-0.5-1.8-1.5-1.6c-0.9,0.2-1.1-1.1-0.3-1.3c2-0.4,3.6,1.4,3,3.3C16.9,8.8,15.6,8.4,15.9,7.6z M8.4,18.1c-4.2,0-8.4-2-8.4-5.3C0,11,1.1,9,3,7.2c3.9-3.9,7.9-3.9,6.8-0.2c-0.2,0.5,0.5,0.2,0.5,0.2c3.1-1.3,5.5-0.7,4.5,2c-0.1,0.4,0,0.4,0.3,0.5C20.3,11.3,16.4,18.1,8.4,18.1L8.4,18.1zM14,12.4c-0.2-2.2-3.1-3.7-6.4-3.3C4.3,9.4,1.8,11.4,2,13.6s3.1,3.7,6.4,3.3C11.7,16.6,14.2,14.6,14,12.4zM13.6,2c-1,0.2-0.7,1.7,0.3,1.5c2.8-0.6,5.3,2.1,4.4,4.8c-0.3,0.9,1.1,1.4,1.5,0.5C21,4.9,17.6,1.2,13.6,2L13.6,2z M10.5,14.2c-0.7,1.5-2.6,2.3-4.3,1.8c-1.6-0.5-2.3-2.1-1.6-3.5c0.7-1.4,2.5-2.2,4-1.8C10.4,11.1,11.2,12.7,10.5,14.2zM7.2,13c-0.5-0.2-1.2,0-1.5,0.5C5.3,14,5.5,14.6,6,14.8c0.5,0.2,1.2,0,1.5-0.5C7.8,13.8,7.7,13.2,7.2,13zM8.4,12.5c-0.2-0.1-0.4,0-0.6,0.2c-0.1,0.2-0.1,0.4,0.1,0.5c0.2,0.1,0.5,0,0.6-0.2C8.7,12.8,8.6,12.6,8.4,12.5z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Weibo</span>				</a>
+			
+			
+					</div>
+
+	</div></div><div data-column="widget-area-3"><div class="widget_text ct-widget widget_custom_html" id="custom_html-4"><h2 class="widget-title">Tools</h2><div class="textwidget entry-content custom-html-widget"><a href="https://www.huobi.com/download/#exchange" target="_blank" rel="noopener">Download APP</a><br>
+<a href="https://huobiapi.github.io/docs/spot/v1/en/#5ea2e0cde2" target="_blank" rel="noopener noreferrer nofollow">API Docs</a><br>
+<a href="https://www.huobi.com/assetintro/" target="_blank" rel="noopener">Introduction of Digital Assets</a><br>
+<a href="https://www.huobi.com/verification/" target="_blank" rel="noopener">Official Media Authenticator</a><br>
+<a href="https://huobiblog.wpcomstaging.com/" target="_blank" rel="noopener">Huobi Blog</a><br>
+<a href="https://futures.huobi.com/en-us/data/landing_page/" target="_blank" rel="noopener">Download Data History</a></div></div></div><div data-column="widget-area-4"><div class="widget_text ct-widget widget_custom_html" id="custom_html-5"><h2 class="widget-title">Services</h2><div class="textwidget entry-content custom-html-widget"><a href="https://www.huobi.com/usd-deposit/" target="_blank" rel="noopener">Buy HUSD</a><br>
+<a href="https://www.huobi.com/fee/" target="_blank" rel="noopener">Fee Rate</a><br>
+<a href="https://www.huobi.com/ladder-lending/cross-margin/" target="_blank" rel="noopener">Coin loan limit</a><br>
+<a href="https://www.huobi.com/support/en-us/" target="_blank" rel="noopener noreferrer nofollow">Support</a><br>
+<a href="https://www.huobi.com/en-us/feedback/" target="_blank" rel="noopener noreferrer nofollow">Contact Global CEO</a><br>
+<a href="https://www.huobi.com/support/en-us/list/115000389432" target="_blank" rel="noopener noreferrer nofollow">Guide</a><br>
+<a href="https://www.huobi.com/support/en-us/list/360000063661" target="_blank" rel="noopener noreferrer nofollow">Derivatives Academy</a><br>
+<a href="https://www.huobi.com/support/en-us/detail/44881770463975" target="_blank" rel="noopener">Broker Program</a></div></div></div><div data-column="widget-area-5"><div class="widget_text ct-widget widget_custom_html" id="custom_html-6"><h2 class="widget-title">Support</h2><div class="textwidget entry-content custom-html-widget"><a href="https://www.huobi.com/application-center/" target="_blank" rel="noopener">Apply to List</a><br>
+<a class="" href="https://institution.huobi.com/en-us/" target="_blank" rel="noopener">Institutional Services</a><br>
+<a href="https://www.huobi.com/en-us/topic/vip/" target="_blank" rel="noopener">Key Client Privileges</a><br>
+<a class="" href="https://c2c.huobi.com/business/" target="_blank" rel="nofollow noopener">Fiat Ad Permission Application</a><br>
+<a href="https://www.huobigroup.com/" target="_blank" rel="noopener noreferrer nofollow">Huobi Group</a></div></div></div><div data-column="widget-area-6"><div class="widget_text ct-widget widget_custom_html" id="custom_html-7"><h2 class="widget-title">Terms of Service</h2><div class="textwidget entry-content custom-html-widget"><a href="https://www.huobi.com/agreement/" target="_blank" rel="noopener noreferrer nofollow">User Agreement</a><br>
+<a href="https://www.huobi.com/support/en-us/detail/360000298601" target="_blank" rel="noopener noreferrer nofollow">Privacy Policy</a><br>
+<a href="https://www.huobi.com/support/en-us/detail/360000658232" target="_blank" rel="noopener noreferrer nofollow">Fiat Rules</a><br>
+<a href="https://www.huobi.com/support/en-us/detail/360000121402" target="_blank" rel="noopener noreferrer nofollow">Anti-Money Laundering</a><br></div></div></div></div></div></footer></div>
+
+<div class="ct-drawer-canvas">
+		<div id="search-modal" class="ct-panel" data-behaviour="modal">
+			<div class="ct-panel-actions">
+				<button class="ct-toggle-close" data-type="type-1" aria-label="Close search modal">
+					<svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+						<path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path>
+					</svg>
+				</button>
+			</div>
+
+			<div class="ct-panel-content">
+				
+
+<form role="search" method="get" class="search-form" action="https://www.huobi.com/learn/en-us" data-live-results="thumbs">
+
+	<input type="search" class="modal-field" placeholder="Search" value="" name="s" autocomplete="off" title="Search Input">
+
+	<button type="submit" class="search-submit" aria-label="Search button">
+		<svg class="ct-icon" width="15" height="15" viewBox="0 0 15 15">
+			<title>Search icon</title>
+			<path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"></path>
+		</svg>
+
+		<span data-loader="circles"><span></span><span></span><span></span></span>
+	</button>
+
+	
+			<input type="hidden" name="ct_post_type" value="post:page:es_template">
+	
+</form>
+
+
+			</div>
+		</div>
+
+		<div id="offcanvas" class="ct-panel ct-header" data-behaviour="right-side"><div class="ct-panel-inner">
+		<div class="ct-panel-actions">
+			<button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+					<path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path>
+				</svg>
+			</button>
+		</div>
+		<div class="ct-panel-content" data-device="desktop"></div><div class="ct-panel-content" data-device="mobile">
+<nav class="mobile-menu has-submenu" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1">
+	<ul id="menu-mobile-1" class=""><li id="menu-item-199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-199"><a href="https://c2c.huobi.com/" class="ct-menu-link">Buy Crypto</a></li>
+<li id="menu-item-200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-200"><a href="https://www.huobi.com/markets/" class="ct-menu-link">Markets</a></li>
+<li id="menu-item-201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-201"><span class="ct-sub-menu-parent"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Spot Trading</a><button class="ct-toggle-dopdown-mobile" aria-label="Expand dropdown menu"><svg class="ct-icon toggle-icon-1" width="15" height="15" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z"></path></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-202"><a href="https://www.huobi.com/exchange/" class="ct-menu-link">Exchange</a></li>
+	<li id="menu-item-203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-203"><a href="https://www.huobi.com/cross-margin/" class="ct-menu-link">Margin</a></li>
+	<li id="menu-item-204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-204"><a href="https://www.huobi.com/en-us/grid-exchange/" class="ct-menu-link">Trading Bot</a></li>
+	<li id="menu-item-205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-205"><a href="https://brokerage.huobi.com/" class="ct-menu-link">Brokerage (OTC)</a></li>
+</ul>
+</li>
+<li id="menu-item-206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-206"><span class="ct-sub-menu-parent"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Derivatives</a><button class="ct-toggle-dopdown-mobile" aria-label="Expand dropdown menu"><svg class="ct-icon toggle-icon-1" width="15" height="15" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z"></path></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-207" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-207"><a href="https://futures.huobi.com/contract/exchange/" class="ct-menu-link">Coin-margined Futures</a></li>
+	<li id="menu-item-208" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-208"><a href="https://futures.huobi.com/swap/exchange/" class="ct-menu-link">Coin-margined Swaps</a></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-209"><a href="https://futures.huobi.com/linear_swap/exchange/" class="ct-menu-link">USDT-margined Swaps</a></li>
+</ul>
+</li>
+<li id="menu-item-211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-211"><span class="ct-sub-menu-parent"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Finance</a><button class="ct-toggle-dopdown-mobile" aria-label="Expand dropdown menu"><svg class="ct-icon toggle-icon-1" width="15" height="15" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z"></path></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-212" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-212"><a href="https://www.huobi.com/en-us/financial/earnings/" class="ct-menu-link">Huobi Earn</a></li>
+	<li id="menu-item-214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-214"><a href="https://www.huobi.com/en-us/financial/pledge/" class="ct-menu-link">Crypto Loans</a></li>
+</ul>
+</li>
+<li id="menu-item-2048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2048"><span class="ct-sub-menu-parent"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Learn</a><button class="ct-toggle-dopdown-mobile" aria-label="Expand dropdown menu"><svg class="ct-icon toggle-icon-1" width="15" height="15" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z"></path></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-2041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2041"><a href="https://www.huobi.com/learn/en-us/" class="ct-menu-link">Learn Hub</a></li>
+	<li id="menu-item-2042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2042"><span class="ct-sub-menu-parent"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="ct-menu-link">Categories</a><button class="ct-toggle-dopdown-mobile" aria-label="Expand dropdown menu"><svg class="ct-icon toggle-icon-1" width="15" height="15" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z"></path></svg></button></span>
+	<ul class="sub-menu">
+		<li id="menu-item-2043" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2043"><a href="https://www.huobi.com/learn/en-us/category/cryptocurrency/" class="ct-menu-link">Cryptocurrency</a></li>
+		<li id="menu-item-2045" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2045"><a href="https://www.huobi.com/learn/en-us/category/investing/" class="ct-menu-link">Investing</a></li>
+		<li id="menu-item-2044" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2044"><a href="https://www.huobi.com/learn/en-us/category/how-to-guides/" class="ct-menu-link">How-to Guides</a></li>
+		<li id="menu-item-2047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2047"><a href="https://www.huobi.com/learn/en-us/latest-articles/" class="ct-menu-link">Latest Articles</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2046"><a href="https://www.huobi.com/learn/en-us/topics/" class="ct-menu-link">All Topics</a></li>
+</ul>
+</li>
+<li id="menu-item-215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-215"><a href="https://www.huobi.com/en-us/topic/welcome-bonus/?inviter_id=11329860" class="ct-menu-link">Get $170</a></li>
+<li id="menu-item-217" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-217"><a href="https://www.huobi.com/download/#exchange" class="ct-menu-link">Download</a></li>
+<li id="menu-item-218" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-has-children current-language-menu-item menu-item-218"><span class="ct-sub-menu-parent"><a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">English</span></span></a><button class="ct-toggle-dopdown-mobile" aria-label="Expand dropdown menu"><svg class="ct-icon toggle-icon-1" width="15" height="15" viewBox="0 0 15 15" aria-label="Menu dropdown icon"><path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z"></path></svg></button></span>
+<ul class="sub-menu">
+	<li id="menu-item-2289" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2289"><a href="https://www.huobi.com/learn/es-es/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Español</span></span></a></li>
+	<li id="menu-item-2893" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2893"><a href="https://www.huobi.com/learn/vi-vi/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Tiếng Việt</span></span></a></li>
+	<li id="menu-item-2889" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2889"><a href="https://www.huobi.com/learn/tr-tr/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Türkçe</span></span></a></li>
+	<li id="menu-item-2892" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2892"><a href="https://www.huobi.com/learn/id-id/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Bahasa Indonesia</span></span></a></li>
+	<li id="menu-item-2891" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2891"><a href="https://www.huobi.com/learn/ms-my/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Bahasa Melayu</span></span></a></li>
+	<li id="menu-item-2888" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2888"><a href="https://www.huobi.com/learn/fr-fr/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Français</span></span></a></li>
+	<li id="menu-item-2890" class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-2890"><a href="https://www.huobi.com/learn/pt-br/what-is-token-distribution/" class="ct-menu-link"><span data-no-translation=""><span class="trp-ls-language-name">Português do Brasil</span></span></a></li>
+</ul>
+</li>
+</ul></nav>
+
+</div></div></div></div>    <script>
+        function coolTagCloudToggle( element ) {
+            var parent = element.closest('.cool-tag-cloud');
+            parent.querySelector('.cool-tag-cloud-inner').classList.toggle('cool-tag-cloud-active');
+            parent.querySelector( '.cool-tag-cloud-load-more').classList.toggle('cool-tag-cloud-active');
+        }
+    </script>
+            <div id="trp-floater-ls" onclick="" data-no-translation="" class="trp-language-switcher-container trp-floater-ls-flags trp-bottom-left trp-color-dark">
+            <div id="trp-floater-ls-current-language" class="">
+
+                <a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="trp-floater-ls-disabled-language trp-ls-disabled-language" onclick="event.preventDefault()">
+					<img class="trp-flag-image" src="./distribution_files/en_US.webp" width="18" height="12" alt="en_US" title="English">				</a>
+
+            </div>
+            <div id="trp-floater-ls-language-list" class="">
+
+                <div class="trp-language-wrap">                    <a href="https://www.huobi.com/learn/es-es/what-is-token-distribution/" title="Español">
+          						  <img class="trp-flag-image" src="./distribution_files/es_ES.webp" width="18" height="12" alt="es_ES" title="Español">					          </a>
+                                    <a href="https://www.huobi.com/learn/tr-tr/what-is-token-distribution/" title="Türkçe">
+          						  <img class="trp-flag-image" src="./distribution_files/tr_TR.webp" width="18" height="12" alt="tr_TR" title="Türkçe">					          </a>
+                                    <a href="https://www.huobi.com/learn/vi-vi/what-is-token-distribution/" title="Tiếng Việt">
+          						  <img class="trp-flag-image" src="./distribution_files/vi.webp" width="18" height="12" alt="vi" title="Tiếng Việt">					          </a>
+                                    <a href="https://www.huobi.com/learn/zh-hk/what-is-token-distribution/" title="香港中文">
+          						  <img class="trp-flag-image" src="./distribution_files/zh_HK.webp" width="18" height="12" alt="zh_HK" title="香港中文">					          </a>
+                                    <a href="https://www.huobi.com/learn/id-id/what-is-token-distribution/" title="Bahasa Indonesia">
+          						  <img class="trp-flag-image" src="./distribution_files/id_ID.webp" width="18" height="12" alt="id_ID" title="Bahasa Indonesia">					          </a>
+                                    <a href="https://www.huobi.com/learn/ms-my/what-is-token-distribution/" title="Bahasa Melayu">
+          						  <img class="trp-flag-image" src="./distribution_files/ms_MY.webp" width="18" height="12" alt="ms_MY" title="Bahasa Melayu">					          </a>
+                                    <a href="https://www.huobi.com/learn/pt-br/what-is-token-distribution/" title="Português do Brasil">
+          						  <img class="trp-flag-image" src="./distribution_files/pt_BR.webp" width="18" height="12" alt="pt_BR" title="Português do Brasil">					          </a>
+                                    <a href="https://www.huobi.com/learn/fr-fr/what-is-token-distribution/" title="Français">
+          						  <img class="trp-flag-image" src="./distribution_files/fr_FR.webp" width="18" height="12" alt="fr_FR" title="Français">					          </a>
+                <a href="https://www.huobi.com/learn/en-us/what-is-token-distribution/#" class="trp-floater-ls-disabled-language trp-ls-disabled-language" onclick="event.preventDefault()"><img class="trp-flag-image" src="./distribution_files/en_US.webp" width="18" height="12" alt="en_US" title="English"></a></div>            </div>
+        </div>
+
+    <script id="getwid-blocks-frontend-js-js-extra">
+var Getwid = {"settings":{"date_time_utc":"2023-03-19 11:54:31","google_api_key":""},"ajax_url":"https:\/\/www.huobi.com\/learn\/wp-admin\/admin-ajax.php","nonces":{"recaptcha_v2_contact_form":"82caca5699"}};
+</script>
+<script src="./distribution_files/frontend.blocks.js" id="getwid-blocks-frontend-js-js"></script>
+<script id="ct-scripts-js-extra">
+var ct_localizations = {"ajax_url":"https:\/\/www.huobi.com\/learn\/wp-admin\/admin-ajax.php","nonce":"0eae8fd5ad","public_url":"https:\/\/www.huobi.com\/learn\/wp-content\/themes\/blocksy\/static\/bundle\/","rest_url":"https:\/\/www.huobi.com\/learn\/en-us\/wp-json\/","search_url":"https:\/\/www.huobi.com\/learn\/en-us\/search\/QUERY_STRING\/","show_more_text":"Show more","more_text":"More","expand_submenu":"Expand dropdown menu","collapse_submenu":"Collapse dropdown menu","dynamic_js_chunks":[{"id":"blocksy_lazy_load","selector":".ct-lazy[class*=\"ct-image\"]","url":"https:\/\/www.huobi.com\/learn\/wp-content\/themes\/blocksy\/static\/bundle\/lazy-load.js"}],"dynamic_styles":{"lazy_load":"https:\/\/www.huobi.com\/learn\/wp-content\/themes\/blocksy\/static\/bundle\/lazy-load.min.css","search_lazy":"https:\/\/www.huobi.com\/learn\/wp-content\/themes\/blocksy\/static\/bundle\/search-lazy.min.css"},"dynamic_styles_selectors":[]};
+</script>
+<script src="./distribution_files/main.js" id="ct-scripts-js"></script>
+<script src="./distribution_files/main(1).js" id="blocksy-companion-scripts-js"></script>
+<script src="./distribution_files/new-tab.js" id="page-links-to-js"></script>
+<script id="es_starter_main_js-js-extra">
+var ig_es_starter_main_js_params = {"show_opt_in_consent":"no","session_tracking_enabled":"yes","user_logged_in":"no","consent_opt_in_message":"","consent_opt_out_message":"No Thanks","conset_after_opt_out_message":"You won't receive further emails from us, thank you!","ajax_url":"https:\/\/www.huobi.com\/learn\/wp-admin\/admin-ajax.php","security":"0dd3d8b1b9"};
+</script>
+<script src="./distribution_files/starter-main.js" id="es_starter_main_js-js"></script>
+
+<script>(function(){var js = "window['__CF$cv$params']={r:'7aa58566eb23dfb5',m:'CjkD62C4Iw_OO0q10lytQzAdJ9Eue7PiUBICzkYgKd8-1679226871-0-Ado51xaHb06JH9YFFEJnmGrIKndsmAEW9G653WMkr/fBnrYOneQAEURe27yIT0rpexBqPTge2FxLe6XYwyILKegHSiR9gq7ybHMbB3KKjSWjAX5rrJhDxt+7zLhPHasOne7+qrisVxiu3vjIVMlX+wWHrb8E2ucWkD29vfwzofEi',s:[0xb76cba8ec8,0x7f64f3eaa3],u:'/cdn-cgi/challenge-platform/h/g'};var _cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js?cb=7aa58566eb23dfb5',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./distribution_files/saved_resource.html"></iframe>
+
+<link rel="stylesheet" href="./distribution_files/lazy-load.min.css"></body></html>

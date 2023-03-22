@@ -1,0 +1,211 @@
+/* ---------- Color Module Styles ----------- */
+/* line 3, ../sass/colors.scss */
+body {
+  color: #3b3b3b;
+  background: #292929;
+}
+
+/* line 8, ../sass/colors.scss */
+#page, #main-wrapper {
+  background: #fff;
+}
+
+/* line 13, ../sass/colors.scss */
+.region-primary-menu .menu-item a.is-active, .region-primary-menu .menu-item--active-trail a {
+  background: #fff;
+}
+
+/* line 19, ../sass/colors.scss */
+.tabs ul.primary li a.is-active {
+  background-color: #fff;
+}
+/* line 23, ../sass/colors.scss */
+.tabs ul.primary li.is-active a {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* line 29, ../sass/colors.scss */
+#navbar-top {
+  background-color: #055a8e;
+}
+
+/* line 33, ../sass/colors.scss */
+#navbar-main {
+  background-color: #1d84c3;
+}
+
+/* line 37, ../sass/colors.scss */
+a, .link {
+  color: #0071b3;
+}
+
+/* line 42, ../sass/colors.scss */
+a:hover, a:focus {
+  color: #018fe2;
+}
+
+/* line 48, ../sass/colors.scss */
+.link:hover, .link:focus {
+  color: #018fe2;
+}
+
+/* line 53, ../sass/colors.scss */
+a:active, .link:active {
+  color: #23aeff;
+}
+
+/* line 57, ../sass/colors.scss */
+.page-item.active .page-link {
+  background-color: #0071b3;
+  border-color: #0071b3;
+}
+
+/* line 62, ../sass/colors.scss */
+.page-link {
+  color: #0071b3;
+}
+/* line 65, ../sass/colors.scss */
+.page-link:hover {
+  color: #0071b3;
+}
+
+/* line 70, ../sass/colors.scss */
+.sidebar .block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+
+/* line 75, ../sass/colors.scss */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+/* line 79, ../sass/colors.scss */
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0256b1;
+}
+
+/* line 84, ../sass/colors.scss */
+.site-footer {
+  background: #292929;
+}
+
+/* line 88, ../sass/colors.scss */
+.region-header {
+  color: #fffeff;
+}
+/* line 91, ../sass/colors.scss */
+.region-header a, .region-header li a.is-active, .region-header .site-branding__text, .region-header .site-branding, .region-header .site-branding__text a, .region-header .site-branding a {
+  color: #fffeff;
+}
+
+/* line 96, ../sass/colors.scss */
+.region-secondary-menu .menu-item a {
+  color: #fffeff;
+}
+/* line 99, ../sass/colors.scss */
+.region-secondary-menu .menu-item a.is-active {
+  color: #fffeff;
+}
+
+/* ---------- Color Form ----------- */
+/* line 107, ../sass/colors.scss */
+[dir="rtl"] .color-form .color-palette {
+  margin-left: 0;
+  margin-right: 20px;
+}
+/* line 112, ../sass/colors.scss */
+[dir="rtl"] .color-form .form-item label {
+  float: right;
+}
+/* line 116, ../sass/colors.scss */
+[dir="rtl"] .color-form .color-palette .lock {
+  right: -20px;
+  left: 0;
+}
+
+/* line 122, ../sass/colors.scss */
+.goal-1-color {
+  background-color: #eb1c2d;
+}
+
+/* line 125, ../sass/colors.scss */
+.goal-2-color {
+  background-color: #d3a029;
+}
+
+/* line 128, ../sass/colors.scss */
+.goal-3-color {
+  background-color: #4c9f38;
+}
+
+/* line 131, ../sass/colors.scss */
+.goal-4-color {
+  background-color: #c52333;
+}
+
+/* line 134, ../sass/colors.scss */
+.goal-5-color {
+  background-color: #ed4135;
+}
+
+/* line 137, ../sass/colors.scss */
+.goal-6-color {
+  background-color: #00aed9;
+}
+
+/* line 140, ../sass/colors.scss */
+.goal-7-color {
+  background-color: #fdb713;
+}
+
+/* line 143, ../sass/colors.scss */
+.goal-8-color {
+  background-color: #8f1838;
+}
+
+/* line 146, ../sass/colors.scss */
+.goal-9-color {
+  background-color: #f06a38;
+}
+
+/* line 149, ../sass/colors.scss */
+.goal-10-color {
+  background-color: #dd1367;
+}
+
+/* line 152, ../sass/colors.scss */
+.goal-11-color {
+  background-color: #f69c39;
+}
+
+/* line 155, ../sass/colors.scss */
+.goal-12-color {
+  background-color: #cf8d2a;
+}
+
+/* line 158, ../sass/colors.scss */
+.goal-13-color {
+  background-color: #48773e;
+}
+
+/* line 161, ../sass/colors.scss */
+.goal-14-color {
+  background-color: #007dbc;
+}
+
+/* line 164, ../sass/colors.scss */
+.goal-15-color {
+  background-color: #5cb84d;
+}
+
+/* line 167, ../sass/colors.scss */
+.goal-16-color {
+  background-color: #02558b;
+}
+
+/* line 170, ../sass/colors.scss */
+.goal-17-color {
+  background-color: #183668;
+}

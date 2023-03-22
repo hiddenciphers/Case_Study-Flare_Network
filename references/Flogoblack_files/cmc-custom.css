@@ -1,0 +1,1927 @@
+body .cmc-tab-affiliate span.cmc_affiliate_links a {
+    float: left;
+    width: 25%
+}
+
+body.cmc-single-page .responsive-tabs__list__item {
+    font-weight: 600;
+    border: 0;
+    border-bottom: 2px solid gray;
+    margin: 0 0 15px 0
+}
+
+body.cmc-single-page .responsive-tabs__list__item--active,
+body.cmc-single-page .responsive-tabs__list__item--active:hover {
+    border: 0;
+    border-bottom: 2px solid #00f;
+    font-weight: 600;
+    padding: 10px 12px 9px
+}
+
+body.cmc-single-page .responsive-tabs__panel:not(.responsive-tabs__panel--active) {
+    opacity: 0
+}
+
+body.cmc-single-page .responsive-tabs__panel--active {
+    box-shadow: 0 0 2px 2px grey;
+    -webkit-animation-name: popout;
+    animation-name: popout;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1
+}
+
+.cmc-24h-changes.cmc-up {
+    color: #258632;
+}
+
+.cmc-24h-changes.cmc-down {
+    color: #FF0000;
+}
+
+div[id*=cmc_].dataTables_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0 0 2px 0 #ddd;
+    position: unset;
+    overflow: hidden;
+}
+
+
+
+@keyframes popout {
+    0% {
+        opacity: .2
+    }
+    20% {
+        opacity: .6
+    }
+    50% {
+        opacity: .9
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable {
+    clear: both;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    max-width: none!important;
+    min-width: 100%!important;
+    border-collapse: separate!important;
+    table-layout: auto!important;
+    box-sizing: border-box!important;
+    background: #fff;
+    padding: 0;
+    border-radius: 0
+}
+
+div[id*=cmc_].dataTables_wrapper .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9
+}
+
+div[id*=cmc_].dataTables_wrapper .table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #fff
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable td,
+div[id*=cmc_].dataTables_wrapper table.dataTable th {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    white-space: unset;
+    vertical-align: middle;
+    padding: 7px;
+    text-align: center;
+    position: relative
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable td a,
+div[id*=cmc_].dataTables_wrapper table.dataTable th a {
+    text-decoration: none;
+    box-shadow: none
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable td.dataTables_empty,
+div[id*=cmc_].dataTables_wrapper table.dataTable th.dataTables_empty {
+    text-align: center
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable.nowrap td,
+div[id*=cmc_].dataTables_wrapper table.dataTable.nowrap th {
+    white-space: nowrap
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable th {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_filter label,
+div[id*=cmc_].dataTables_wrapper div.dataTables_length label {
+    font-weight: 400;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 14px
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable td {
+    font-size: 14px;
+    border-right: 0!important
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_length {
+    display: inline-block;
+    left: 0;
+    top: -60px;
+    position: absolute;
+    vertical-align: middle;
+    height: 40px
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_length select {
+    width: 55px!important;
+    display: inline-block!important;
+    height: 40px!important;
+    border: 1px solid #dedede;
+    background: #f7f7f7;
+    border-radius: 3px;
+    color: #222;
+    font-size: 14px;
+    -moz-appearance: menulist!important;
+    -webkit-appearance: menulist!important;
+    appearance: menulist!important;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_filter {
+    display: inline-block;
+    position: static;
+    height: 40px;
+    top: -60px;
+    right: 0
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_filter input {
+    margin-left: .5em;
+    width: 200px!important;
+    display: inline-block!important;
+    height: 48px!important;
+    border: 1px solid #dedede;
+    background: #f7f7f7;
+    border-radius: 3px;
+    color: #222;
+    font-size: 14px;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_info {
+    padding-top: .85em;
+    white-space: nowrap;
+    display: none!important
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_paginate {
+    margin: 0 -6px 0 0;
+    white-space: unset;
+    text-align: right;
+    display: table;
+    border-spacing: 7px 0;
+    float: right;
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_paginate a.paginate_button {
+    box-sizing: border-box;
+    display: table-cell;
+    min-width: 90px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none!important;
+    cursor: pointer;
+    color: #333!important;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+    height: 48px;
+    vertical-align: middle
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_paginate a.paginate_button.disabled,
+div[id*=cmc_].dataTables_wrapper div.dataTables_paginate a.paginate_button.disabled:hover {
+    cursor: not-allowed;
+    color: #ddd!important;
+    border: 1px solid #ddd;
+    background: 0 0
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_paginate a.paginate_button:hover {
+    color: #fff!important;
+    border: 1px solid #111;
+    background-color: #585858;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #585858), color-stop(100%, #111));
+    background: -webkit-linear-gradient(top, #585858 0, #111 100%);
+    background: -moz-linear-gradient(top, #585858 0, #111 100%);
+    background: -ms-linear-gradient(top, #585858 0, #111 100%);
+    background: -o-linear-gradient(top, #585858 0, #111 100%);
+    background: linear-gradient(to bottom, #585858 0, #111 100%)
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_paginate a.paginate_button.current,
+div[id*=cmc_].dataTables_wrapper div.dataTables_paginate a.paginate_button.current:hover {
+    color: #333!important;
+    border: 1px solid #cecece;
+    background-color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #dcdcdc));
+    background: -webkit-linear-gradient(top, #fff 0, #dcdcdc 100%);
+    background: -moz-linear-gradient(top, #fff 0, #dcdcdc 100%);
+    background: -ms-linear-gradient(top, #fff 0, #dcdcdc 100%);
+    background: -o-linear-gradient(top, #fff 0, #dcdcdc 100%);
+    background: linear-gradient(to bottom, #fff 0, #dcdcdc 100%)
+}
+
+#cmc_coinslist_wrapper.dataTables_wrapper div.dataTables_processing,
+#cmc_historical_tbl_wrapper.dataTables_wrapper div.dataTables_processing {
+    position: absolute;
+    text-align: center;
+    z-index: 999999;
+    background: rgba(255, 255, 255, .75);
+    width: 100%;
+    height: calc(100% - 75px);
+    top: 75px;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    margin: 0
+}
+
+#cmc_historical_tbl_wrapper.dataTables_wrapper div.dataTables_processing {
+    height: 100%!important;
+    top: 0!important
+}
+
+@keyframes coinsloader {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -240% 0
+    }
+}
+
+#cmc_coinslist_wrapper.dataTables_wrapper div.dataTables_processing:before,
+#cmc_historical_tbl_wrapper.dataTables_wrapper div.dataTables_processing:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #444 0, #666 15%, #ededed 30%, #ededed 50%, #ddd 65%, #fff 80%, #444 100%);
+    background-size: 160%;
+    animation: coinsloader 1s linear infinite
+}
+
+#cmc_coinslist_wrapper.dataTables_wrapper div.dataTables_processing:after,
+#cmc_historical_tbl_wrapper.dataTables_wrapper div.dataTables_processing:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #444 0, #666 15%, #ededed 30%, #ededed 50%, #ddd 65%, #fff 80%, #444 100%);
+    background-size: 160%;
+    animation: coinsloader 1s linear infinite
+}
+
+#cmc_coinslist_wrapper.dataTables_wrapper div.dataTables_processing img {
+    width: 200px;
+    height: auto;
+    display: none
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc {
+    background-image: none!important
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead>tr>th.sorting,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead>tr>th.sorting_asc,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead>tr>th.sorting_desc {
+    padding-right: 24px
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead>tr>td:active,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead>tr>td:focus,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead>tr>th:active,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead>tr>th:focus {
+    outline: 0!important
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc_disabled,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc_disabled {
+    cursor: pointer;
+    position: relative
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc_disabled:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: calc(50% - 10px)!important;
+    display: block;
+    opacity: .3;
+    font-size: 13px;
+    right: .5em
+}
+
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper table.dataTable thead .sorting:after,
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper table.dataTable thead .sorting_asc:after,
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper table.dataTable thead .sorting_desc:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting:before,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc:before,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc_disabled:before,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc:before,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc_disabled:before {
+    display: none!important
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc_disabled:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc_disabled:after {
+    content: "\21F3"
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc:after {
+    content: "\21E7"
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc:after {
+    content: "\21E9"
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc:after {
+    opacity: 1
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_asc_disabled:before,
+div[id*=cmc_].dataTables_wrapper table.dataTable thead .sorting_desc_disabled:after {
+    opacity: 0
+}
+
+.DTFC_RightWrapper,
+div[id*=cmc_].dataTables_wrapper .DTFC_RightWrapper,
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollBody table thead .sorting:after,
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollBody table thead .sorting_asc:after,
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollBody table thead .sorting_desc:after {
+    display: none
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollHead table.dataTable {
+    margin-bottom: 0!important
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollBody table {
+    border-top: none;
+    margin-top: 0!important;
+    margin-bottom: 0!important
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable th[role=columnheader]:not(.no-sort) {
+    cursor: pointer
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable th[role=columnheader]:not(.no-sort):after {
+    content: "\21F3";
+    right: 1.5px;
+    top: calc(50% - 8px);
+    position: absolute;
+    opacity: .4;
+    font-size: 11px
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable th[aria-sort=ascending]:not(.no-sort):after {
+    content: "\21E7";
+    opacity: 1
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable th[aria-sort=descending]:not(.no-sort):after {
+    content: "\21E9";
+    opacity: 1
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable th[role=columnheader]:not(.no-sort):hover:after {
+    visibility: visible;
+    opacity: 1
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollBody table tbody tr:first-child td,
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollBody table tbody tr:first-child th {
+    border-top: none
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollFoot>.dataTables_scrollFootInner {
+    box-sizing: content-box
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollFoot>.dataTables_scrollFootInner>table {
+    margin-top: 0!important;
+    border-top: none
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable.table-sm>thead>tr>th {
+    padding-right: 20px
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable.table-sm .sorting:before,
+div[id*=cmc_].dataTables_wrapper table.dataTable.table-sm .sorting_asc:before,
+div[id*=cmc_].dataTables_wrapper table.dataTable.table-sm .sorting_desc:before {
+    top: 5px;
+    right: .85em
+}
+
+div[id*=cmc_].dataTables_wrapper table.dataTable.table-sm .sorting:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable.table-sm .sorting_asc:after,
+div[id*=cmc_].dataTables_wrapper table.dataTable.table-sm .sorting_desc:after {
+    top: 5px
+}
+
+div[id*=cmc_].dataTables_wrapper table.table-bordered.dataTable th {
+    background: #fff;
+    color: #111;
+    border-color: #ddd
+}
+
+div[id*=cmc_].dataTables_wrapper table.table-bordered.dataTable td,
+div[id*=cmc_].dataTables_wrapper table.table-bordered.dataTable th {
+    border-left-width: 0
+}
+
+div[id*=cmc_].dataTables_wrapper table.table-bordered.dataTable td:last-child,
+div[id*=cmc_].dataTables_wrapper table.table-bordered.dataTable th:last-child {
+    border-right-width: 0
+}
+
+div[id*=cmc_].dataTables_wrapper div.dataTables_scrollHead table.table-bordered,
+div[id*=cmc_].dataTables_wrapper table.table-bordered.dataTable tbody td,
+div[id*=cmc_].dataTables_wrapper table.table-bordered.dataTable tbody th {
+    border-bottom-width: 0
+}
+
+div[id*=cmc_].dataTables_wrapper div.table-responsive>div.dataTables_wrapper>div.row {
+    margin: 0
+}
+
+div[id*=cmc_].dataTables_wrapper div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:first-child {
+    padding-left: 0
+}
+
+div[id*=cmc_].dataTables_wrapper div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child {
+    padding-right: 0
+}
+
+div[id*=cmc_].dataTables_wrapper table.DTFC_Cloned tr.even {
+    background-color: #fff;
+    margin-bottom: 0
+}
+
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftHeadWrapper table {
+    border-bottom: none!important;
+    margin-bottom: 0!important
+}
+
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper table {
+    border-top: none;
+    margin: 0!important
+}
+
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper table tbody tr:first-child td,
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper table tbody tr:first-child th {
+    border-top: none
+}
+
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftFootWrapper table {
+    border-top: none;
+    margin-top: 0!important;
+    background-color: #fff
+}
+
+div[id*=cmc_].dataTables_wrapper div.DTFC_Blocker,
+div[id*=cmc_].dataTables_wrapper table.DTFC_Cloned tfoot,
+div[id*=cmc_].dataTables_wrapper table.DTFC_Cloned thead {
+    background-color: #fff
+}
+
+div[id*=cmc_].dataTables_wrapper div.DTFC_LeftWrapper table.dataTable,
+div[id*=cmc_].dataTables_wrapper div.DTFC_RightWrapper table.dataTable {
+    margin-bottom: 0;
+    z-index: 2
+}
+
+div[id*=cmc_].dataTables_wrapper div.DTFC_LeftWrapper table.dataTable.no-footer,
+div[id*=cmc_].dataTables_wrapper div.DTFC_RightWrapper table.dataTable.no-footer {
+    border-bottom: none
+}
+
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyLiner {
+    overflow: hidden!important
+}
+
+div[id*=cmc_].dataTables_wrapper .dataTables_scroll {
+    width: calc(100% - 1px);
+    overflow: hidden;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px -3px #222
+}
+
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper table,
+div[id*=cmc_].dataTables_wrapper .DTFC_LeftHeadWrapper table {
+    table-layout: auto!important;
+    box-sizing: border-box!important;
+    background-color: #fff!important
+}
+
+div[id*=cmc_].dataTables_wrapper .dataTables_scrollBody,
+div[id*=cmc_].dataTables_wrapper .dataTables_scrollBody table,
+div[id*=cmc_].dataTables_wrapper .dataTables_scrollHead,
+div[id*=cmc_].dataTables_wrapper .dataTables_scrollHead table {
+    width: 100%!important;
+    overflow-y: hidden!important;
+    box-sizing: content-box!important
+}
+
+div[id*=cmc_].dataTables_wrapper table td:nth-of-type(1),
+div[id*=cmc_].dataTables_wrapper table th:nth-of-type(1) {
+    width: 20px!important;
+    text-align: center;
+    white-space: nowrap
+}
+
+div[id*=cmc_].dataTables_wrapper table td:nth-of-type(2),
+div[id*=cmc_].dataTables_wrapper table th:nth-of-type(2) {
+    min-width: 75px!important;
+    max-width: 110px!important;
+    width: 110px;
+    white-space: unset;
+    word-wrap: break-word
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc-changes,
+#cryptocurency-market-cap-wrapper tbody .cmc-price,
+#cryptocurency-market-cap-wrapper tbody .cmc_live_cap,
+#cryptocurency-market-cap-wrapper tbody .cmc_live_supply,
+#cryptocurency-market-cap-wrapper tbody .cmc_live_vol,
+.cmc-market-cap,
+.cmc-vol {
+    white-space: nowrap
+}
+
+div[id*=cmc_historical].dataTables_wrapper table td:nth-of-type(1),
+div[id*=cmc_historical].dataTables_wrapper table td:nth-of-type(2),
+div[id*=cmc_historical].dataTables_wrapper table th:nth-of-type(1),
+div[id*=cmc_historical].dataTables_wrapper table th:nth-of-type(2),
+div[id*=cmc_top-gainer-lossers].dataTables_wrapper table td:nth-of-type(1),
+div[id*=cmc_top-gainer-lossers].dataTables_wrapper table td:nth-of-type(2),
+div[id*=cmc_top-gainer-lossers].dataTables_wrapper table th:nth-of-type(1),
+div[id*=cmc_top-gainer-lossers].dataTables_wrapper table th:nth-of-type(2) {
+    width: auto!important
+}
+
+#cmc_coinslist_wrapper .table-striped>tbody>tr:nth-of-type(odd) td:nth-of-type(1),
+#cmc_coinslist_wrapper .table-striped>tbody>tr:nth-of-type(odd) td:nth-of-type(2),
+#cmc_historical_tbl_wrapper .table-striped>tbody>tr:nth-of-type(odd) td:nth-of-type(1) {
+    background-color: #f9f9f9
+}
+
+#cmc_coinslist_wrapper .table-striped>tbody>tr:nth-of-type(even) td:nth-of-type(1),
+#cmc_coinslist_wrapper .table-striped>tbody>tr:nth-of-type(even) td:nth-of-type(2),
+#cmc_historical_tbl_wrapper .table-striped>tbody>tr:nth-of-type(even) td:nth-of-type(1) {
+    background-color: #fff
+}
+
+#cmc_coinslist_wrapper .table-striped>tbody>tr td:nth-of-type(2),
+#cmc_historical_tbl_wrapper .table-striped>tbody>tr td:nth-of-type(1) {
+    box-shadow: 2px 2px 4px 0 #ddd
+}
+
+#cmc_coinslist_wrapper .bottom,
+#cmc_coinslist_wrapper .top {
+    position: absolute;
+    z-index: 11;
+    right: 0
+}
+
+#cmc_coinslist_wrapper .top {
+    top: 15px
+}
+
+#cmc_coinslist_wrapper .bottom {
+    bottom: -60px;
+    width: 100%;
+}
+
+td .cmc-charts {
+    width: 162px;
+    max-width: 200px;
+    display: block;
+    height: 40px;
+    margin: 0 auto
+}
+
+.cmc-charts canvas[data-content=undefined] {
+    display: none!important
+}
+
+th#cmc_weekly_charts_head {
+    width: 190px
+}
+
+#cmc-chart-preloader,
+.cmc-chart,
+.cmc-coin-historical-data {
+    width: 100%;
+    display: inline-block
+}
+
+.cmc-sparkline-charts[data-content=""] {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-family: monospace
+}
+
+#jqstooltip {
+    display: table!important;
+    padding: 2px!important
+}
+
+.top-scroll-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 20px;
+    cursor: pointer;
+    margin-bottom: -10px
+}
+
+.top-scroll {
+    display: inline-block;
+    height: 20px;
+    cursor: pointer
+}
+
+.top-scroll-wrapper::-webkit-scrollbar {
+    cursor: pointer
+}
+
+.top-scroll-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+.top-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #999
+}
+
+.top-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #444
+}
+
+.cmc-chart {
+    height: 500px;
+    margin: 10px auto
+}
+
+#cmc-chart-preloader {
+    text-align: center;
+    background: rgba(237, 237, 237, .3);
+    border: 1px solid #ebebeb;
+    min-height: 300px
+}
+#cmc-chart-preloader b{
+    color: #0e0e0e;
+}
+
+.cmc-coin-historical-data {
+    position: relative;
+    margin: 80px auto!important;
+    box-shadow: 0 0 2px 0 #ddd
+}
+
+div#cmc_historical_tbl_paginate {
+    position: absolute;
+    bottom: -60px;
+    right: 0
+}
+
+.cmc-chart img.cmc-preloader {
+    width: 15%;
+    opacity: .7;
+    margin-top: 75px
+}
+
+.cmc-chart .amcharts-chart-div a[title="JavaScript charts"] {
+    top: inherit!important;
+    bottom: 30px!important;
+    box-shadow: none;
+    font-size: 9px!important;
+    color: #a7a7a7!important;
+    right: 5px!important;
+    left: inherit!important
+}
+
+.cmc-chart .amcharts-period-selector-div fieldset {
+    margin-bottom: 5px
+}
+
+.cmc-chart .amcharts-scrollbar-chart-div .amcharts-chart-div a,
+.cmc-chart .amcharts-stock-panel-div-stockPanel1 .amcharts-chart-div a {
+    display: none!important
+}
+
+.cmc-chart .amcharts-export-menu-top-right {
+    top: 35px
+}
+
+.cmc-chart input.amChartsButton.amcharts-period-input,
+.cmc-chart input.amChartsButtonSelected.amcharts-period-input-selected {
+    background: #efefef;
+    color: #222;
+    padding: 7px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 13px;
+    border-radius: 0
+}
+
+.cmc-chart input.amChartsButton.amcharts-period-input:hover {
+    background: #323232;
+    color: #fff
+}
+
+.cmc-chart input.amChartsButtonSelected.amcharts-period-input-selected {
+    padding: 10px;
+    background: #222;
+    color: #fff
+}
+
+.cmc-chart input.amChartsInputField.amcharts-end-date-input,
+.cmc-chart input.amChartsInputField.amcharts-start-date-input {
+    background: #f3f3f3;
+    color: #222;
+    padding: 3px;
+    border-radius: 0;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 13px
+}
+
+span.cmc_affiliate_links {
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto 20px;
+}
+
+span.cmc_affiliate_links a {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 0 #8c8c8c
+}
+
+span.cmc_affiliate_links a.cmc_buy {
+    background: green;
+    margin-right: 0%
+}
+
+span.cmc_affiliate_links a.cmc_sell {
+    background: red;
+    margin-left: 2%;
+    float: right
+}
+
+span.cmc_affiliate_links a:hover {
+    opacity: .9
+}
+
+.twitter-typeahead .tt-hint,
+.twitter-typeahead .tt-query {
+    margin-bottom: 0
+}
+
+span.twitter-typeahead input.typeahead {
+    padding: 0 5px;
+    margin: 0 !important;
+    height: 48px;
+    border: 1px solid #ddd;
+    background-color: #ccc
+}
+
+.tt-dropdown-menu,
+.tt-menu,
+input.tt-hint {
+    background-color: #fff
+}
+
+input.typeahead.tt-input {
+    color: #222
+}
+
+input.tt-hint {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.tt-dropdown-menu {
+    min-width: 160px;
+    margin-top: 2px;
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box
+}
+
+.tt-suggestion {
+    display: block;
+    padding: 3px 20px
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+    color: #fff
+}
+
+.tt-hint,
+.tt-query {
+    width: 396px;
+    height: 30px;
+    padding: 8px 12px;
+    font-size: 24px;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: 0
+}
+
+.tt-query {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+}
+
+.tt-hint {
+    color: #999
+}
+
+.tt-menu {
+    width: auto;
+    min-width: 245px;
+    margin-top: 12px;
+    padding: 8px 0;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
+}
+
+.tt-menu a {
+    text-decoration: none
+}
+
+.tt-suggestion {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    color: #fff;
+    background-color: #0097cf
+}
+
+.tt-suggestion p {
+    margin: 0
+}
+
+.cmc_price_conversion {
+    display: inline-block;
+    width: 78px;
+    margin: 15px 7px 15px 0;
+    vertical-align: middle;
+    padding: 0
+}
+
+.cmc_price_conversion select {
+    width: 100%;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) #f7f7f7;
+    border: 1px solid #ddd;
+    color: #6d6d6d;
+    border-radius: 2px;
+    height: 48px;
+    padding: 0 5px;
+    -moz-appearance: menulist!important;
+    -webkit-appearance: menulist!important;
+    appearance: menulist!important;
+    margin: 0 !important;
+}
+
+.cmc_pagi,
+.cmc_search {
+    margin: 15px 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.cmc_search {
+    width: 210px
+}
+
+.cmc_pagi {
+    width: 58%
+}
+
+.cmc_p_wrp,
+.cmc_pagi {
+    text-align: right
+}
+
+.cmc_p_wrp {
+    width: 100%
+}
+
+#cryptocurency-market-cap-wrapper {
+    width: 100%;
+    margin: 0 auto 80px;
+    padding: 0;
+    display: inline-block;
+    clear: both;
+    position: relative
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc_coin_logo {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc_coin_logo img {
+    max-width: 20px;
+    height: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0
+}
+
+.cmc-gainer-lossers tbody .cmc_coin_logo {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle
+}
+
+.cmc-gainer-lossers tbody .cmc_coin_logo img {
+    max-width: 20px;
+    height: 20px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0
+}
+
+.cmc-gainer-lossers tbody .cmc-name {
+    display: block;
+    line-break: break-word;
+    word-wrap: break-word;
+    text-align: left;
+    float: left;
+}
+
+.cmc-gainer-lossersr tbody .cmc_coin_name {
+    display: block;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-break: break-word
+}
+
+.cmc-gainer-lossers tbody .cmc-price {
+    padding: 1px;
+    border-radius: 3px
+}
+
+.cmc-gainer-lossers tbody .cmc_coin_symbol {
+    font-size: 10px;
+    display: inline-block
+}
+
+.cmc-gainer-lossers tbody span.changes.up {
+    color: green
+}
+
+.cmc-gainer-lossers tbody span.changes.down {
+    color: red
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc-name {
+    display: block;
+    line-break: break-word;
+    word-wrap: break-word;
+    text-align: left;
+    float: left;
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc_coin_name {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-break: break-word
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc-price {
+    padding: 1px;
+    border-radius: 3px
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc_coin_symbol {
+    font-size: 10px;
+    display: inline-block
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc-changes.cmc-up {
+    color: green
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc-changes.cmc-down {
+    color: red
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc-coin-chart {
+    display: inline-block;
+    text-align: center
+}
+
+#cryptocurency-market-cap-wrapper tbody .small-chart-area {
+    display: inline-block;
+    height: 40px;
+    width: 135px;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle
+}
+
+.cmc_spinner {
+    text-align: center
+}
+
+.cmc_spinner>div {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both
+}
+
+.cmc_spinner .bounce1 {
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+
+.cmc_spinner .bounce2 {
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    100%,
+    80% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    100%,
+    80% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+img.cmc-small-preloader {
+    width: auto;
+    height: 40px;
+    opacity: .7
+}
+
+#cryptocurency-market-cap-wrapper tbody .cmc-coin-chart img {
+    filter: saturate(5);
+    border: 1px solid #ddd;
+    width: 135px;
+    height: 40px
+}
+
+#cryptocurency-market-cap-wrapper tbody tr:hover .cmc-coin-chart img {
+    filter: invert(90%);
+    border: 1px solid #ffc714
+}
+
+#cryptocurency-market-cap-wrapper .DTFC_LeftBodyLiner {
+    overflow: hidden!important
+}
+
+#cmc_coinslist_wrapper::-webkit-scrollbar,
+#cmc_historical_tbl_wrapper::-webkit-scrollbar {
+    cursor: pointer
+}
+
+#cmc_coinslist_wrapper::-webkit-scrollbar-track,
+#cmc_historical_tbl_wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+#cmc_coinslist_wrapper::-webkit-scrollbar-thumb,
+#cmc_historical_tbl_wrapper::-webkit-scrollbar-thumb {
+    background: #999
+}
+
+#cmc_coinslist_wrapper::-webkit-scrollbar-thumb:hover,
+#cmc_historical_tbl_wrapper::-webkit-scrollbar-thumb:hover {
+    background: #444
+}
+
+div#coin-market-cap-widget_filter,
+div#coin-market-cap-widget_info,
+div#coin-market-cap-widget_length,
+div#coin-market-cap-widget_paginate {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    margin: 0 auto;
+    line-break: auto;
+    word-wrap: break-word
+}
+
+div#coin-market-cap-widget_filter,
+div#coin-market-cap-widget_paginate {
+    float: right
+}
+
+div#coin-market-cap-widget_filter label,
+div#coin-market-cap-widget_length label {
+    display: inline-block;
+    padding: 0;
+    margin: 0
+}
+
+div#coin-market-cap-widget_filter label input[type=search],
+div#coin-market-cap-widget_length label select {
+    display: inline-block;
+    max-width: 150px;
+    margin: 0 4px 10px;
+    height: 40px
+}
+
+div#coin-market-cap-widget_paginate a {
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    text-decoration: none;
+    box-shadow: none;
+    padding: 5px;
+    margin: 2px 4px;
+    cursor: pointer;
+    display: block;
+    color: #636363;
+    min-width: 32px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    float: left
+}
+
+div#coin-market-cap-widget_paginate span.ellipsis {
+    float: left
+}
+
+div#coin-market-cap-widget_paginate a:hover {
+    background: #fff
+}
+
+.cmc-search-sugestions a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    box-shadow: none!important;
+    font-size: 12px
+}
+
+.cmc-search-sugestions img {
+    display: inline-block!important;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: middle
+}
+
+.cmc_coin_details {
+    display: inline-block;
+    width: 100%;
+    text-align: center
+}
+
+.cmc_coin_details ul {
+    margin: 0!important;
+    padding: 0!important;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    list-style: none!important
+}
+
+.cmc_coin_details li {
+    float: left;
+    list-style: none!important;
+    margin: 4px 12px;
+    min-height: 85px;
+    width: 25%;
+    max-width: 200px
+}
+
+.cmc_coin_details li:after,
+.cmc_coin_details li:before {
+    display: none
+}
+
+.cmc_coin_details li:nth-of-type(1) {
+    margin: 4px 12px 4px 0;
+    min-height: 200px;
+    max-width: 132px
+}
+
+.cmc_coin_details li strong:nth-of-type(1) {
+    background: #f1f1f1;
+    padding: 1px 5px;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #eee;
+    color: #3c3c3c;
+    margin-bottom: 3px;
+    margin-top: 3px
+}
+
+.cmc_coin_details .coin-name {
+    text-align: center
+}
+
+.cmc_coin_details li .coin-name strong {
+    background: 0 0;
+    border: 0
+}
+
+.cmc_coin_details span.cmc_coin_price {
+    font-size: 1.4em;
+    padding: 5px;
+    border-radius: 2px;
+    width: 100%;
+    display: inline-block
+}
+
+.cmc-extra-info ul a,
+.cmc-extra-info ul a li {
+    vertical-align: middle;
+    font-size: 10px;
+    line-height: 13px
+}
+
+.cmc_coin_details .cmc_live_updates.price-plus span.cmc_coin_price {
+    background: green;
+    color: #fff
+}
+
+.cmc_coin_details .cmc_live_updates.price-minus span.cmc_coin_price {
+    background: red;
+    color: #fff
+}
+
+#cmc-container-chart .cmc-chart .amChartsPanel svg {
+    overflow: visible;
+    /* margin-left: 15px; */
+}
+
+#cryptocurency-market-cap-wrapper tbody .changes.down {
+    color: red;
+}
+
+#cryptocurency-market-cap-wrapper tbody .changes.up {
+    color: green;
+}
+
+.cmc_coin_price_change .cmc-up {
+    color: green
+}
+
+.cmc_coin_price_change .cmc-down {
+    color: red
+}
+
+.cmc_coin_ath_per .cmc-down {
+    color: red
+}
+
+.cmc_coin_ath_per .cmc-up {
+    color: green
+}
+
+.cmc_coin_ath_per.cmc-down {
+    color: red
+}
+
+.cmc_coin_ath_per.cmc-up {
+    color: green
+}
+
+.cmc-extra-info {
+    display: inline-block;
+    width: 100%;
+    clear: both
+}
+
+.cmc-extra-info ul {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.cmc-extra-info ul a {
+    display: table;
+    width: Calc(11% - 2px);
+    height: 50px;
+    text-decoration: none;
+    text-shadow: none;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 5px 5px 5px 32px;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+    background-repeat: no-repeat!important;
+    background-position: left!important;
+    background-size: 38px auto!important;
+    color: #474747;
+    -webkit-transition: background-size 1s;
+    transition: background-size 1s;
+    box-shadow: 1px 1px 6px -2px #878787
+}
+
+.cmc-extra-info ul a li {
+    display: table-cell;
+    text-align: left;
+    font-weight: 700
+}
+
+.ccpw-preloader,
+.cmc-extra-info ul a li:after,
+.cmc-extra-info ul a li:before,
+.cmc-preloader {
+    display: none
+}
+
+.cmc-extra-info ul a:nth-child(n+6) {
+    border-bottom: 0
+}
+
+.cmc-extra-info ul a:nth-child(5) {
+    border-right: 0
+}
+
+.cmc-extra-info ul a.blockexplorer {
+    background: url(../../images/blockexplorer.png)
+}
+
+.cmc-extra-info ul a.firstannounced {
+    background: url(../../images/firstannounced.png)
+}
+
+.cmc-extra-info ul a.facebook {
+    background: url(../../images/facebook.png)
+}
+
+.cmc-extra-info ul a.twitter {
+    background: url(../../images/twitter.png)
+}
+
+.cmc-extra-info ul a.github {
+    background: url(../../images/github.png)
+}
+
+.cmc-extra-info ul a.reddit {
+    background: url(../../images/reddit.png)
+}
+
+.cmc-extra-info ul a.youtube {
+    background: url(../../images/youtube.png)
+}
+
+.cmc-extra-info ul a.whitepaper {
+    background: url(../../images/whitepaper.png)
+}
+
+.cmc-extra-info ul a.website {
+    background: url(../../images/website.png)
+}
+
+.cmc-extra-info ul a:hover {
+    color: #777;
+    background-size: 42px auto!important;
+    box-shadow: 1px 1px 6px -2px #878787
+}
+
+#ctf a,
+a.paginate_button {
+    box-shadow: none
+}
+
+i.cmc-up {
+    color: green
+}
+
+i.cmc-down {
+    color: red
+}
+
+.cmc_pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px
+}
+
+.cmc_pagination>li {
+    display: inline;
+    padding: 0;
+    margin: 0
+}
+
+.cmc_pagination>li>a,
+.cmc_pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+    box-shadow: none;
+    font-size: 13px;
+    height: 48px
+}
+
+.cmc_pagination>li:first-child>a,
+.cmc_pagination>li:first-child>span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px
+}
+
+.cmc_pagination>li:last-child>a,
+.cmc_pagination>li:last-child>span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px
+}
+
+.cmc_pagination>li>a:focus,
+.cmc_pagination>li>a:hover,
+.cmc_pagination>li>span:focus,
+.cmc_pagination>li>span:hover {
+    z-index: 2;
+    background-color: #eee;
+    border-color: #ddd
+}
+
+.cmc_pagination>.active>a,
+.cmc_pagination>.active>a:focus,
+.cmc_pagination>.active>a:hover,
+.cmc_pagination>.active>span,
+.cmc_pagination>.active>span:focus,
+.cmc_pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    cursor: default
+}
+
+.cmc_pagination>.disabled>a,
+.cmc_pagination>.disabled>a:focus,
+.cmc_pagination>.disabled>a:hover,
+.cmc_pagination>.disabled>span,
+.cmc_pagination>.disabled>span:focus,
+.cmc_pagination>.disabled>span:hover {
+    color: #777;
+    background-color: #fff;
+    border-color: #ddd;
+    cursor: not-allowed
+}
+
+.cmc_pagination-lg>li>a,
+.cmc_pagination-lg>li>span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333
+}
+
+.cmc_pagination-lg>li:first-child>a,
+.cmc_pagination-lg>li:first-child>span {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px
+}
+
+.cmc_pagination-lg>li:last-child>a,
+.cmc_pagination-lg>li:last-child>span {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px
+}
+
+.cmc_pagination-sm>li>a,
+.cmc_pagination-sm>li>span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.cmc_pagination-sm>li:first-child>a,
+.cmc_pagination-sm>li:first-child>span {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px
+}
+
+.cmc_pagination-sm>li:last-child>a,
+.cmc_pagination-sm>li:last-child>span {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.widget table#cmc_top-gainer-lossers td,
+.widget table#cmc_top-gainer-lossers th {
+    font-size: 12px;
+    max-width: 32%!important;
+    white-space: unset!important
+}
+
+table#cmc_top-gainer-lossers td,
+table#cmc_top-gainer-lossers th {
+    max-width: 32%!important;
+    white-space: unset!important
+}
+
+div[id*=cmc_] .bottom div.dataTables_filter input[type="search"] {
+    display: none !important;
+}
+@media only screen and (min-width:640px) {
+    .price-plus .cmc-price {
+        background-color: #099b3d!important;
+        color: #fff!important
+    }
+    .price-minus .cmc-price {
+        background-color: #d61147!important;
+        color: #fff!important
+    }
+}
+
+@media only screen and (max-width:640px) {
+     .price-plus .cmc-price {
+        background-color: #099b3d!important;
+        color: #fff!important
+    }
+    .price-minus .cmc-price {
+        background-color: #d61147!important;
+        color: #fff!important
+    }
+   div[id*=cmc_] .bottom div.dataTables_filter input[type="search"] {
+    display: none !important;
+    }
+    div[id*=cmc_] .top div#cmc_coinslist_paginate {
+    display: none !important;
+    }
+    div#coin-market-cap-widget_filter,
+    div#coin-market-cap-widget_paginate {
+        float: left
+    }
+    .cmc_pagi,
+    span.twitter-typeahead,
+    span.twitter-typeahead input.typeahead {
+        width: 100%
+    }
+    .cmc_search {
+        width: calc(100% - 120px)
+    }
+    #cmc_coinslist .btn_cmc_watch_list {
+        position: absolute;
+        top: 2px;
+        left: calc(50% - 9px);
+        font-size: 10px;
+    }
+    #cmc_toggel_fav {
+        font-size: 18px;
+    }
+    #cmc_coinslist_wrapper .bottom {
+        width: 100%
+    }
+    .cmc_coin_details li {
+        width: calc(50% - 10.5px);
+        margin: 5px!important
+    }
+    div[id*=cmc_].dataTables_wrapper div.dataTables_info,
+    div[id*=cmc_].dataTables_wrapper div.dataTables_paginate {
+        width: 100%
+    }
+    div[id*=cmc_].dataTables_wrapper div.dataTables_filter input {
+        width: 140px!important
+    }
+    div[id*=cmc_].dataTables_wrapper div.dataTables_filter label,
+    div[id*=cmc_].dataTables_wrapper div.dataTables_length label {
+        font-size: 11px
+    }
+    div[id*=cmc_].dataTables_wrapper table.dataTable th {
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+        padding: 5px
+    }
+    div[id*=cmc_].dataTables_wrapper table.dataTable td {
+        font-size: 12px;
+        text-align: center;
+        padding: 5px
+    }
+    div[id*=cmc_].dataTables_wrapper .DTFC_LeftBodyWrapper,
+    div[id*=cmc_].dataTables_wrapper .DTFC_LeftHeadWrapper {
+        border-right: 1px solid #828282;
+        box-shadow: 1px 0 2px #9b9b9b
+    }
+    div[id*=cmc_].dataTables_wrapper table.dataTable tr td:nth-of-type(3),
+    div[id*=cmc_].dataTables_wrapper table.dataTable tr th:nth-of-type(3) {
+        padding-left: 15px
+    }
+    div[id*=cmc_].dataTables_wrapper table td:nth-of-type(1),
+    div[id*=cmc_].dataTables_wrapper table th:nth-of-type(1) {
+        min-width: 18px!important;
+        max-width: 32px!important;
+        width: auto;
+        padding-right: 10px!important
+    }
+    div[id*=cmc_historical].dataTables_wrapper table td:nth-of-type(1),
+    div[id*=cmc_historical].dataTables_wrapper table th:nth-of-type(1) {
+        width: auto!important;
+        min-width: 52px!important;
+        max-width: 56px!important
+    }
+    div[id*=cmc_].dataTables_wrapper table td:nth-of-type(2),
+    div[id*=cmc_].dataTables_wrapper table th:nth-of-type(2) {
+        min-width: 70px!important;
+        width: 85px;
+        max-width: 85px!important;
+        white-space: unset;
+        word-wrap: break-word;
+        word-break: break-word;
+        text-align: left
+    }
+    div[id*=cmc_historical].dataTables_wrapper table td:nth-of-type(2),
+    div[id*=cmc_historical].dataTables_wrapper table th:nth-of-type(2) {
+        min-width: 46px!important;
+        width: 56px;
+        max-width: 58px!important;
+        word-break: keep-all;
+        word-wrap: inherit;
+    }
+    div[id*=cmc_top-gainer-lossers].dataTables_wrapper table.cmc-top-basic td:nth-of-type(1),
+    div[id*=cmc_top-gainer-lossers].dataTables_wrapper table.cmc-top-basic td:nth-of-type(2),
+    div[id*=cmc_top-gainer-lossers].dataTables_wrapper table.cmc-top-basic th:nth-of-type(1),
+    div[id*=cmc_top-gainer-lossers].dataTables_wrapper table.cmc-top-basic th:nth-of-type(2) {
+        width: auto!important;
+        min-width: inherit!important;
+        max-width: 62px!important
+    }
+    .amChartsPeriodSelector.amcharts-period-selector-div div:nth-of-type(1) {
+        display: none!important
+    }
+    .cmc-extra-info ul a {
+        width: Calc(50% - 2px);
+        background-size: auto 90%!important
+    }
+    .cmc-extra-info ul a:hover {
+        background-size: auto 100%!important
+    }
+    .cmc_calculator_block:first-child {
+        width: 100%!important;
+        margin: 0 0 20px!important
+    }
+    .cmc_calculator_block {
+        width: 49%!important;
+        margin-right: 1%!important
+    }
+    .cmc_calculator h2,
+    .cmc_calculator h2 div.equalsto {
+        font-size: 16px
+    }
+    .cmc_calculator h2 div.equalsto {
+        margin: 0 5px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #cryptocurency-market-cap-wrapper .DTFC_LeftBodyWrapper {
+        border-right: 2px solid #ccc!important
+    }
+    #cryptocurency-market-cap-wrapper tbody .cmc_coin_name {
+        font-size: 9px
+    }
+    #cryptocurency-market-cap-wrapper tbody td,
+    #cryptocurency-market-cap-wrapper th {
+        font-size: 13px
+    }
+    #cryptocurency-market-cap-wrapper th:first-child {
+        padding-right: 18px;
+        font-size: 10px
+    }
+    #cryptocurency-market-cap-wrapper #cmc-top-gainer-lossers_wrapper th:first-child {
+        padding-right: 28px;
+        font-size: 13px
+    }
+    div#coin-market-cap-widget_filter,
+    div#coin-market-cap-widget_info,
+    div#coin-market-cap-widget_length,
+    div#coin-market-cap-widget_paginate {
+        text-align: left!important;
+        width: 100%;
+        font-size: 14px
+    }
+    div#coin-market-cap-widget_filter label input[type=search],
+    div#coin-market-cap-widget_length label select {
+        height: 20px;
+        font-size: 12px;
+        padding: 1px;
+        margin: 0 4px 5px
+    }
+/**
+am4charts 
+*/
+    .amcharts-range-selector-wrapper.amcharts-range-selector-bottom {  
+   
+    display: grid;
+}
+}
+
+.fb-comments iframe {
+    width: 100%!important
+}
+
+#cmc_toggel_fav,
+.btn_cmc_watch_list {
+    cursor: pointer;
+}
+
+#cmc_toggel_fav {
+    display: inline-block;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.cmc_icon-star:before {
+    color: #ffc41f;
+}
+
+.tradingview-widget-container.autosize {
+    height: 550px!important;
+}
+
+.cmc-slidecontainer input[type="range"] {
+    -webkit-appearance: none;
+    margin: 0 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 7px;
+    background: #CCD1D9;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+}
+
+.cmc-slidecontainer input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 0;
+    border: 10px solid transparent;
+    border-top-color: #3861fb;
+    background: transparent;
+    box-shadow: none;
+    transition: background .3s ease-in-out;
+}
+
+.cmc-slidecontainer input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+
+/**
+am4charts 
+*/
+.amcharts-range-selector-wrapper {
+   
+    margin-bottom: 0;
+}
+.cmc-am4-range button.amcharts-range-selector-period-button {
+    color: #0e0e0e;
+    background: #ddd;
+    padding: 7px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 13px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.cmc-am4-range button.amcharts-range-selector-period-button.selected {
+    padding: 7px;
+    background: #222;
+    color: #fff;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 13px;
+    border-radius: 0;
+    cursor: pointer;
+}
+.cmc-am4-range .amcharts-range-selector-range-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cmc-am4-range .amcharts-range-selector-from-input,.cmc-am4-range .amcharts-range-selector-to-input{
+    padding: 5px;
+}
+.amcharts-range-selector-range-wrapper span {
+    margin: 6px 6px;
+}
+.amcharts-range-selector-wrapper.amcharts-range-selector-bottom {
+    margin-top: 10px;
+}
+.tradingview-widget-container * {
+    max-width: 100%;
+}
+span.amcharts-range-selector-title.amcharts-range-selector-period-title {    margin-right: 5px;}
+
+ /**
+ * placeholder-loading v0.4.0
+ * Author: Zalog (https://www.zalog.ro/)
+ * License: MIT
+ **/
+ .ph-item{position:relative;display:flex;flex-wrap:wrap;margin-bottom:30px;padding:30px 15px 15px;overflow:hidden;direction:ltr;background-color:#fff;border:1px solid #e6e6e6;border-radius:2px}.ph-item,.ph-item *,.ph-item :after,.ph-item :before{box-sizing:border-box}.ph-item:before{position:absolute;top:0;right:0;bottom:0;left:50%;z-index:1;width:500%;margin-left:-250%;background:linear-gradient(90deg,hsla(0,0%,100%,0) 46%,hsla(0,0%,100%,.35) 50%,hsla(0,0%,100%,0) 54%) 50% 50%;-webkit-animation:phAnimation .8s linear infinite;animation:phAnimation .8s linear infinite;content:" ";pointer-events:none}.ph-item>*{display:flex;flex:1 1 auto;flex-flow:column;margin-bottom:15px;padding-right:15px;padding-left:15px}.ph-row{display:flex;flex-wrap:wrap;margin-top:-7.5px}.ph-row div{height:10px;margin-top:7.5px;background-color:#ced4da}.ph-row .big,.ph-row.big div{height:20px}.ph-row .empty{background-color:hsla(0,0%,100%,0)}.ph-col-2{flex:0 0 16.66667%}.ph-col-4{flex:0 0 33.33333%}.ph-col-6{flex:0 0 50%}.ph-col-8{flex:0 0 66.66667%}.ph-col-10{flex:0 0 83.33333%}.ph-col-12{flex:0 0 100%}[class*=ph-col]{direction:ltr}[class*=ph-col]>*+.ph-row{margin-top:0}[class*=ph-col]>*+*{margin-top:7.5px}.ph-avatar{position:relative;width:100%;min-width:60px;overflow:hidden;background-color:#ced4da;border-radius:50%}.ph-avatar:before{display:block;padding-top:100%;content:" "}.ph-picture{width:100%;height:120px;background-color:#ced4da}@-webkit-keyframes phAnimation{0%{transform:translate3d(-30%,0,0)}to{transform:translate3d(30%,0,0)}}@keyframes phAnimation{0%{transform:translate3d(-30%,0,0)}to{transform:translate3d(30%,0,0)}}

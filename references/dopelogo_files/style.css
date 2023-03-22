@@ -1,0 +1,463 @@
+html {
+  scroll-behavior: smooth !important;
+  font-family: 'Poppins';
+}
+
+h1 {
+  font-size: 3.5rem !important;
+}
+h4 {
+  font-size: 2rem !important;
+}
+
+
+
+.btn.connected:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.hero-animation {
+  position:relative;
+  animation:hero 1s ease-out forwards;
+  animation-fill-mode: both;
+  animation-iteration-count:1;
+  animation-delay: 0.4s;
+}
+
+@keyframes hero
+{ from {top:75px; opacity: 0;}
+to {top:0px; opacity: 1}
+}
+
+@-webkit-keyframes hero /* Safari and Chrome */
+{
+from {top:57px; opacity: 0;}
+to {top:0px; opacity: 1;}
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 2rem;
+}
+
+table {
+  font-family: 'Poppins', sans-serif;
+  line-height: 2rem;
+  table-layout: fixed;
+}
+
+ol > li{
+  font-family: 'Poppins', sans-serif;
+  line-height: 2rem;
+  table-layout: fixed;
+}
+
+td {
+  word-wrap: break-word;
+  text-align: inherit !important;
+}
+th {
+  word-wrap: break-word;
+  text-align: inherit !important;
+}
+
+
+button ol {
+  font-family: Aldrich !important;
+}
+
+
+
+.tooltip-u {
+  border-bottom: 1px dotted #6d6d6d !important;
+  text-decoration: none;
+}
+
+.btn {
+  z-index: 0 !important;
+}
+
+.sidenav-overlay {
+  z-index: 0 !important;
+}
+
+.main-color {
+  background-color: #f8f8f8 !important;
+  /* background-color: #fafafa !important; */
+}
+
+
+.sidenav-trigger {
+  color: #4cade6;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.icon-block .material-icons.icon-lg {
+  font-size: 40px !important;
+}
+
+footer.page-footer {
+  margin: 0;
+  color: #289fe4;
+}
+
+.btn-round.btn-large {
+  border-radius: 24px;
+}
+
+.btn-round {
+  border-radius: 24px;
+}
+
+
+
+.flare-finance-background-color {
+  color: #D94E49
+}
+
+.flare-finance {
+  color: #D94E49
+}
+.flare-finance-alt {
+  color: #bd5f5b
+}
+
+.p-top-36 {
+  padding-top: 36px !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.spacer-y {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.box-shadow:hover {
+  -webkit-box-shadow: 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 11px 15px -7px rgb(0 0 0 / 20%);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 11px 15px -7px rgb(0 0 0 / 20%);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 11px 15px -7px rgb(0 0 0 / 20%);
+}
+
+.spacer-bottom-l {
+  padding-bottom: 8.8rem !important;
+}
+
+.spacer-bottom {
+  padding-bottom: 6.4rem !important;
+}
+
+.spacerm-bottom {
+  margin-bottom: 6.4rem !important;
+}
+
+.spacer-bottom-m {
+  padding-bottom: 4rem !important;
+}
+
+.spacer-bottom-s {
+  padding-bottom: 1.75rem !important;
+}
+
+.spacer-bottom-xs {
+  padding-bottom: 1rem !important;
+}
+
+.spacer-top-l {
+  padding-top: 10rem !important;
+}
+
+.spacerm-top-l {
+  margin-top: 10rem !important;
+}
+.spacerm-top-m {
+  margin-top: 4rem !important;
+}
+.spacerm-top-s {
+  margin-top: 2rem !important;
+}
+
+.spacer-top-m {
+  padding-top: 4rem !important;
+}
+.spacer-top-s {
+  padding-top: 2rem !important;
+}
+
+.spacer-top-xs {
+  padding-top: 1rem !important;
+}
+
+
+.spacer-y-xs {
+  padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
+}
+
+
+
+.hider {
+  visibility: hidden !important;
+}
+
+.shower {
+  visibility: visible;
+}
+
+
+.full-height {
+  min-height: 100%;
+}
+
+
+.alert.success {
+  background-color: aquamarine;
+}
+.alert.error {
+  background-color: crimson;
+  color: whitesmoke
+}
+.alert.warning {
+  background-color: rgba(255, 140, 201, 0.246);
+  color: #252525
+}
+
+
+
+#hero {
+  height: 600px !important;
+}
+
+.row.contact-row {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.contact-img {
+  background-image: url("/static/imgs/contact-main.webp");
+  background-position: calc(100% - 12rem) calc(100%);
+  background-repeat: no-repeat;
+  width: 100% !important;
+}
+
+.homepage-hero-position {
+  padding-top: 4rem !important;
+}
+.homepage-hero {
+  background-image: url("/static/imgs/homepage-hero.svg");
+  background-position: calc(100%);
+  background-position-y: -5rem;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  height: 100%;
+
+  position: absolute !important;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.homepage-mid {
+  background-image: url("/static/imgs/homepage-mid.svg");
+  background-position: calc(100%);
+  /* background-position-y: -5rem; */
+  background-repeat: no-repeat;
+  width: 100% !important;
+}
+
+.homepage-last {
+  background-image: url("/static/imgs/homepage-last.svg");
+  background-position: calc(100%);
+  /* background-position-y: -5rem; */
+  background-repeat: no-repeat;
+  width: 100% !important;
+}
+
+
+@media (min-width: 1640px) {
+  /* .homepage-hero {
+    background-position: calc(100% + 100px);
+    background-position-y: 0rem;
+  } */
+
+  .homepage-mid {
+    background-position: calc(100% - 20rem);
+    background-position-y: 14rem;
+  }
+  .homepage-last {
+    background-position: calc(100% - 7rem);
+    background-position-y: 11rem;
+  }
+}
+
+@media (max-width: 1639px) {
+  .homepage-last {
+    background-position: calc(100% + 7rem);
+    background-position-y: 15rem;
+  }
+}
+@media (max-width: 1389px) {
+  .homepage-hero {
+    background-image: url("/static/imgs/homepage-hero.svg");
+    background-position: calc(100%);
+    background-position-y: -10rem;
+  }
+  .homepage-mid {
+    background-position: calc(100% + 20rem);
+    background-position-y: 3rem;
+  }
+  .homepage-last {
+    background-position: calc(100% + 12rem);
+    background-position-y: 15rem;
+  }
+  .contact-img {
+    background-position: calc(100% + 10rem) calc(100%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .homepage-hero-position {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .homepage-mid {
+    background-position: calc(100% + 33rem);
+    background-position-y: -10rem;
+  }
+  .homepage-last {
+    background-position: calc(100%);
+    background-position-y: 14rem;
+  }
+  .contact-img {
+    background-position: calc(100% + 22rem) calc(100%);
+  }
+}
+@media (max-width: 992px) {
+  .homepage-hero-position {
+    padding-top: 0rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .homepage-hero {
+    background-position: calc(100% + 327px);
+    background-position-y: -5rem;
+  }
+  .homepage-mid {
+    background-position: calc(100% + 31rem);
+    background-position-y: 0rem;
+  }
+  .homepage-last {
+    background-position: calc(100%);
+    background-position-y: 12rem;
+  }
+}
+
+@media (max-width: 735px) {
+  .homepage-hero {
+    background-position: calc(100% + 340px) calc(100% - 180px);
+  }
+  .homepage-mid {
+    background-position: calc(100% + 55rem);
+    background-position-y: -10rem;
+  }
+  .homepage-last {
+    background-position: calc(100%);
+    background-position-y: 20rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 46px !important;
+  }
+  h5 {
+    font-size: 20px !important;
+  }
+  .homepage-hero {
+    background-position: calc(100% + 310px) calc(100% + 110px);
+    height: 70% !important;
+  }
+  .homepage-mid {
+    background-position: calc(100% + 58rem);
+    background-position-y: 37rem;
+  }
+  .homepage-last {
+    background-position: calc(100% + 113px);
+    background-position-y: 22rem;
+  }
+  .contact-img {
+    background-position: calc(100% + 50rem) calc(100% + 1rem);
+  }
+}
+
+@media (max-width: 415px) {
+  .homepage-hero {
+    position: absolute;
+    height: 90%;
+    background-position: calc(100% + 380px) calc(100% + 225px);
+  }
+  .homepage-mid {
+    background-position: calc(100% + 62rem);
+    background-position-y: 32rem;
+  }
+  .homepage-last {
+    background-position: calc(100% + 113px);
+    background-position-y: 33rem;
+  }
+}

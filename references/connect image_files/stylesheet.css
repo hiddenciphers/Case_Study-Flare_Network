@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Ubuntu Mono Letter';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('subset-UbuntuMono-Regular.eot');
+  src:
+    url('subset-UbuntuMono-Regular.eot?#iefix') format('embedded-opentype'),
+    url('subset-UbuntuMono-Regular.woff2') format('woff2'),
+    url('subset-UbuntuMono-Regular.woff') format('woff'),
+    url('subset-UbuntuMono-Regular.ttf') format('truetype'),
+    url('subset-UbuntuMono-Regular.svg#UbuntuMono-Regular') format('svg');
+  font-display: swap;
+}

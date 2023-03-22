@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://flare-explorer.flare.network/ -->
+<html lang="en-US" style="--numChartData:0;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./Flare Explorer_files/main-page-7a82ad750c6affd5a75f2a798464bcd9.css">
+        <link rel="preload" href="./Flare Explorer_files/chain-f3d63374d767c0dd66327e5341ad9034.js" as="script">
+        <link rel="preload" href="./Flare Explorer_files/chart-loader-6723571410b2aaf781bf0f255866000a.js" as="script">
+        <link rel="preload" href="./Flare Explorer_files/token-transfers-toggle-dffbeff4e22a1427602392ce0437273e.js" as="script">
+
+    <link rel="preload" href="./Flare Explorer_files/autocomplete-5261d1be118d971082a8827aaa53e497.js" as="script">
+    <link rel="preload" href="https://flare-explorer.flare.network/images/icons/fontawesome/github-085f3d7cc061791dbc3091dd891324d0.svg?vsn=d" as="image" crossorigin="">
+    <link rel="preload" href="https://flare-explorer.flare.network/images/icons/fontawesome/twitter-77c54a1c1b6059dd7d457930bc8d1671.svg?vsn=d" as="image" crossorigin="">
+    <link rel="preload" href="https://flare-explorer.flare.network/images/icons/fontawesome/telegram-b3bc7d8aac69fc737afcd163f23c5dd3.svg?vsn=d" as="image" crossorigin="">
+    <link rel="preload" href="https://flare-explorer.flare.network/images/icons/fontawesome/bar-chart-695c0e001e45371bc2aa623682ee28b4.svg?vsn=d" as="image" crossorigin="">
+    <link rel="preload" href="https://flare-explorer.flare.network/images/icons/fontawesome/info-circle-cc526228a68f0cd74fa6c80b8924d54f.svg?vsn=d" as="image" crossorigin="">
+    <link rel="preload" href="https://flare-explorer.flare.network/images/icons/fontawesome/tag-287add6175476b8324518840bd775fc4.svg?vsn=d" as="image" crossorigin="">
+    <link rel="stylesheet" href="./Flare Explorer_files/non-critical-361fee99855ca045610f0f1079622d56.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+    <link rel="stylesheet" href="./Flare Explorer_files/non-critical-361fee99855ca045610f0f1079622d56.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://flare-explorer.flare.network/apple-touch-icon-585d0c9a02f4be994d20cd32ecf4e913.png?vsn=d">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://flare-explorer.flare.network/images/favicon-32x32-4ded6db466a407f532e22de62b14fb01.png?vsn=d">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://flare-explorer.flare.network/images/favicon-16x16-999db271fcc24412adb81f0c3c84a4d0.png?vsn=d">
+    <link rel="manifest" href="https://flare-explorer.flare.network/manifest-b9aa277fcfc34c31db6c7a7ea3469b8c.webmanifest?vsn=d">
+    <link rel="mask-icon" href="https://flare-explorer.flare.network/safari-pinned-tab-adc3ba3be99be1d8d81f1aef8b248240.svg?vsn=d" color="#5bbad5">
+    <link rel="shortcut icon" type="image/x-icon" href="https://flare-explorer.flare.network/images/favicon-24d44934baf34b38c368731db984eca1.ico?vsn=d">
+    <meta name="msapplication-TileColor" content="#7dd79f">
+    <meta name="msapplication-config" content="/browserconfig-a493ba0aa0b8ec8068d786d7248bb92c.xml?vsn=d">
+    <meta name="theme-color" content="#ffffff">
+<title>
+Flare Explorer
+</title>
+<meta name="description" content="BlockScout provides analytics data, API, and Smart Contract tools for the Flare">
+<meta name="keywords" content="BlockScout, blockchain, api, analytics, address, smart contract">
+
+    <script defer="" data-cfasync="false">
+      window.localized = {
+        'Blocks Indexed': 'Blocks Indexed',
+        'Block Processing': 'Block Mined, awaiting import...',
+        'Indexing Tokens': 'Indexing Tokens',
+        'Less than': 'Less than',
+        'Market Cap': 'Market Cap',
+        'Price': 'Price',
+        'Ether': 'FLR',
+        'Tx/day': 'Tx/day'
+      }
+    </script>
+  <style>.swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4!important;grid-row:1/4!important;grid-template-columns:1fr 99fr 1fr;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 1px hsla(0deg,0%,0%,.075),0 1px 2px hsla(0deg,0%,0%,.075),1px 2px 4px hsla(0deg,0%,0%,.075),1px 3px 8px hsla(0deg,0%,0%,.075),2px 4px 16px hsla(0deg,0%,0%,.075);pointer-events:all}.swal2-popup.swal2-toast>*{grid-column:2}.swal2-popup.swal2-toast .swal2-title{margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-loading{justify-content:center}.swal2-popup.swal2-toast .swal2-input{height:2em;margin:.5em;font-size:1em}.swal2-popup.swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-popup.swal2-toast .swal2-html-container{margin:.5em 1em;padding:0;overflow:initial;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-html-container:empty{padding:0}.swal2-popup.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-popup.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}.swal2-popup.swal2-toast .swal2-styled{margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:grid;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto) minmax(-webkit-min-content,auto);grid-template-rows:minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,auto);height:100%;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-bottom-start,.swal2-container.swal2-center-start,.swal2-container.swal2-top-start{grid-template-columns:minmax(0,1fr) auto auto}.swal2-container.swal2-bottom,.swal2-container.swal2-center,.swal2-container.swal2-top{grid-template-columns:auto minmax(0,1fr) auto}.swal2-container.swal2-bottom-end,.swal2-container.swal2-center-end,.swal2-container.swal2-top-end{grid-template-columns:auto auto minmax(0,1fr)}.swal2-container.swal2-top-start>.swal2-popup{align-self:start}.swal2-container.swal2-top>.swal2-popup{grid-column:2;align-self:start;justify-self:center}.swal2-container.swal2-top-end>.swal2-popup,.swal2-container.swal2-top-right>.swal2-popup{grid-column:3;align-self:start;justify-self:end}.swal2-container.swal2-center-left>.swal2-popup,.swal2-container.swal2-center-start>.swal2-popup{grid-row:2;align-self:center}.swal2-container.swal2-center>.swal2-popup{grid-column:2;grid-row:2;align-self:center;justify-self:center}.swal2-container.swal2-center-end>.swal2-popup,.swal2-container.swal2-center-right>.swal2-popup{grid-column:3;grid-row:2;align-self:center;justify-self:end}.swal2-container.swal2-bottom-left>.swal2-popup,.swal2-container.swal2-bottom-start>.swal2-popup{grid-column:1;grid-row:3;align-self:end}.swal2-container.swal2-bottom>.swal2-popup{grid-column:2;grid-row:3;justify-self:center;align-self:end}.swal2-container.swal2-bottom-end>.swal2-popup,.swal2-container.swal2-bottom-right>.swal2-popup{grid-column:3;grid-row:3;align-self:end;justify-self:end}.swal2-container.swal2-grow-fullscreen>.swal2-popup,.swal2-container.swal2-grow-row>.swal2-popup{grid-column:1/4;width:100%}.swal2-container.swal2-grow-column>.swal2-popup,.swal2-container.swal2-grow-fullscreen>.swal2-popup{grid-row:1/4;align-self:stretch}.swal2-container.swal2-no-transition{transition:none!important}.swal2-popup{display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0,100%);width:32em;max-width:100%;padding:0 0 1.25em;border:none;border-radius:5px;background:#fff;color:#545454;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-title{position:relative;max-width:100%;margin:0;padding:.8em 1em 0;color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:auto;margin:1.25em auto 0;padding:0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 transparent #2778c4 transparent}.swal2-styled{margin:.3125em;padding:.625em 1.1em;transition:box-shadow .1s;box-shadow:0 0 0 3px transparent;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#7066e0;color:#fff;font-size:1em}.swal2-styled.swal2-confirm:focus{box-shadow:0 0 0 3px rgba(112,102,224,.5)}.swal2-styled.swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#dc3741;color:#fff;font-size:1em}.swal2-styled.swal2-deny:focus{box-shadow:0 0 0 3px rgba(220,55,65,.5)}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#6e7881;color:#fff;font-size:1em}.swal2-styled.swal2-cancel:focus{box-shadow:0 0 0 3px rgba(110,120,129,.5)}.swal2-styled.swal2-default-outline:focus{box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-styled:focus{outline:0}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1em 0 0;padding:1em 1em 0;border-top:1px solid #eee;color:inherit;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto!important;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:2em auto 1em}.swal2-close{z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:color .1s,box-shadow .1s;border:none;border-radius:5px;background:0 0;color:#ccc;font-family:serif;font-family:monospace;font-size:2.5em;cursor:pointer;justify-self:end}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close:focus{outline:0;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}.swal2-close::-moz-focus-inner{border:0}.swal2-html-container{z-index:1;justify-content:center;margin:1em 1.6em .3em;padding:0;overflow:auto;color:inherit;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word;word-break:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em 2em 3px}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:auto;transition:border-color .1s,box-shadow .1s;border:1px solid #d9d9d9;border-radius:.1875em;background:0 0;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px transparent;color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em 2em 3px;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-file{width:75%;margin-right:auto;margin-left:auto;background:0 0;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:0 0;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{flex-shrink:0;margin:0 .4em}.swal2-input-label{display:flex;justify-content:center;margin:1em auto 0}.swal2-validation-message{align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;border:.25em solid transparent;border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-warning.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-warning.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-i-mark .5s;animation:swal2-animate-i-mark .5s}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-info.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-info.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-i-mark .8s;animation:swal2-animate-i-mark .8s}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-question.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-question.swal2-icon-show .swal2-icon-content{-webkit-animation:swal2-animate-question-mark .8s;animation:swal2-animate-question-mark .8s}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:0 0;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}.leave-russia-now-and-apply-your-skills-to-the-world{display:flex;position:fixed;z-index:1939;top:0;right:0;bottom:0;left:0;flex-direction:column;align-items:center;justify-content:center;padding:25px 0 20px;background:#20232a;color:#fff;text-align:center}.leave-russia-now-and-apply-your-skills-to-the-world div{max-width:560px;margin:10px;line-height:146%}.leave-russia-now-and-apply-your-skills-to-the-world iframe{max-width:100%;max-height:55.5555555556vmin;margin:16px auto}.leave-russia-now-and-apply-your-skills-to-the-world strong{border-bottom:2px dashed #fff}.leave-russia-now-and-apply-your-skills-to-the-world button{display:flex;position:fixed;z-index:1940;top:0;right:0;align-items:center;justify-content:center;width:48px;height:48px;margin-right:10px;margin-bottom:-10px;border:none;background:0 0;color:#aaa;font-size:48px;font-weight:700;cursor:pointer}.leave-russia-now-and-apply-your-skills-to-the-world button:hover{color:#fff}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@-webkit-keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@-webkit-keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{background-color:transparent!important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:all}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:transparent;pointer-events:none}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}</style></head>
+
+  <body class=" dark-theme-applied" style="background-color: rgb(28, 29, 49);">
+    <script defer="" data-cfasync="false">
+      function applyDarkMode() {
+        if (localStorage.getItem("current-color-mode") !== "light") {
+          document.body.className += " " + "dark-theme-applied";
+          document.body.style.backgroundColor = "#1c1d31";
+        }
+      }
+      window.onload = applyDarkMode()
+    </script>
+    <script defer="" data-cfasync="false">
+      if (localStorage.getItem("current-color-mode") !== "light") {
+        if (document.getElementById("top-navbar")) {
+          document.getElementById("top-navbar").style.backgroundColor = "#282945";
+        }
+        if (document.getElementById("navbar-logo")) {
+          document.getElementById("navbar-logo").style.filter = "brightness(0) invert(1)";
+        }
+        let modeChanger = document.getElementById("dark-mode-changer");
+        if (modeChanger) {
+          modeChanger.className += " " + "dark-mode-changer--dark";
+        }
+      }
+    </script>
+    <script defer="" data-cfasync="false">
+      if (localStorage.getItem("current-color-mode") !== "light") {
+        const search = document.getElementById("main-search-autocomplete")
+        const searchMobile = document.getElementById("main-search-autocomplete-mobile")
+            if (search && search.style) {
+          search.style.backgroundColor = "#22223a";
+              search.style.borderColor = "#22223a";
+        }
+        if (searchMobile && searchMobile.style) {
+          searchMobile.style.backgroundColor = "#22223a";
+          searchMobile.style.borderColor = "#22223a";
+        }
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="layout-container">
+
+
+
+
+
+
+
+<nav class="navbar navbar-dark navbar-expand-lg navbar-primary" data-selector="navbar" id="top-navbar">
+  <div class="container-fluid navbar-container">
+<a class="navbar-brand" data-test="header_logo" href="https://flare-explorer.flare.network/">
+
+        <img class="navbar-logo" id="navbar-logo" src="./Flare Explorer_files/flare-120c821cf29e165c8d80f1ccfb076a37.svg" alt="Flare">
+
+
+
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link topnav-nav-link dropdown-toggle" href="https://flare-explorer.flare.network/#" id="navbarBlocksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="nav-link-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16">
+    <path fill="#D2DAE9" fill-rule="evenodd" d="M7 0L-.007 3.498 7 6.996l7.007-3.498L7 0z"></path>
+    <path fill="#C1C7D4" fill-rule="evenodd" d="M0 5.005v7.674L6.004 16V8.326L0 5.005z"></path>
+    <path fill="#A3A9B5" fill-rule="evenodd" d="M7.996 8.326V16L14 12.679V5.005L7.996 8.326z"></path>
+</svg>
+
+              </span>
+Blocks
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarBlocksDropdown">
+<a class="dropdown-item " href="https://flare-explorer.flare.network/blocks">
+Blocks
+</a>
+<a class="dropdown-item " href="https://flare-explorer.flare.network/uncles">
+Uncles
+</a>
+<a class="dropdown-item " href="https://flare-explorer.flare.network/reorgs">
+Forked Blocks (Reorgs)
+</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="activeTransactions">
+            <a href="https://flare-explorer.flare.network/#" role="button" id="navbarTransactionsDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="nav-link-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
+    <path fill="#BDC4D2" fill-rule="evenodd" d="M15 5h-4.519l1.224 1.224a1.037 1.037 0 0 1-1.465 1.465L7.311 4.76a1.017 1.017 0 0 1-.24-.409 1.024 1.024 0 0 1-.066-.327C7.005 4.016 7 4.009 7 4c-.012-.28.082-.562.295-.776L10.224.295a1.037 1.037 0 0 1 1.465 1.465L10.448 3H15a1 1 0 0 1 0 2z"></path>
+    <path fill="#A3A9B5" fill-rule="evenodd" d="M8.788 10.587c-.038.058-.063.122-.114.173l-2.925 2.929a1.033 1.033 0 0 1-1.462 0 1.037 1.037 0 0 1 0-1.465L5.509 11H1a1 1 0 0 1 0-2h4.541L4.303 7.76a1.037 1.037 0 0 1 0-1.465 1.033 1.033 0 0 1 1.462 0L8.69 9.224c.203.203.303.47.302.736.001.014.008.026.008.04 0 .224-.087.42-.212.587z"></path>
+</svg>
+
+              </span>
+Transactions
+            </a>
+            <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+<a class="dropdown-item " href="https://flare-explorer.flare.network/txs">Validated</a>
+
+
+
+<a class="dropdown-item " data-test="pending_transactions_link" href="https://flare-explorer.flare.network/pending-transactions">Pending</a>
+
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="https://flare-explorer.flare.network/#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="nav-link-icon">
+<!--?xml version="1.0"?-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24" width="16" height="16">
+    <path fill="#A3A9B5" fill-rule="evenodd" d="M 16.5 0 C 12.357864 0 9 1.790861 9 4 C 9 6.209139 12.357864 8 16.5 8 C 20.642136 8 24 6.209139 24 4 C 24 1.790861 20.642136 0 16.5 0 z M 9.0625 5.5 C 9.0235 5.664 9 5.83 9 6 L 9 7 C 9 7.849 9.49775 8.63325 10.34375 9.28125 C 11.80575 9.57825 13.06825 10.10225 14.03125 10.78125 C 14.80225 10.92425 15.638 11 16.5 11 C 20.642 11 24 9.209 24 7 L 24 6 C 24 5.83 23.9765 5.664 23.9375 5.5 C 23.4755 7.473 20.324 9 16.5 9 C 12.676 9 9.5245 7.473 9.0625 5.5 z M 23.9375 8.5 C 23.4755 10.473 20.324 12 16.5 12 C 16.079 12 15.68325 11.9735 15.28125 11.9375 C 15.74625 12.5585 15.997 13.266 16 14 C 16.166 14.005 16.331 14 16.5 14 C 20.642 14 24 12.209 24 10 L 24 9 C 24 8.83 23.9765 8.664 23.9375 8.5 z M 7.5 10 C 3.358 10 0 11.791 0 14 C 0 16.209 3.358 18 7.5 18 C 11.642 18 15 16.209 15 14 C 15 11.791 11.642 10 7.5 10 z M 23.9375 11.5 C 23.4755 13.473 20.324 15 16.5 15 C 16.331 15 16.166 15.005 16 15 L 16 17 C 16.166 17.005 16.331 17 16.5 17 C 20.642 17 24 15.209 24 13 L 24 12 C 24 11.83 23.9765 11.664 23.9375 11.5 z M 23.9375 14.5 C 23.4755 16.473 20.324 18 16.5 18 C 16.331 18 16.166 18.005 16 18 L 16 20 C 16.166 20.005 16.331 20 16.5 20 C 20.642 20 24 18.209 24 16 L 24 15 C 24 14.83 23.9765 14.664 23.9375 14.5 z M 0.0625 15.5 C 0.0235 15.664 0 15.83 0 16 L 0 17 C 0 19.209 3.358 21 7.5 21 C 11.642 21 15 19.209 15 17 L 15 16 C 15 15.83 14.9765 15.664 14.9375 15.5 C 14.4755 17.473 11.324 19 7.5 19 C 3.676 19 0.5245 17.473 0.0625 15.5 z M 0.0625 18.5 C 0.0235 18.664 0 18.83 0 19 L 0 20 C 0 22.209 3.358 24 7.5 24 C 11.642 24 15 22.209 15 20 L 15 19 C 15 18.83 14.9765 18.664 14.9375 18.5 C 14.4755 20.473 11.324 22 7.5 22 C 3.676 22 0.5245 20.473 0.0625 18.5 z"></path>
+</svg>
+
+              </span>
+Tokens
+            </a>
+            <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+<a class="dropdown-item " href="https://flare-explorer.flare.network/tokens">All</a>
+<a class="dropdown-item " href="https://flare-explorer.flare.network/accounts">FLR</a>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a href="https://flare-explorer.flare.network/#" role="button" id="navbarAPIsDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="nav-link-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+    <path fill="#D2DAE9" fill-rule="evenodd" d="M15 3H5a1 1 0 0 1-2 0H1a1 1 0 0 1 0-2h2a1 1 0 0 1 2 0h10a1 1 0 0 1 0 2z"></path>
+    <path fill="#BDC4D2" fill-rule="evenodd" d="M15 9h-2a1 1 0 0 1-2 0H1a1 1 0 0 1 0-2h10a1 1 0 0 1 2 0h2a1 1 0 0 1 0 2z"></path>
+    <path fill="#A3A9B5" fill-rule="evenodd" d="M15 15H5a1 1 0 0 1-2 0H1a1 1 0 0 1 0-2h2a1 1 0 0 1 2 0h10a1 1 0 0 1 0 2z"></path>
+</svg>
+
+              </span>
+APIs
+            </a>
+            <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+<a class="dropdown-item " href="https://flare-explorer.flare.network/graphiql">GraphQL</a>
+<a class="dropdown-item " href="https://flare-explorer.flare.network/api-docs">RPC</a>
+<a class="dropdown-item " href="https://flare-explorer.flare.network/eth-rpc-api-docs">Eth RPC</a>
+            </div>
+          </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link topnav-nav-link active-icon " href="https://flare-explorer.flare.network/#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="nav-link-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" class="active-dot-icon">
+    <circle cx="3" cy="3" r="3" fill="#80d6a1"></circle>
+</svg>
+            </span>
+Flare
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a href="https://flare-explorer.flare.network/" class="dropdown-item" target="_blank">Flare
+              <span class="external-link-icon">
+<svg height="12pt" viewBox="0 0 12 12" width="12pt" xmlns="http://www.w3.org/2000/svg"><path d="m9.992188 1.496094c-.019532 0-.039063 0-.058594.003906h-2.433594c-.179688-.003906-.347656.09375-.4375.246094-.09375.15625-.09375.351562 0 .507812.089844.152344.257812.25.4375.246094h1.292969l-4.644531 4.648438c-.132813.125-.183594.308593-.140626.484374.046876.175782.183594.3125.359376.359376.175781.042968.359374-.007813.488281-.136719l4.644531-4.648438v1.292969c-.003906.179688.09375.347656.246094.4375.15625.09375.351562.09375.507812 0 .152344-.089844.25-.257812.246094-.4375v-2.4375c.019531-.144531-.023438-.292969-.125-.402344-.097656-.109375-.238281-.167968-.382812-.164062zm-7.492188.003906c-.546875 0-1 .453125-1 1v7c0 .546875.453125 1 1 1h7c.546875 0 1-.453125 1-1v-3c.003906-.179688-.09375-.347656-.246094-.4375-.15625-.09375-.351562-.09375-.507812 0-.152344.089844-.25.257812-.246094.4375v3h-7v-7h3c.179688.003906.347656-.09375.4375-.246094.09375-.15625.09375-.351562 0-.507812-.089844-.152344-.257812-.25-.4375-.246094zm0 0" fill="#333"></path></svg>
+              </span>
+            </a>
+            <a href="https://songbird-explorer.flare.network/" class="dropdown-item" target="_blank">Songbird
+              <span class="external-link-icon">
+<svg height="12pt" viewBox="0 0 12 12" width="12pt" xmlns="http://www.w3.org/2000/svg"><path d="m9.992188 1.496094c-.019532 0-.039063 0-.058594.003906h-2.433594c-.179688-.003906-.347656.09375-.4375.246094-.09375.15625-.09375.351562 0 .507812.089844.152344.257812.25.4375.246094h1.292969l-4.644531 4.648438c-.132813.125-.183594.308593-.140626.484374.046876.175782.183594.3125.359376.359376.175781.042968.359374-.007813.488281-.136719l4.644531-4.648438v1.292969c-.003906.179688.09375.347656.246094.4375.15625.09375.351562.09375.507812 0 .152344-.089844.25-.257812.246094-.4375v-2.4375c.019531-.144531-.023438-.292969-.125-.402344-.097656-.109375-.238281-.167968-.382812-.164062zm-7.492188.003906c-.546875 0-1 .453125-1 1v7c0 .546875.453125 1 1 1h7c.546875 0 1-.453125 1-1v-3c.003906-.179688-.09375-.347656-.246094-.4375-.15625-.09375-.351562-.09375-.507812 0-.152344.089844-.25.257812-.246094.4375v3h-7v-7h3c.179688.003906.347656-.09375.4375-.246094.09375-.15625.09375-.351562 0-.507812-.089844-.152344-.257812-.25-.4375-.246094zm0 0" fill="#333"></path></svg>
+              </span>
+            </a>
+            <a href="https://coston-explorer.flare.network/" class="dropdown-item" target="_blank">Coston
+              <span class="external-link-icon">
+<svg height="12pt" viewBox="0 0 12 12" width="12pt" xmlns="http://www.w3.org/2000/svg"><path d="m9.992188 1.496094c-.019532 0-.039063 0-.058594.003906h-2.433594c-.179688-.003906-.347656.09375-.4375.246094-.09375.15625-.09375.351562 0 .507812.089844.152344.257812.25.4375.246094h1.292969l-4.644531 4.648438c-.132813.125-.183594.308593-.140626.484374.046876.175782.183594.3125.359376.359376.175781.042968.359374-.007813.488281-.136719l4.644531-4.648438v1.292969c-.003906.179688.09375.347656.246094.4375.15625.09375.351562.09375.507812 0 .152344-.089844.25-.257812.246094-.4375v-2.4375c.019531-.144531-.023438-.292969-.125-.402344-.097656-.109375-.238281-.167968-.382812-.164062zm-7.492188.003906c-.546875 0-1 .453125-1 1v7c0 .546875.453125 1 1 1h7c.546875 0 1-.453125 1-1v-3c.003906-.179688-.09375-.347656-.246094-.4375-.15625-.09375-.351562-.09375-.507812 0-.152344.089844-.25.257812-.246094.4375v3h-7v-7h3c.179688.003906.347656-.09375.4375-.246094.09375-.15625.09375-.351562 0-.507812-.089844-.152344-.257812-.25-.4375-.246094zm0 0" fill="#333"></path></svg>
+              </span>
+            </a>
+            <a href="https://coston2-explorer.flare.network/" class="dropdown-item" target="_blank">Coston2
+              <span class="external-link-icon">
+<svg height="12pt" viewBox="0 0 12 12" width="12pt" xmlns="http://www.w3.org/2000/svg"><path d="m9.992188 1.496094c-.019532 0-.039063 0-.058594.003906h-2.433594c-.179688-.003906-.347656.09375-.4375.246094-.09375.15625-.09375.351562 0 .507812.089844.152344.257812.25.4375.246094h1.292969l-4.644531 4.648438c-.132813.125-.183594.308593-.140626.484374.046876.175782.183594.3125.359376.359376.175781.042968.359374-.007813.488281-.136719l4.644531-4.648438v1.292969c-.003906.179688.09375.347656.246094.4375.15625.09375.351562.09375.507812 0 .152344-.089844.25-.257812.246094-.4375v-2.4375c.019531-.144531-.023438-.292969-.125-.402344-.097656-.109375-.238281-.167968-.382812-.164062zm-7.492188.003906c-.546875 0-1 .453125-1 1v7c0 .546875.453125 1 1 1h7c.546875 0 1-.453125 1-1v-3c.003906-.179688-.09375-.347656-.246094-.4375-.15625-.09375-.351562-.09375-.507812 0-.152344.089844-.25.257812-.246094.4375v3h-7v-7h3c.179688.003906.347656-.09375.4375-.246094.09375-.15625.09375-.351562 0-.507812-.089844-.152344-.257812-.25-.4375-.246094zm0 0" fill="#333"></path></svg>
+              </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- Dark mode changer -->
+      <button class="dark-mode-changer" id="dark-mode-changer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16">
+            <path fill="#9B62FF" fill-rule="evenodd" d="M14.88 11.578a.544.544 0 0 0-.599-.166 5.7 5.7 0 0 1-1.924.321c-3.259 0-5.91-2.632-5.91-5.866 0-1.947.968-3.759 2.59-4.849a.534.534 0 0 0-.225-.97A5.289 5.289 0 0 0 8.059 0C3.615 0 0 3.588 0 8s3.615 8 8.059 8c2.82 0 5.386-1.423 6.862-3.806a.533.533 0 0 0-.041-.616z"></path>
+        </svg>
+      </button>
+<!-- Search navbar -->
+<div class="search-form d-lg-flex d-inline-block mobile-search-hide">
+	<div class="input-group" style="width: 100%;" title="Search by address, token symbol name, transaction hash, or block number">
+		<div class="form-control search-control me auto mobile-search-hide">
+			<div class="autoComplete_wrapper" role="combobox" aria-owns="autoComplete_list_1" aria-haspopup="true" aria-expanded="false"><input id="main-search-autocomplete" class="main-search-autocomplete" data-test="search_input" data-chain-id="14" data-display-token-icons="" type="text" tabindex="1" aria-controls="autoComplete_list_1" aria-autocomplete="both" placeholder="Search by address, token symbol, name, transaction hash, or block number"><ul id="autoComplete_list_1" role="listbox" hidden=""></ul></div>
+		</div>
+		<div class="input-group-append left">
+			<button class="input-group-text" id="search-icon">
+<svg viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg" width="16" height="17">
+    <path fill="#7DD79F" fill-rule="evenodd" d="M15.713 15.727a.982.982 0 0 1-1.388 0l-2.289-2.29C10.773 14.403 9.213 15 7.5 15A7.5 7.5 0 1 1 15 7.5c0 1.719-.602 3.284-1.575 4.55l2.288 2.288a.983.983 0 0 1 0 1.389zM7.5 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 1 0 0-11z"></path>
+</svg>
+
+			</button>
+		</div>
+		<div class="input-group-append right desktop-only">
+			<div id="slash-icon" class="input-group-text border" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Press / and focus will be moved to the search field" data-template="&lt;div class=&#39;tooltip tooltip-pale-color&#39; role=&#39;tooltip&#39;&gt;&lt;div class=&#39;arrow&#39;&gt;&lt;/div&gt;&lt;div class=&#39;tooltip-inner&#39;&gt;&lt;/div&gt;&lt;/div&gt;">
+			/
+			</div>
+		</div>
+	</div>
+	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit">Search</button>
+</div>
+    </div>
+  </div>
+<!-- Search navbar -->
+<div class="search-form d-lg-flex d-inline-block mobile-search-show">
+	<div class="input-group" style="width: 100%;" title="Search by address, token symbol name, transaction hash, or block number">
+		<div class="form-control search-control me auto mobile-search-show">
+			<div class="autoComplete_wrapper" role="combobox" aria-owns="autoComplete_list_2" aria-haspopup="true" aria-expanded="false"><input id="main-search-autocomplete-mobile" class="main-search-autocomplete" data-test="search_input" data-chain-id="14" data-display-token-icons="" type="text" tabindex="1" aria-controls="autoComplete_list_2" aria-autocomplete="both" placeholder="Search by address, token symbol, name, transaction hash, or block number"><ul id="autoComplete_list_2" role="listbox" hidden=""></ul></div>
+		</div>
+		<div class="input-group-append left">
+			<button class="input-group-text" id="search-icon">
+<svg viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg" width="16" height="17">
+    <path fill="#7DD79F" fill-rule="evenodd" d="M15.713 15.727a.982.982 0 0 1-1.388 0l-2.289-2.29C10.773 14.403 9.213 15 7.5 15A7.5 7.5 0 1 1 15 7.5c0 1.719-.602 3.284-1.575 4.55l2.288 2.288a.983.983 0 0 1 0 1.389zM7.5 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 1 0 0-11z"></path>
+</svg>
+
+			</button>
+		</div>
+		<div class="input-group-append right desktop-only">
+			<div id="slash-icon" class="input-group-text border" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Press / and focus will be moved to the search field" data-template="&lt;div class=&#39;tooltip tooltip-pale-color&#39; role=&#39;tooltip&#39;&gt;&lt;div class=&#39;arrow&#39;&gt;&lt;/div&gt;&lt;div class=&#39;tooltip-inner&#39;&gt;&lt;/div&gt;&lt;/div&gt;">
+			/
+			</div>
+		</div>
+	</div>
+	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit">Search</button>
+</div>
+</nav>
+
+      <main class="js-ad-dependant-pt pt-5">
+        <p class="alert alert-info" role="alert"></p>
+        <p class="alert alert-danger" role="alert"></p>
+<div class="dashboard-banner-container" data-page="chain-details">
+  <div class="container">
+    <div class="dashboard-banner">
+      <!-- Graph and legend -->
+      <div class="dashboard-banner-network-graph">
+        <!-- Graph -->
+        <div class="dashboard-banner-chart">
+          <button data-chart-error-message="" class="alert alert-danger col-12 text-left mt-5" style="display: none;">
+            <span>There was a problem loading the chart.</span>
+          </button>
+          <canvas data-chart="historyChart" data-history_chart_paths="{
+                        &quot;market&quot;:&quot;/market-history-chart&quot;
+
+                        ,
+
+
+                        &quot;transaction&quot;:&quot;/transaction-history-chart&quot;
+
+}" data-history_chart_config="{}" width="0" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;">
+          </canvas>
+        </div>
+        <!-- Legend -->
+        <script>
+         numChartData = 0
+         document.documentElement.style.setProperty("--numChartData", numChartData);
+        </script>
+        <div class="dashboard-banner-chart-legend">
+
+<div class="dashboard-banner-chart-legend-item gas-price-oracle">
+    <span class="dashboard-banner-chart-legend-label">
+Gas tracker
+    </span>
+    <div class="dashboard-banner-chart-legend-value-container">
+
+
+        <span class="dashboard-banner-chart-legend-value inline">
+            <div>
+            <div class="d-flex flex-row" style="height: 20px; line-height: 20px;">
+                <div class="flex-column">100.0 Gwei</div>
+                <span data-toggle="tooltip" data-placement="top" data-html="true" data-template="&lt;div class=&#39;tooltip tooltip-inversed-color tooltip-gas-tracker&#39; role=&#39;tooltip&#39;&gt;&lt;div class=&#39;arrow&#39;&gt;&lt;/div&gt;&lt;div class=&#39;tooltip-inner&#39;&gt;&lt;/div&gt;&lt;/div&gt;" title="
+                &lt;div class=&#39;custom-tooltip header&#39;&gt;Gas tracker&lt;/div&gt;
+                &lt;div&gt;
+                    &lt;div class=&#39;custom-tooltip description left d-flex&#39;&gt;&lt;span&gt;Slow&lt;/span&gt;&lt;span class=&#39;custom-tooltip description right&#39;&gt;37.5 Gwei&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&#39;custom-tooltip description left d-flex&#39;&gt;&lt;span&gt;Average&lt;/span&gt;&lt;span class=&#39;custom-tooltip description right&#39;&gt;100.0 Gwei&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&#39;custom-tooltip description left d-flex&#39;&gt;&lt;span&gt;Fast&lt;/span&gt;&lt;span class=&#39;custom-tooltip description right&#39;&gt;225.0 Gwei&lt;/span&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                ">
+                <span style="display: inline-block; height: 20px; width: 12px;" class="fontawesome-icon info-circle ml-1"></span>
+                </span>
+            </div>
+            </div>
+        </span>
+
+    </div>
+</div>
+
+        </div>
+      </div>
+      <!-- Stats -->
+      <div class="dashboard-banner-network-plain-container">
+        <div class="dashboard-banner-network-stats">
+
+              <div class="dashboard-banner-network-stats-item dashboard-banner-network-stats-item-1">
+                <span class="dashboard-banner-network-stats-label">
+Average block time
+                </span>
+                <span class="dashboard-banner-network-stats-value" data-selector="average-block-time">2.1 seconds</span>
+              </div>
+
+          <div class="dashboard-banner-network-stats-item dashboard-banner-network-stats-item-2">
+            <span class="dashboard-banner-network-stats-label">
+Total transactions
+            </span>
+            <div class="d-flex">
+              <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">20,248,867</span>
+
+            </div>
+          </div>
+          <div class="dashboard-banner-network-stats-item dashboard-banner-network-stats-item-3">
+            <span class="dashboard-banner-network-stats-label">
+Total blocks
+            </span>
+            <span class="dashboard-banner-network-stats-value" data-selector="block-count">6,472,483</span>
+          </div>
+          <div class="dashboard-banner-network-stats-item dashboard-banner-network-stats-item-4">
+            <span class="dashboard-banner-network-stats-label">
+Wallet addresses
+            </span>
+            <span class="dashboard-banner-network-stats-value" data-selector="address-count">305,780</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container">
+  <div class="card card-chain-blocks js-ad-dependant-mb-3">
+    <div class="card-body">
+<a class="btn-line float-right" href="https://flare-explorer.flare.network/blocks">View All Blocks</a>
+      <h2 class="card-title">Blocks</h2>
+      <div class="row" data-selector="chain-block-list" data-url="/chain-blocks">
+        
+        
+        
+        
+           
+      <div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="6472482">
+  <div class="tile tile-type-block n-p d-flex flex-column">
+<a class="tile-title" data-selector="block-number" href="https://flare-explorer.flare.network/block/6472482">6472482</a>
+    <div class="tile-bottom-contents">
+      <div class="tile-transactions">
+        <span class="mr-2">1 Transactions</span>
+        <span class="text-nowrap" data-from-now="2023-03-18T07:05:41.000000Z">a few seconds ago</span>
+      </div>
+
+
+    </div>
+  </div>
+</div><div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="6472481">
+  <div class="tile tile-type-block n-p d-flex flex-column">
+<a class="tile-title" data-selector="block-number" href="https://flare-explorer.flare.network/block/6472481">6472481</a>
+    <div class="tile-bottom-contents">
+      <div class="tile-transactions">
+        <span class="mr-2">1 Transactions</span>
+        <span class="text-nowrap" data-from-now="2023-03-18T07:05:40.000000Z">2 seconds ago</span>
+      </div>
+
+
+    </div>
+  </div>
+</div><div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="6472480">
+  <div class="tile tile-type-block n-p d-flex flex-column">
+<a class="tile-title" data-selector="block-number" href="https://flare-explorer.flare.network/block/6472480">6472480</a>
+    <div class="tile-bottom-contents">
+      <div class="tile-transactions">
+        <span class="mr-2">1 Transactions</span>
+        <span class="text-nowrap" data-from-now="2023-03-18T07:05:37.000000Z">5 seconds ago</span>
+      </div>
+
+
+    </div>
+  </div>
+</div><div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="6472479">
+  <div class="tile tile-type-block n-p d-flex flex-column">
+<a class="tile-title" data-selector="block-number" href="https://flare-explorer.flare.network/block/6472479">6472479</a>
+    <div class="tile-bottom-contents">
+      <div class="tile-transactions">
+        <span class="mr-2">1 Transactions</span>
+        <span class="text-nowrap" data-from-now="2023-03-18T07:05:31.000000Z">11 seconds ago</span>
+      </div>
+
+
+    </div>
+  </div>
+</div></div>
+    </div>
+  </div>
+<!-- Coinzilla Banner 728x90 -->
+<script async="" src="./Flare Explorer_files/display.js"></script>
+<div class="ad-container mb-2" style="display: none;">
+    <div class="coinzilla" data-zone="C-26660bf627543e46851"></div>
+</div>
+<script defer="" data-cfasync="false" src="./Flare Explorer_files/banner-019a283a01d6fd307b030563c89c2422.js"></script>
+  <div class="card card-chain-transactions">
+    <div class="card-body">
+<a class="btn-line float-right" href="https://flare-explorer.flare.network/txs">View All Transactions</a>
+      <h2 class="card-title lg-card-title">Transactions</h2>
+      <div data-selector="channel-batching-message" style="">
+        <div data-selector="reload-transactions-button" class="alert alert-info">
+          <a href="https://flare-explorer.flare.network/#" class="alert-link"><span data-selector="channel-batching-count">991</span> More transactions have come in</a>
+        </div>
+      </div>
+      <span data-selector="transactions-list" data-transactions-path="/recent-transactions">
+        
+        
+      <div class="tile tile-type-contract-call fade-in tile-status--success" data-test="contract-call" data-identifier-hash="0x7a18770646c9f3a29ac699adb57c81e1434087ebded4e9b5a8c98cf9456ac89d">
+  <div class="row tile-body" data-selector="token-transfers-toggle" data-test="chain_transaction">
+    <!-- Color Block -->
+    <div class="tile-transaction-type-block col-md-2 d-flex flex-row flex-md-column">
+      <div>
+
+        <span class="tile-label" data-test="transaction_type">
+Contract Call
+        </span>
+      </div>
+      <span class="tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+
+Success
+      </span>
+    </div>
+    <!-- Content -->
+    <div class="col-md-7 col-lg-8 d-flex flex-column pr-2 pr-sm-2 pr-md-0">
+      <span>
+      <div class="text-truncate d-flex">
+<a class="text-truncate" data-test="transaction_hash_link" href="https://flare-explorer.flare.network/tx/0x7a18770646c9f3a29ac699adb57c81e1434087ebded4e9b5a8c98cf9456ac89d">0x7a18770646c9f3a29ac699adb57c81e1434087ebded4e9b5a8c98cf9456ac89d</a>
+
+
+<div class="bs-label method ml-1">
+RevealPrices
+</div>
+
+      </div>
+      </span>
+      <span>
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x4CfB79399cd840414a2BeF2c7C7A0cE3b9b0F89d">
+<span class="" data-address-hash="0x4CfB79399cd840414a2BeF2c7C7A0cE3b9b0F89d">
+
+
+      <span class="d-none d-md-none d-xl-inline">0x4CfB79399cd840414a2BeF2c7C7A0cE3b9b0F89d</span>
+      <span class="d-md-inline-block d-xl-none">0x4cfb79–b0f89d</span>
+
+
+</span>
+
+</a>
+
+
+        →
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x1000000000000000000000000000000000000003">
+<span class="contract-address" data-address-hash="0x1000000000000000000000000000000000000003">
+
+
+
+        <span data-toggle="tooltip" data-placement="top" title="0x1000000000000000000000000000000000000003" data-custom-class="">
+          <span class="d-none d-md-none d-lg-inline d-xl-inline">PriceSubmitter</span>
+          <span class="d-inline d-md-inline d-lg-none d-xl-none">PriceSub..er</span>
+          <span> (0x100000–000003)</span>
+        </span>
+
+
+
+</span>
+
+</a>
+
+
+      </span>
+      <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+        <span class="tile-title">
+0 FLR
+        </span>
+        <span class="ml-0 ml-md-1 text-nowrap">
+0.142598925 TX Fee
+        </span>
+      </span>
+
+      <!-- Transfer -->
+
+    </div>
+    <!-- Block info -->
+    <div class="col-md-3 col-lg-2 d-flex flex-row flex-md-column flex-nowrap justify-content-center text-md-right mt-3 mt-md-0 tile-bottom">
+      <span class="mr-2 mr-md-0 order-1">
+<a href="https://flare-explorer.flare.network/block/6472136">Block #6472136</a>
+      </span>
+      <span class="mr-2 mr-md-0 order-2" in-tile="" data-from-now="2023-03-18T06:53:45.000000Z">12 minutes ago</span>
+
+    </div>
+  </div>
+</div><div class="tile tile-type-token-transfer fade-in tile-status--success" data-test="token-transfer" data-identifier-hash="0x867d8fd209b25ac3309ebd3ac1ae7e5601e3cb4f31b257dabbdb21c5a2700827">
+  <div class="row tile-body" data-selector="token-transfers-toggle" data-test="chain_transaction">
+    <!-- Color Block -->
+    <div class="tile-transaction-type-block col-md-2 d-flex flex-row flex-md-column">
+      <div>
+
+        <span class="tile-label" data-test="transaction_type">
+Token Minting
+        </span>
+      </div>
+      <span class="tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+
+Success
+      </span>
+    </div>
+    <!-- Content -->
+    <div class="col-md-7 col-lg-8 d-flex flex-column pr-2 pr-sm-2 pr-md-0">
+      <span>
+      <div class="text-truncate d-flex">
+<a class="text-truncate" data-test="transaction_hash_link" href="https://flare-explorer.flare.network/tx/0x867d8fd209b25ac3309ebd3ac1ae7e5601e3cb4f31b257dabbdb21c5a2700827">0x867d8fd209b25ac3309ebd3ac1ae7e5601e3cb4f31b257dabbdb21c5a2700827</a>
+
+
+<div class="bs-label method ml-1">
+Claim
+</div>
+
+      </div>
+      </span>
+      <span>
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x99B0779a2D46F9C2Db80e969f818a292AD0a13Fd">
+<span class="" data-address-hash="0x99B0779a2D46F9C2Db80e969f818a292AD0a13Fd">
+
+
+      <span class="d-none d-md-none d-xl-inline">0x99B0779a2D46F9C2Db80e969f818a292AD0a13Fd</span>
+      <span class="d-md-inline-block d-xl-none">0x99b077–0a13fd</span>
+
+
+</span>
+
+</a>
+
+
+        →
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x85627d71921AE25769f5370E482AdA5E1e418d37">
+<span class="contract-address" data-address-hash="0x85627d71921AE25769f5370E482AdA5E1e418d37">
+
+
+
+        <span data-toggle="tooltip" data-placement="top" title="0x85627d71921ae25769f5370e482ada5e1e418d37" data-custom-class="">
+          <span class="d-none d-md-none d-lg-inline d-xl-inline">FtsoRewardManager</span>
+          <span class="d-inline d-md-inline d-lg-none d-xl-none">FtsoRewa..er</span>
+          <span> (0x85627d–418d37)</span>
+        </span>
+
+
+
+</span>
+
+</a>
+
+
+      </span>
+      <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+        <span class="tile-title">
+0 FLR
+        </span>
+        <span class="ml-0 ml-md-1 text-nowrap">
+0.05805120746545421 TX Fee
+        </span>
+      </span>
+
+      <!-- Transfer -->
+
+        <div class="d-flex flex-column mt-2">
+
+<div class="text-nowrap-small-screen row mt-3 mt-sm-0" data-test="token_transfer">
+  <span class="col-xs-12 col-lg-5" style="display: inline-table;">
+
+    <span class="d-inline-block tile-type-token-transfer-short-name">
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x0000000000000000000000000000000000000000">
+<span class="" data-address-hash="0x0000000000000000000000000000000000000000">
+
+
+0x000000–000000
+
+
+</span>
+
+</a>
+
+
+    </span>
+    →
+    <span class="d-inline-block tile-type-token-transfer-short-name">
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x99B0779a2D46F9C2Db80e969f818a292AD0a13Fd">
+<span class="" data-address-hash="0x99B0779a2D46F9C2Db80e969f818a292AD0a13Fd">
+
+
+0x99b077–0a13fd
+
+
+</span>
+
+</a>
+
+
+    </span>
+  </span>
+  <span class="col-xs-12 col-lg-4 ml-3 ml-sm-0">
+
+4.381169367076404702
+ <a data-test="token_link" href="https://flare-explorer.flare.network/token/0x1d80c49bbbcd1c0911346656b529df9e5c2f783d">WFLR</a>
+
+  </span>
+</div>
+
+          <div class="collapse token-transfer-toggle" id="transaction-0x867d8fd209b25ac3309ebd3ac1ae7e5601e3cb4f31b257dabbdb21c5a2700827">
+
+          </div>
+        </div>
+
+
+    </div>
+    <!-- Block info -->
+    <div class="col-md-3 col-lg-2 d-flex flex-row flex-md-column flex-nowrap justify-content-center text-md-right mt-3 mt-md-0 tile-bottom">
+      <span class="mr-2 mr-md-0 order-1">
+<a href="https://flare-explorer.flare.network/block/6472135">Block #6472135</a>
+      </span>
+      <span class="mr-2 mr-md-0 order-2" in-tile="" data-from-now="2023-03-18T06:53:44.000000Z">12 minutes ago</span>
+
+    </div>
+  </div>
+</div><div class="tile tile-type-contract-call fade-in tile-status--success" data-test="contract-call" data-identifier-hash="0x2d54d20d7068bcabd0f9bb05d7f369bf2c578693f4caffdc5a294997a6c5e4b6">
+  <div class="row tile-body" data-selector="token-transfers-toggle" data-test="chain_transaction">
+    <!-- Color Block -->
+    <div class="tile-transaction-type-block col-md-2 d-flex flex-row flex-md-column">
+      <div>
+
+        <span class="tile-label" data-test="transaction_type">
+Contract Call
+        </span>
+      </div>
+      <span class="tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+
+Success
+      </span>
+    </div>
+    <!-- Content -->
+    <div class="col-md-7 col-lg-8 d-flex flex-column pr-2 pr-sm-2 pr-md-0">
+      <span>
+      <div class="text-truncate d-flex">
+<a class="text-truncate" data-test="transaction_hash_link" href="https://flare-explorer.flare.network/tx/0x2d54d20d7068bcabd0f9bb05d7f369bf2c578693f4caffdc5a294997a6c5e4b6">0x2d54d20d7068bcabd0f9bb05d7f369bf2c578693f4caffdc5a294997a6c5e4b6</a>
+
+
+<div class="bs-label method ml-1">
+RevealPrices
+</div>
+
+      </div>
+      </span>
+      <span>
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x1184F1dF8EE3AcdFb917a5816013d3673f586cC1">
+<span class="" data-address-hash="0x1184F1dF8EE3AcdFb917a5816013d3673f586cC1">
+
+
+      <span class="d-none d-md-none d-xl-inline">0x1184F1dF8EE3AcdFb917a5816013d3673f586cC1</span>
+      <span class="d-md-inline-block d-xl-none">0x1184f1–586cc1</span>
+
+
+</span>
+
+</a>
+
+
+        →
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x1000000000000000000000000000000000000003">
+<span class="contract-address" data-address-hash="0x1000000000000000000000000000000000000003">
+
+
+
+        <span data-toggle="tooltip" data-placement="top" title="0x1000000000000000000000000000000000000003" data-custom-class="">
+          <span class="d-none d-md-none d-lg-inline d-xl-inline">PriceSubmitter</span>
+          <span class="d-inline d-md-inline d-lg-none d-xl-none">PriceSub..er</span>
+          <span> (0x100000–000003)</span>
+        </span>
+
+
+
+</span>
+
+</a>
+
+
+      </span>
+      <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+        <span class="tile-title">
+0 FLR
+        </span>
+        <span class="ml-0 ml-md-1 text-nowrap">
+0.0167914865 TX Fee
+        </span>
+      </span>
+
+      <!-- Transfer -->
+
+    </div>
+    <!-- Block info -->
+    <div class="col-md-3 col-lg-2 d-flex flex-row flex-md-column flex-nowrap justify-content-center text-md-right mt-3 mt-md-0 tile-bottom">
+      <span class="mr-2 mr-md-0 order-1">
+<a href="https://flare-explorer.flare.network/block/6472134">Block #6472134</a>
+      </span>
+      <span class="mr-2 mr-md-0 order-2" in-tile="" data-from-now="2023-03-18T06:53:42.000000Z">12 minutes ago</span>
+
+    </div>
+  </div>
+</div><div class="tile tile-type-contract-call fade-in tile-status--success" data-test="contract-call" data-identifier-hash="0x6baf2bca71ef3a679f93fc7388ad756e4f0ee3c05f2e747330b82837eb7893f5">
+  <div class="row tile-body" data-selector="token-transfers-toggle" data-test="chain_transaction">
+    <!-- Color Block -->
+    <div class="tile-transaction-type-block col-md-2 d-flex flex-row flex-md-column">
+      <div>
+
+        <span class="tile-label" data-test="transaction_type">
+Contract Call
+        </span>
+      </div>
+      <span class="tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+
+Success
+      </span>
+    </div>
+    <!-- Content -->
+    <div class="col-md-7 col-lg-8 d-flex flex-column pr-2 pr-sm-2 pr-md-0">
+      <span>
+      <div class="text-truncate d-flex">
+<a class="text-truncate" data-test="transaction_hash_link" href="https://flare-explorer.flare.network/tx/0x6baf2bca71ef3a679f93fc7388ad756e4f0ee3c05f2e747330b82837eb7893f5">0x6baf2bca71ef3a679f93fc7388ad756e4f0ee3c05f2e747330b82837eb7893f5</a>
+
+
+<div class="bs-label method ml-1">
+RevealPrices
+</div>
+
+      </div>
+      </span>
+      <span>
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x3EE31B4E632539241Ff3bbEaCa495584749cCB69">
+<span class="" data-address-hash="0x3EE31B4E632539241Ff3bbEaCa495584749cCB69">
+
+
+      <span class="d-none d-md-none d-xl-inline">0x3EE31B4E632539241Ff3bbEaCa495584749cCB69</span>
+      <span class="d-md-inline-block d-xl-none">0x3ee31b–9ccb69</span>
+
+
+</span>
+
+</a>
+
+
+        →
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x1000000000000000000000000000000000000003">
+<span class="contract-address" data-address-hash="0x1000000000000000000000000000000000000003">
+
+
+
+        <span data-toggle="tooltip" data-placement="top" title="0x1000000000000000000000000000000000000003" data-custom-class="">
+          <span class="d-none d-md-none d-lg-inline d-xl-inline">PriceSubmitter</span>
+          <span class="d-inline d-md-inline d-lg-none d-xl-none">PriceSub..er</span>
+          <span> (0x100000–000003)</span>
+        </span>
+
+
+
+</span>
+
+</a>
+
+
+      </span>
+      <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+        <span class="tile-title">
+0 FLR
+        </span>
+        <span class="ml-0 ml-md-1 text-nowrap">
+0.0167911685 TX Fee
+        </span>
+      </span>
+
+      <!-- Transfer -->
+
+    </div>
+    <!-- Block info -->
+    <div class="col-md-3 col-lg-2 d-flex flex-row flex-md-column flex-nowrap justify-content-center text-md-right mt-3 mt-md-0 tile-bottom">
+      <span class="mr-2 mr-md-0 order-1">
+<a href="https://flare-explorer.flare.network/block/6472134">Block #6472134</a>
+      </span>
+      <span class="mr-2 mr-md-0 order-2" in-tile="" data-from-now="2023-03-18T06:53:42.000000Z">12 minutes ago</span>
+
+    </div>
+  </div>
+</div><div class="tile tile-type-contract-call fade-in tile-status--success" data-test="contract-call" data-identifier-hash="0x3af24c11913af9539111d36d7b080e3c6d2e7961acc8a0d2792e39cdd2da3846">
+  <div class="row tile-body" data-selector="token-transfers-toggle" data-test="chain_transaction">
+    <!-- Color Block -->
+    <div class="tile-transaction-type-block col-md-2 d-flex flex-row flex-md-column">
+      <div>
+
+        <span class="tile-label" data-test="transaction_type">
+Contract Call
+        </span>
+      </div>
+      <span class="tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+
+Success
+      </span>
+    </div>
+    <!-- Content -->
+    <div class="col-md-7 col-lg-8 d-flex flex-column pr-2 pr-sm-2 pr-md-0">
+      <span>
+      <div class="text-truncate d-flex">
+<a class="text-truncate" data-test="transaction_hash_link" href="https://flare-explorer.flare.network/tx/0x3af24c11913af9539111d36d7b080e3c6d2e7961acc8a0d2792e39cdd2da3846">0x3af24c11913af9539111d36d7b080e3c6d2e7961acc8a0d2792e39cdd2da3846</a>
+
+
+<div class="bs-label method ml-1">
+RevealPrices
+</div>
+
+      </div>
+      </span>
+      <span>
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0xBE304C28F3a050486b9733AE56cB5541B16c007B">
+<span class="" data-address-hash="0xBE304C28F3a050486b9733AE56cB5541B16c007B">
+
+
+      <span class="d-none d-md-none d-xl-inline">0xBE304C28F3a050486b9733AE56cB5541B16c007B</span>
+      <span class="d-md-inline-block d-xl-none">0xbe304c–6c007b</span>
+
+
+</span>
+
+</a>
+
+
+        →
+
+
+<a data-test="address_hash_link" href="https://flare-explorer.flare.network/address/0x1000000000000000000000000000000000000003">
+<span class="contract-address" data-address-hash="0x1000000000000000000000000000000000000003">
+
+
+
+        <span data-toggle="tooltip" data-placement="top" title="0x1000000000000000000000000000000000000003" data-custom-class="">
+          <span class="d-none d-md-none d-lg-inline d-xl-inline">PriceSubmitter</span>
+          <span class="d-inline d-md-inline d-lg-none d-xl-none">PriceSub..er</span>
+          <span> (0x100000–000003)</span>
+        </span>
+
+
+
+</span>
+
+</a>
+
+
+      </span>
+      <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+        <span class="tile-title">
+0 FLR
+        </span>
+        <span class="ml-0 ml-md-1 text-nowrap">
+0.0167953025 TX Fee
+        </span>
+      </span>
+
+      <!-- Transfer -->
+
+    </div>
+    <!-- Block info -->
+    <div class="col-md-3 col-lg-2 d-flex flex-row flex-md-column flex-nowrap justify-content-center text-md-right mt-3 mt-md-0 tile-bottom">
+      <span class="mr-2 mr-md-0 order-1">
+<a href="https://flare-explorer.flare.network/block/6472133">Block #6472133</a>
+      </span>
+      <span class="mr-2 mr-md-0 order-2" in-tile="" data-from-now="2023-03-18T06:53:40.000000Z">12 minutes ago</span>
+
+    </div>
+  </div>
+</div></span>
+    </div>
+  </div>
+</section>
+
+      </main>
+<footer class="footer">
+  <div class="footer-body container">
+    <!-- Logo -->
+    <div class="row footer-logo-row">
+      <div class="col-md-12">
+<a class="footer-brand" href="https://flare-explorer.flare.network/">
+
+            <img class="footer-logo" src="./Flare Explorer_files/flare-120c821cf29e165c8d80f1ccfb076a37.svg" alt="Flare">
+
+
+</a>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-xs-12 col-lg-3">
+        <p class="footer-info-text">Flare Explorer is a tool for inspecting and analyzing transactions, addresses and other activities on the Flare blockchain.</p>
+        <div class="footer-social-icons">
+          <a href="https://www.twitter.com/FlareNetworks" rel="noreferrer" target="_blank" class="footer-social-icon" title="Twitter">
+          </a><a href="https://t.me/poa_network" rel="noreferrer" target="_blank" class="footer-social-icon" title="Telegram">
+          </a><a href="https://discord.gg/XqNa7Rq" rel="noreferrer" target="_blank" class="footer-social-icon" title="Discord">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="https://t.me/FlareNetwork" rel="noreferrer" target="_blank" class="footer-social-icon" title="Telegram">
+             <i class="fab fa-telegram-plane"></i>
+           </a>
+          <a href="https://gitlab.com/flarenetwork" rel="noreferrer" target="_blank" class="footer-social-icon" title="GitLab">
+            <i class="fab fa-gitlab"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4 col-lg-3 footer-list">
+        <h3>Flare Networks</h3>
+        <ul>
+          <li><a href="https://flare.xyz/" rel="noreferrer" class="footer-link" target="_blank">Website</a></li>
+          <li><a href="https://docs.flare.network/" rel="noreferrer" class="footer-link" target="_blank">Documentation</a></li>
+<input id="js-chain-id" class="d-none" value="14">
+<input id="js-coin-name" class="d-none" value="FLR">
+
+<input id="js-subnetwork" class="d-none" value="Flare">
+<input id="js-json-rpc" class="d-none" value="https://flare-api.flare.network/ext/C/rpc">
+<li>
+    <a class="footer-link js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;">
+Add Flare
+    </a>
+</li>
+        </ul>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div>
+      Powered by BlockScout
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+<div class="modal fade" id="errorStatusModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-status" role="document">
+    <div class="modal-content">
+      <div class="modal-status-graph modal-status-graph-error">
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="86">
+    <defs>
+        <filter id="errora" width="85" height="86" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feoffset dy="6" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="3.464"></fegaussianblur>
+            <feflood flood-color="#C80A40" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="atop"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".6" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <femerge>
+                <femergenode></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+            </femerge>
+        </filter>
+        <filter id="errorb">
+            <feoffset dy="-4" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="2.828"></fegaussianblur>
+            <feflood flood-color="#FF0D51" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="out" result="compOut"></fecomposite>
+            <fecomposite in="compOut" in2="SourceAlpha" operator="in"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".5" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <feblend in2="SourceGraphic"></feblend>
+        </filter>
+    </defs>
+    <path fill="#FFF" fill-rule="evenodd" d="M54.738 36.969L70.342 52.58c3.521 3.524 3.521 9.237 0 12.76a9.015 9.015 0 0 1-12.754 0L41.984 49.729 26.381 65.34a9.015 9.015 0 0 1-12.754 0c-3.522-3.523-3.522-9.236 0-12.76l15.604-15.611-15.572-15.58c-3.522-3.524-3.522-9.237 0-12.76a9.013 9.013 0 0 1 12.753 0l15.572 15.58 15.572-15.58a9.015 9.015 0 0 1 12.754 0c3.522 3.523 3.522 9.236 0 12.76l-15.572 15.58z" filter="url(#errorb)"></path>
+</svg>
+
+      </div>
+<button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+        <path fill-rule="evenodd" d="M10.435 8.983l7.261 7.261a1.027 1.027 0 1 1-1.452 1.452l-7.261-7.261-7.262 7.262a1.025 1.025 0 1 1-1.449-1.45l7.262-7.261L.273 1.725A1.027 1.027 0 1 1 1.725.273l7.261 7.261 7.23-7.231a1.025 1.025 0 1 1 1.449 1.45l-7.23 7.23z"></path>
+    </svg>
+</button>
+      <div class="modal-body modal-status-body">
+        <h2 class="modal-status-title"></h2>
+        <p class="modal-status-text" style="word-break: break-all;"></p>
+        <div class="modal-status-button-wrapper">
+
+            <button class="btn-line" type="button" data-dismiss="modal">
+              <span class="btn-line-text">Ok</span>
+            </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="modal fade" id="warningStatusModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-status" role="document">
+    <div class="modal-content">
+      <div class="modal-status-graph modal-status-graph-warning">
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="85">
+    <defs>
+        <filter id="warninga" width="43" height="85" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feoffset dy="6" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="3.464"></fegaussianblur>
+            <feflood flood-color="#C16502" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="atop"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".6" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <femerge>
+                <femergenode></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+            </femerge>
+        </filter>
+        <filter id="warningb">
+            <feoffset dy="-4" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="2.828"></fegaussianblur>
+            <feflood flood-color="#FF8502" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="out" result="compOut"></fecomposite>
+            <fecomposite in="compOut" in2="SourceAlpha" operator="in"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".5" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <feblend in2="SourceGraphic"></feblend>
+        </filter>
+    </defs>
+    <path fill="#FFF" fill-rule="evenodd" d="M30.23 18.848L26 40h-.1a5.003 5.003 0 0 1-9.8 0H16l-4.23-21.152A9.958 9.958 0 0 1 11 15c0-5.523 4.477-10 10-10s10 4.477 10 10a9.958 9.958 0 0 1-.77 3.848zM21 49a9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9z" filter="url(#warningb)"></path>
+</svg>
+
+      </div>
+<button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+        <path fill-rule="evenodd" d="M10.435 8.983l7.261 7.261a1.027 1.027 0 1 1-1.452 1.452l-7.261-7.261-7.262 7.262a1.025 1.025 0 1 1-1.449-1.45l7.262-7.261L.273 1.725A1.027 1.027 0 1 1 1.725.273l7.261 7.261 7.23-7.231a1.025 1.025 0 1 1 1.449 1.45l-7.23 7.23z"></path>
+    </svg>
+</button>
+      <div class="modal-body modal-status-body">
+        <h2 class="modal-status-title"></h2>
+        <p class="modal-status-text" style=""></p>
+        <div class="modal-status-button-wrapper">
+
+            <button class="btn-line" type="button" data-dismiss="modal">
+              <span class="btn-line-text">Ok</span>
+            </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="modal fade" id="successStatusModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-status" role="document">
+    <div class="modal-content">
+      <div class="modal-status-graph modal-status-graph-success">
+<svg xmlns="http://www.w3.org/2000/svg" width="99" height="80">
+    <defs>
+        <filter id="successa" width="99" height="80" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feoffset dy="6" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="3.464"></fegaussianblur>
+            <feflood flood-color="#0E796B" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="atop"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".6" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <femerge>
+                <femergenode></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+            </femerge>
+        </filter>
+        <filter id="successb">
+            <feoffset dy="-4" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="2.828"></fegaussianblur>
+            <feflood flood-color="#15BBA6" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="out" result="compOut"></fecomposite>
+            <fecomposite in="compOut" in2="SourceAlpha" operator="in"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".5" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <feblend in2="SourceGraphic"></feblend>
+        </filter>
+    </defs>
+    <path fill="#FFF" fill-rule="evenodd" d="M84.31 21.389L46.381 59.34a8.993 8.993 0 0 1-6.399 2.642 8.998 8.998 0 0 1-6.402-2.642L13.629 39.389a9.022 9.022 0 0 1 0-12.76 9.022 9.022 0 0 1 12.76 0l13.593 13.593L71.557 8.629a9.013 9.013 0 0 1 12.753 0c3.522 3.523 3.522 9.236 0 12.76z" filter="url(#successb)"></path>
+</svg>
+
+      </div>
+<button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+        <path fill-rule="evenodd" d="M10.435 8.983l7.261 7.261a1.027 1.027 0 1 1-1.452 1.452l-7.261-7.261-7.262 7.262a1.025 1.025 0 1 1-1.449-1.45l7.262-7.261L.273 1.725A1.027 1.027 0 1 1 1.725.273l7.261 7.261 7.23-7.231a1.025 1.025 0 1 1 1.449 1.45l-7.23 7.23z"></path>
+    </svg>
+</button>
+      <div class="modal-body modal-status-body">
+        <h2 class="modal-status-title"></h2>
+        <p class="modal-status-text" style=""></p>
+        <div class="modal-status-button-wrapper">
+
+            <button class="btn-line" type="button" data-dismiss="modal">
+              <span class="btn-line-text">Ok</span>
+            </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="modal fade" id="questionStatusModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-status" role="document">
+    <div class="modal-content">
+      <div class="modal-status-graph modal-status-graph-question">
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="85">
+    <defs>
+        <filter id="questiona" width="62" height="85" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feoffset dy="6" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="3.464"></fegaussianblur>
+            <feflood flood-color="#2674AF" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="atop"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".6" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <femerge>
+                <femergenode></femergenode>
+                <femergenode in="SourceGraphic"></femergenode>
+            </femerge>
+        </filter>
+        <filter id="questionb">
+            <feoffset dy="-4" in="SourceAlpha"></feoffset>
+            <fegaussianblur result="blurOut" stdDeviation="2.828"></fegaussianblur>
+            <feflood flood-color="#329AE9" result="floodOut"></feflood>
+            <fecomposite in="floodOut" in2="blurOut" operator="out" result="compOut"></fecomposite>
+            <fecomposite in="compOut" in2="SourceAlpha" operator="in"></fecomposite>
+            <fecomponenttransfer>
+                <fefunca slope=".5" type="linear"></fefunca>
+            </fecomponenttransfer>
+            <feblend in2="SourceGraphic"></feblend>
+        </filter>
+    </defs>
+    <path fill="#FFF" fill-rule="evenodd" d="M30.385 46.419c1.149 0 2.146-.344 2.995-1.033.847-.689 1.381-1.664 1.6-2.928.273-1.205.889-2.368 1.846-3.487.957-1.119 2.339-2.454 4.144-4.004 1.915-1.779 3.474-3.3 4.678-4.563 1.203-1.262 2.228-2.784 3.077-4.564.848-1.779 1.272-3.731 1.272-5.855 0-2.87-.794-5.438-2.38-7.707-1.587-2.267-3.774-4.046-6.565-5.338-2.79-1.292-5.963-1.937-9.518-1.937-3.174 0-6.333.531-9.478 1.593-3.147 1.062-5.95 2.54-8.412 4.434-.931.747-1.6 1.522-2.01 2.325-.41.804-.616 1.808-.616 3.013 0 1.78.479 3.287 1.436 4.521.957 1.235 2.12 1.851 3.488 1.851 1.149 0 2.653-.545 4.513-1.636l1.97-1.033c1.531-.918 2.913-1.621 4.144-2.11a10.075 10.075 0 0 1 3.734-.732c1.53 0 2.734.374 3.61 1.12.875.747 1.313 1.752 1.313 3.014 0 1.263-.315 2.41-.943 3.444-.63 1.033-1.574 2.268-2.832 3.702-1.751 1.895-3.118 3.746-4.103 5.554-.984 1.808-1.477 4.062-1.477 6.759 0 1.78.397 3.158 1.19 4.133.793.977 1.9 1.464 3.324 1.464zm.164 20.579c2.297 0 4.198-.803 5.703-2.411 1.504-1.606 2.257-3.587 2.257-5.941 0-2.353-.753-4.334-2.257-5.941-1.505-1.607-3.406-2.411-5.703-2.411-2.244 0-4.117.804-5.621 2.411-1.506 1.607-2.257 3.588-2.257 5.941 0 2.354.751 4.335 2.257 5.941 1.504 1.608 3.377 2.411 5.621 2.411z" filter="url(#questionb)"></path>
+</svg>
+
+      </div>
+<button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+        <path fill-rule="evenodd" d="M10.435 8.983l7.261 7.261a1.027 1.027 0 1 1-1.452 1.452l-7.261-7.261-7.262 7.262a1.025 1.025 0 1 1-1.449-1.45l7.262-7.261L.273 1.725A1.027 1.027 0 1 1 1.725.273l7.261 7.261 7.23-7.231a1.025 1.025 0 1 1 1.449 1.45l-7.23 7.23z"></path>
+    </svg>
+</button>
+      <div class="modal-body modal-status-body">
+        <h2 class="modal-status-title"></h2>
+        <p class="modal-status-text" style=""></p>
+        <div class="modal-status-button-wrapper">
+
+            <button class="btn-line except" type="button">
+              <span class="btn-line-text">No</span>
+            </button>
+            <button class="btn-line accept" type="button">
+              <span class="btn-line-text">Yes</span>
+            </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <script defer="" data-cfasync="false" src="./Flare Explorer_files/chain-f3d63374d767c0dd66327e5341ad9034.js"></script>
+      <script defer="" data-cfasync="false" src="./Flare Explorer_files/chart-loader-6723571410b2aaf781bf0f255866000a.js"></script>
+      <script defer="" data-cfasync="false" src="./Flare Explorer_files/token-transfers-toggle-dffbeff4e22a1427602392ce0437273e.js"></script>
+
+    <script defer="" src="./Flare Explorer_files/autocomplete-5261d1be118d971082a8827aaa53e497.js"></script>
+
+
+  
+
+</body></html>

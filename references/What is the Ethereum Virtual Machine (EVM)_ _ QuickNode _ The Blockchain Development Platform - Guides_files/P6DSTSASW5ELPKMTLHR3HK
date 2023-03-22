@@ -1,0 +1,270 @@
+(function () {
+  var scheme = (("https:" == document.location.protocol) ? "https" : "http");
+  var adnxs_domain = 'secure.adnxs.com';
+  var aol_domain = 'secure.leadback.advertising.com';
+  window.adroll_seg_eid = "VGO7MC5QJNGDTHORU5KRRU";
+  window.adroll_sendrolling_cross_device = true;
+  window.adroll_form_fields = {};
+  if (typeof __adroll._form_attach != 'undefined') {
+    __adroll._form_attach();
+  }
+  window.adroll_rule_type = "s";
+  var rule = ["970c5c76", "*/*"];
+  if (scheme=='http') { adnxs_domain = 'ib.adnxs.com'; aol_domain = 'leadback.advertising.com';}
+  var el = document.createElement("div");
+  el.style["width"] = "1px";
+  el.style["height"] = "1px";
+  el.style["display"] = "inline";
+  el.style["position"] = "absolute";
+  var content = '';
+
+  if (__adroll.consent_allowed(__adroll.consent_networks.facebook)) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','//connect.facebook.net/en_US/fbevents.js');
+  }
+
+  try {
+      try {
+          
+    (function(){
+     if (__adroll.consent_allowed(__adroll.consent_networks.linkedin)) {
+        if (typeof window._already_called_lintrk !== "undefined" && !!window._already_called_lintrk) {
+            var tag = document.createElement('img');
+            tag.setAttribute('height', '1');
+            tag.setAttribute('width', '1');
+            tag.setAttribute('style', 'display:none;');
+            tag.setAttribute('alt', '');
+            tag.setAttribute('src', 'https://px.ads.linkedin.com/collect/?pid=4275106&fmt=gif');
+            document.body.appendChild(tag);
+        }
+        else {
+            _linkedin_partner_id = "4275106";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        }
+      }
+    })();
+
+      } catch(e) {}
+      try {
+          
+(function() {
+var rtb = document.createElement("div");
+rtb.style["width"] = "1px";
+rtb.style["height"] = "1px";
+rtb.style["display"] = "inline";
+rtb.style["position"] = "absolute";
+rtb.innerHTML = ["/cm/b/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/g/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/index/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/n/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/o/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/outbrain/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/pubmatic/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/taboola/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/triplelift/out?advertisable=IARSD2MG4VBW7GSAEHJTZG","/cm/x/out?advertisable=IARSD2MG4VBW7GSAEHJTZG"].reduce(function (acc, cmURL) {
+    return acc + '<img height="1" width="1" style="border-style:none;" alt="" src="' + __adroll._srv(cmURL) + '"/>';
+}, '');
+__adroll._head().appendChild(rtb);
+})();
+
+      } catch(e) {}
+      try {
+          
+(function(){
+    var scr = document.createElement("script");
+    scr.type = "text/javascript";
+    scr.src = "//s.adroll.com/j/sendrolling.js";
+    ((document.getElementsByTagName("head") || [null])[0] || document.getElementsByTagName("script")[0].parentNode).appendChild(scr);
+}());
+
+      } catch(e) {}
+      try {
+          
+(function(){
+  if (__adroll.consent_allowed(__adroll.consent_networks.linkedin)) {
+    if (__adroll._has_global('adroll_segments')) {
+
+      if (__adroll._global('adroll_segments') === '8fa8ce73') {
+        var conversion_tag = document.createElement("img");
+
+        conversion_tag.setAttribute('height', '1');
+        conversion_tag.setAttribute('width', '1');
+        conversion_tag.setAttribute('style', 'display:none;');
+        conversion_tag.setAttribute('alt', '');
+        conversion_tag.setAttribute('src', 'https://px.ads.linkedin.com/collect/?pid=4275106&conversionId=10049618&fmt=gif');
+
+        document.body.appendChild(conversion_tag);
+      }
+
+
+      if (__adroll._global('adroll_segments') === '966856d5') {
+        var conversion_tag = document.createElement("img");
+
+        conversion_tag.setAttribute('height', '1');
+        conversion_tag.setAttribute('width', '1');
+        conversion_tag.setAttribute('style', 'display:none;');
+        conversion_tag.setAttribute('alt', '');
+        conversion_tag.setAttribute('src', 'https://px.ads.linkedin.com/collect/?pid=4275106&conversionId=10049610&fmt=gif');
+
+        document.body.appendChild(conversion_tag);
+      }
+
+
+      if (__adroll._global('adroll_segments') === '66983ade') {
+        var conversion_tag = document.createElement("img");
+
+        conversion_tag.setAttribute('height', '1');
+        conversion_tag.setAttribute('width', '1');
+        conversion_tag.setAttribute('style', 'display:none;');
+        conversion_tag.setAttribute('alt', '');
+        conversion_tag.setAttribute('src', 'https://px.ads.linkedin.com/collect/?pid=4275106&conversionId=9517202&fmt=gif');
+
+        document.body.appendChild(conversion_tag);
+      }
+
+    }
+  }
+})();
+
+      } catch(e) {}
+      try {
+          (function () {
+    "use strict";
+    var SITE_PERSONALIZATION_CB = "onB2BPersonalizationDataReady";
+    var RW_GA_EVENT = "rw_personalization_data";
+    var GA_ID = "UA-102961404-1";
+    var USE_GTM = "";
+    var ENABLE_EMPTY_ATTRIBUTES_CALLBACK = "true";
+    
+    function getPersonalizationData(onPersonalizationDataReady) {
+        __adroll._b2bPersonalizationDataCb = onPersonalizationDataReady;
+        __adroll.add_script_element(
+            __adroll._srv("/user_attrs?advertisable_eid=IARSD2MG4VBW7GSAEHJTZG&keys_eid=YPQ6GTB44RGJTHUDVD8ATK&first_party=false&jsonp=__adroll._b2bPersonalizationDataCb&include_first_party_company_data=true", true)
+        );
+    }
+    getPersonalizationData(function(personalizationDataResponse) {
+        
+        function runPersonalizationCallback(personalizationData) {
+            setTimeout(function () {
+                __adroll._global(SITE_PERSONALIZATION_CB)(personalizationData);
+            });
+        }
+        
+        function configureSitePersonalizationCallback(personalizationData) {
+            if (!__adroll._has_global(SITE_PERSONALIZATION_CB)) {
+                Object.defineProperty(window, SITE_PERSONALIZATION_CB, {
+                    configurable: true,
+                    set: function (cb) {
+                        __adroll._unset_global(SITE_PERSONALIZATION_CB);
+                        __adroll._set_global(SITE_PERSONALIZATION_CB, cb);
+                        runPersonalizationCallback(personalizationData);
+                    }
+                });
+            } else {
+                runPersonalizationCallback(personalizationData);
+            }
+        }
+        
+        function configureGoogleAnalytics(personalizationData) {
+            __adroll._ensure_global("dataLayer", []);
+            function gtag() {__adroll._global("dataLayer").push(arguments);}
+            gtag("config", GA_ID, {
+                "send_page_view": false,
+                "custom_map": {
+                    "dimension1": "domain", "dimension2": "company_name", "dimension3": "company_industry", "dimension5": "company_revenue", "dimension4": "company_size"
+                },
+            });
+            gtag("event", RW_GA_EVENT, personalizationData);
+            if (!__adroll._global("gtag") && __adroll._global("ga")) {
+                const payload = {};
+                const dimensions = {
+                    "dimension1": "domain", "dimension2": "company_name", "dimension3": "company_industry", "dimension5": "company_revenue", "dimension4": "company_size"
+                };
+                var keys = Object.keys(dimensions);
+                for (var k in keys) {
+                    payload[keys[k]] = personalizationData[dimensions[keys[k]]];
+                }
+                __adroll._global("ga")("send", "event", payload);
+            }
+        }
+        
+        function getDataLayerPersonalizationData(personalizationData) {
+            return {
+                rwCompanyDomain: personalizationData["domain"],
+                rwCompanyName: personalizationData["company_name"],
+                rwCompanyIndustry: personalizationData["company_industry"],
+                rwCompanyRevenue: personalizationData["company_revenue"],
+                rwCompanySize: personalizationData["company_size"]
+            }
+        }
+        
+        function configureGoogleTagManager(personalizationData) {
+            __adroll._ensure_global("dataLayer", []);
+            const dataLayerPersonalizationData = getDataLayerPersonalizationData(personalizationData);
+            dataLayerPersonalizationData["event"] = RW_GA_EVENT;
+            const dataLayer = __adroll._global("dataLayer");
+            if (dataLayer.constructor === Array) {
+                dataLayer.push(dataLayerPersonalizationData);
+            }
+        }
+        var personalizationData = personalizationDataResponse.user_attributes;
+        if (Object.keys(personalizationData).length > 0 || ENABLE_EMPTY_ATTRIBUTES_CALLBACK === "true") {
+            configureSitePersonalizationCallback(personalizationData);
+            if (GA_ID && Object.keys(personalizationData).length > 0) {
+                configureGoogleAnalytics(personalizationData);
+            } else if (USE_GTM && Object.keys(personalizationData).length > 0) {
+                configureGoogleTagManager(personalizationData);
+            }
+        }
+    });
+})();
+
+      } catch(e) {}
+      try {
+          if (__adroll.consent_allowed(__adroll.consent_networks.facebook)) {
+    var fbLimitedDataUse = true;
+    if(typeof __adroll.fb === 'undefined'){
+    if (fbLimitedDataUse) {
+        fbq('dataProcessingOptions', ['LDU'], 0, 0);
+    }
+    fbq('init', '1740804266146093');
+    fbq('set', 'autoConfig', 'false', '1740804266146093');
+    __adroll.fb=true;
+
+    var __fbcd = {segment_eid: "VGO7MC5QJNGDTHORU5KRRU"};
+    for (var prop in __adroll.get_external_data()){
+        __fbcd['ar_' + prop] = __adroll.get_external_data()[prop];
+    }
+
+    fbq('track', "PageView", __fbcd);
+    } else {
+    var __fbcd = {event: "EventSegment", segment_eid: "VGO7MC5QJNGDTHORU5KRRU"};
+    for (var prop in __adroll.get_external_data()){
+        __fbcd['ar_' + prop] = __adroll.get_external_data()[prop];
+    }
+
+    fbq('track', "CustomEvent", __fbcd);
+    }
+}
+
+      } catch(e) {}
+  } catch(e) {}
+
+  var r = Math.random()*10000000000000000;
+  content = content.replace(/\[ord\]/gi, r);
+  content = content.replace(/\[protocol\]/gi, scheme);
+  content = content.replace(/\[adnxs_domain\]/gi, adnxs_domain);
+  content = content.replace(/\[aol_domain\]/gi, aol_domain);
+  var adroll_tpc = __adroll._global('adroll_tpc');
+  if (adroll_tpc) {
+    var srv_parts = __adroll._srv().split('?');
+    var srv_host = srv_parts[0].substr(srv_parts[0].indexOf(':') + 1);
+    var srv_re = new RegExp(srv_host + '([^\?\"\'\>\#\S]+)\\?*', 'gi');
+    content = content.replace(srv_re, srv_host + '$1?' + srv_parts[1] + '&');
+  }
+  content = __adroll.replace_external_data(content);
+  el.innerHTML = content;
+  __adroll._head().appendChild(el);
+  if (typeof __adroll.set_pixel_cookie != 'undefined') {__adroll.set_pixel_cookie(adroll_adv_id, adroll_pix_id, "VGO7MC5QJNGDTHORU5KRRU");}
+}());

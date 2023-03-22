@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){window.wpseoScriptData.metabox.base_url=window.yoastSeoBaseSiteUrl.base_url})

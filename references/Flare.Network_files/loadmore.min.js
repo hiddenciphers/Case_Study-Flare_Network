@@ -1,0 +1,2 @@
+jQuery(function(a){var b=!0;a(window).scroll(function(){var c={action:"loadmore",query:inspya_loadmore_params.posts,page:inspya_loadmore_params.current_page};a(document).scrollTop()>a(document).height()-1e4&&1==b&&a.ajax({url:inspya_loadmore_params.ajaxurl,data:c,type:"POST",beforeSend:function(a){b=!1},success:function(c){c&&(a(".flare-news .wrapper .posts-wrapper.main").find(".news-item:last-of-type").after(c),b=!0,inspya_loadmore_params.current_page++)}})})});
+//# sourceMappingURL=loadmore.min.js.map

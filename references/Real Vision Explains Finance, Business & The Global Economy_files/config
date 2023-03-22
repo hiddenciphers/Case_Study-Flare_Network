@@ -1,0 +1,1 @@
+/**/ typeof jsonpCallback_80209466123 === 'function' && jsonpCallback_80209466123({"integration":{"id":"60edca4279b0b7248b3ff5a5","type":"sso","retention":"3 years","sso":{"property":"window.localStorage.ajs_user_id"},"rateLimit":false},"endpoints":{"lead":"/lead"},"bcGuid":"b70c2855-e6cc-406f-8825-6183cca81a17"});

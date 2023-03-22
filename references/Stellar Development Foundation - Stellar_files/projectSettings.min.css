@@ -1,0 +1,2 @@
+.dropdown-list{display:block;opacity:0;visibility:hidden;transition:opacity 0.1s linear 0.3s, visibility 0ms linear 0.31s}.nav-link:hover .dropdown-list{opacity:1;visibility:visible;transition:opacity 0.1s, visibility 0ms;transition-delay:0.2s}.nav-link:hover .dropdown-toggle{border-bottom:2px solid #3e1bdb}
+

@@ -1,0 +1,320 @@
+ul.gc_dlc_fund_breakdown{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size: 75%;
+}
+
+ul.gc_dlc_fund_breakdown li{
+
+}
+
+ul.gc_dlc_fund_breakdown li .product-label{
+    font-weight:bold;
+}
+
+ul.gc_dlc_fund_breakdown li .product-share{
+    
+}
+
+body.postid-801 .per-share-data {
+    display:none;
+}
+
+body .gs-product-category [data-fund-status="false"] .gs-unactive-product-boxes {
+    position: relative;
+    transform: none;
+    clip-path: none;
+    width: 100%;
+    left: 0;
+    top: 61px;
+}
+
+#defi-fund{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    border: solid 1px #E4E4E4;
+    background: #fff;
+}
+
+.single-defi {
+    border: solid 1px #E4E4E4;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 50%;
+    line-height: normal;
+}
+
+.defi-image{
+    padding:0.25rem 1rem 0.25rem 0;
+}
+
+.defi-title{
+    width:25%;
+    padding:0.25rem;
+    color: #073948;
+    font-size: 14px;
+    text-align: left;
+    font-family: "Mackay";
+}
+
+.defi-value{
+    width:25%;
+    padding:0.25rem;
+    margin-left: auto;
+}
+
+.defi-fund-percentage{
+    width:25%;
+    padding:0.25rem;
+    text-align: right;
+}
+
+#defi-fund-text{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:767px) {
+    .single-defi {
+        width: 100%;
+    }
+}
+
+/* gc_public_pricing */
+
+#gc-public-pricing {
+    border: solid 1px #023a48;
+}
+
+#gc-public-pricing .gcpp-legend{
+    background: #023a48;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#gc-public-pricing .gcpp-legend div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+#gc-public-pricing .gcpp-legend div.gcpp-legend-1 {
+    min-width:450px;
+}
+
+#gc-public-pricing .gcpp-legend div.gcpp-legend-6 {
+    text-align: center;
+}
+
+#gc-public-pricing .gcpp-row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px #f2f3f4;
+    font-size:13px;
+    align-items: center;
+}
+
+.gcpp-identifier {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    min-width:450px;
+    align-items: center;
+}
+
+.gcpp-identifier .gcpp-image{
+    padding: .75rem;
+    width:55px;
+    align-items: center;
+    display: flex;
+}
+
+.gcpp-identifier .gcpp-title{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+    flex: none;
+}
+
+.gcpp-identifier .gcpp-symbol{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem .75rem .75rem 0;
+    flex: none;
+}
+
+.gcpp-mps {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.gcpp-mpsd {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.gcpp-hs {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.gcpp-hsd {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.gcpp-ttm {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.gcpp-invest {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.gcpp-invest a {
+    background-color: #2AAD92;
+    border-radius: 0;
+    padding: 20px 48px;
+    line-height: 1em;
+    letter-spacing: 0.1px;
+    position: relative;
+    font-family: "Proxima Nova", Sans-serif;
+    font-weight: 600;
+    color: #fff!important;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.gcpp-invest a:hover,
+.gcpp-invest a:active,
+.gcpp-invest a:focus {
+    background-color: #249981;
+}
+
+@media screen and (max-width:1024px) {
+
+    #gc-public-pricing {
+        border: none;
+    }
+    #gc-public-pricing .gcpp-legend {
+        display: none;
+    }
+
+    #gc-public-pricing .gcpp-row {
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+        border: solid 1px #023a48;
+        margin-bottom: 1.5rem;
+    }
+
+    .gcpp-identifier {
+        min-width: auto;
+        width: 100%;
+        flex: none;
+        display: block;
+        text-align: center;
+    }
+
+    .gcpp-identifier .gcpp-image {
+        width: 100%;
+        text-align: center;
+        display:block;
+    }
+
+    .gcpp-identifier .gcpp-image img {
+        max-width:75px;
+    }
+
+    .gcpp-identifier .gcpp-symbol {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0 .75rem 0.5rem;
+    }
+
+    .gcpp-identifier .gcpp-title {
+        padding: 0 .75rem 0.75rem;
+    }
+
+    .gcpp-mps:before {
+        content: 'Market Price/ Share';
+        display: block;
+    }
+
+    .gcpp-mps {
+        width: 50%;
+        flex: none;
+        text-align: center;
+    }
+
+    .gcpp-mpsd:before {
+        content: 'Market Price/ Share 24h%';
+        display: block;
+    }
+
+    .gcpp-mpsd {
+        width: 50%;
+        flex: none;
+        text-align: center;
+    }
+
+    .gcpp-hs:before {
+        content: 'Holdings/ Share';
+        display: block;
+    }
+
+    .gcpp-hs {
+        width: 50%;
+        flex: none;
+        text-align: center;
+    }
+
+    .gcpp-hsd:before {
+        content: 'Holdings/ Share 24h%';
+        display: block;
+    }
+
+    .gcpp-hsd {
+        width: 50%;
+        flex: none;
+        text-align: center;
+    }
+}
