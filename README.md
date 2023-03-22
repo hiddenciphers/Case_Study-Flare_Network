@@ -100,10 +100,10 @@ The [**State Connector**](references/State%20Connector%20-%20Technical%20Documen
 ![Alt text](images/FLRTICKER.png) [[^13]](references/Flare%20price%20today,%20FLR%20to%20USD%20live,%20marketcap%20and%20chart%20_%20CoinMarketCap.html)
 
 ```
-Flare Network Native Asset - FLR token
+Flare Network Native Asset - FLR
 ```
 
-[**Flare Network (FLR): A Layer -1 for Decentralized Data**](references/FLR.html) [[^14]](references/FLR.html) published Jan 8, 2023 states,
+[**Flare Network (FLR): A Layer -1 for Decentralized Data**](references/FLR.html) [[^14]](references/FLR.html) published Jan 8, 2023 by [**ByBit**](references/FLR.html) states,
 
 "Flare Network's [**native token**](references/NativeTokens.html) is referred to as ([**FLR**](references/Flare%20price%20today,%20FLR%20to%20USD%20live,%20marketcap%20and%20chart%20_%20CoinMarketCap.html)). [**FLR**](references/Flare%20price%20today,%20FLR%20to%20USD%20live,%20marketcap%20and%20chart%20_%20CoinMarketCap.html) is created to maintain consistent usage costs, support the native data & interoperability protocols & facilitate a variety of use cases, including [**DeFi**](references/Decentralized%20finance%20-%20Wikipedia.html), [**NFT**](references/Non-fungible%20token%20-%20Wikipedia.html)s, [**Metaverse**](references/Metaverse%20-%20Wikipedia.html) and [**Web3**](references/Web3%20-%20Wikipedia.html) gaming. 
 
